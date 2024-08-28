@@ -11,3 +11,32 @@
 body {
   -webkit-tap-highlight-color: transparent;
 }
+
+
+
+/* emabla css code */
+.promo-embla {
+  margin: auto;
+  --promo-slide-height: 3rem;
+  --promo-slide-spacing: 3rem;
+  --promo-slide-size: 1rem;
+}
+
+.promo-embla__viewport {
+  overflow: hidden;
+}
+
+.promo-embla__container {
+  display: flex;
+  touch-action: pan-x pinch-zoom;
+  margin-top: calc(var(--promo-slide-spacing) * -1);
+  height: calc(var(--promo-slide-spacing) + var(--promo-slide-height));
+  flex-direction: column;
+
+}
+
+.promo-embla__slide {
+  transform: translate3d(0, 0, 0);
+  /* flex: 0 0 var(--promo-slide-size); */
+  padding-top: var(--promo-slide-spacing);
+}
