@@ -5,8 +5,8 @@ import { ProjectUnderConstruction } from '@/public/assetManager';
 
 const ProjectsConstructionAnimation = ({ width }) => {
   return (
-    <div className='flex flex-col items-center justify-center mx-auto bg-white ' >
-      <div className=' w-[15rem]   z-10 z-index-10 ' >
+    <div className='flex flex-col items-center justify-center mx-auto mt-[-3rem] bg-white ' >
+      <div className=' w-[28rem]   z-10 z-index-10 ' >
         <Lottie
           animationData={ProjectUnderConstruction}
           autoplay={true}
