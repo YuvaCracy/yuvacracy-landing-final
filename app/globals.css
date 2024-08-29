@@ -12,6 +12,10 @@ body {
   -webkit-tap-highlight-color: transparent;
 }
 
+.z-index-10 {
+  z-index: 30;
+}
+
 
 
 /* emabla css code */
