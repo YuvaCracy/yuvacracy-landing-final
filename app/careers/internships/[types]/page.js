@@ -9,7 +9,7 @@ import {useRouter} from "nextjs-toploader/app";
 import { usePathname } from "next/navigation";
 import Process from "@/components/careers/internships/process/process";
 
-const page = ({ params }) => {
+const InternshipTypes = ({ params }) => {
   const router = useRouter();
   const path = usePathname();
 
@@ -37,4 +37,4 @@ const page = ({ params }) => {
   }
 };
 
-export default page;
+export default InternshipTypes;

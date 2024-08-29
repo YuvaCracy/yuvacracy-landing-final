@@ -1,10 +1,10 @@
 "use client";
-import React, { useState } from "react";
+import React from "react";
 import CareerLayout from "../Layout";
 import Internships from "@/components/careers/internships/Internships";
 import Process from "@/components/careers/internships/process/process";
 
-const Page = () => {
+const InternshipPage = () => {
   return (
     <CareerLayout className="w-[100%] h-full">
       {/* Main Area */}
@@ -14,4 +14,4 @@ const Page = () => {
   );
 };
 
-export default Page;
+export default InternshipPage;

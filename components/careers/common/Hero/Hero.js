@@ -1,3 +1,4 @@
+"use client"
 import React from 'react'
 import Image from "next/image";
 import { CareersHero1 } from "@/public/assetManager";
@@ -20,6 +21,7 @@ const CareerHeroSection = () => {
       </div>
       <Image
         className="w-[84vw] h-[55vh] my-16 select-none"
+        alt="Yuvacracy is a youth led organization"
         src={CareersHero1}
       />
     </div>

@@ -2,7 +2,7 @@
 import React, { useEffect } from "react";
 import {useRouter} from "nextjs-toploader/app";
 
-const page = () => {
+const CareerPage = () => {
   const router = useRouter();
   useEffect(() => {
     router.push("careers/internships");
@@ -10,4 +10,4 @@ const page = () => {
   return <div></div>;
 };
 
-export default page;
+export default CareerPage;
