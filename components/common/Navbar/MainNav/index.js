@@ -9,7 +9,7 @@ import { aboutLinksData, CareersData, centresData, eventsData, supportData } fro
 
 const MainNav = () => {
   return (
-    <div className='bg-white sticky top-0 shadow-md w-[100%] h-[4rem] flex justify-between  items-center px-[8rem]  ' >
+    <div className='bg-white z-[999] sticky top-0 shadow-md w-[100%] h-[4rem] flex justify-between  items-center px-[8rem]  ' >
 
       {/* header code */}
       <AnimatedLogo />

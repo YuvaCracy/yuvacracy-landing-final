@@ -1,5 +1,4 @@
 import React from 'react'
-import { useRouter } from 'nextjs-toploader/app'
 
 const PrimaryButton = ({ data }) => {
   return (

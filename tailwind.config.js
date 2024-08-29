@@ -26,7 +26,8 @@ module.exports = {
         Paragraph_Primary_BG: "#DDDDDD",
         border: "#CCCCCC",
         Border_Primary_BG: "#333333",
-        Nav_Link_Primary_BG: "##FF9B3F"
+        Nav_Link_Primary_BG: "##FF9B3F",
+        textSecond: "#5c616c" 
       },
     },
   },

@@ -1,15 +1,33 @@
 import Image from "next/image";
 import React from "react";
 
+const Box = () => {
+  return (
+    <div className="bg-[#f1f3ff] rounded-lg p-4 absolute -bottom-[1rem] right-[12rem] z-10 shadow-md">
+      <div className="text-4xl text-[#003366] font-bold ">
+        100<span className="text-4xl -mt-[0.5rem]">+</span>
+      </div>
+      <div className=" w-[16rem]">
+        <div className="text-[#003366] text-xl mt-2">
+          Students, Young People <br />
+          Changed their career With Us
+        </div>
+      </div>
+    </div>
+  );
+};
+
 const InternComponent = ({ title, subtitle, desc, list, link, image }) => {
   return (
-    <div className="flex border-2 rounded-xl p-7 my-20">
+    <div className="flex border-2 rounded-xl p-7 my-20 relative">
       <div className="flex-1 font-openSans flex flex-col justify-between">
         {/* Title */}
         <div>
           <div className="flex pt-2">
             <div>
-              <span className="text-3xl font-montserrat font-bold">{title}</span>
+              <span className="text-3xl font-montserrat font-bold">
+                {title}
+              </span>
               <div className="flex py-2 items-center">
                 <div className="h-[0.3rem] bg-primary flex-grow mt-1 mr-2" />
                 <span className="italic text-subheading text-[1.1rem]">
@@ -19,7 +37,9 @@ const InternComponent = ({ title, subtitle, desc, list, link, image }) => {
             </div>
           </div>
 
-          <div className="mt-4 text-lg pt-2 pb-3 pr-12 text-gray-700">{desc}</div>
+          <div className="mt-4 text-lg pt-2 pb-3 pr-12 text-gray-700">
+            {desc}
+          </div>
 
           {/* List */}
           <ul className="mt-4 space-y-2">
@@ -40,13 +60,14 @@ const InternComponent = ({ title, subtitle, desc, list, link, image }) => {
         </div>
       </div>
 
-      {/* Image */}
-      <div className="flex justify-end pl-8">
+      {/* Image and Box */}
+      <div className="relative flex justify-end pl-8">
         <Image
           src={image}
           alt={title}
           className="rounded-xl object-cover w-[25rem]"
         />
+        <Box />
       </div>
     </div>
   );
