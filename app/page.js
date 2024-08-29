@@ -2,12 +2,17 @@
 
 import React from 'react'
 import PromotionalContent from '@/components/home/promotional'
+import MainNav from '@/components/common/Navbar/MainNav'
 
 
 const AppPage = () => {
   return (
-    <div className=' w-[100%] h-[100vh] bg-white'>
+    <div className=' w-[100%]  bg-white'>
       <PromotionalContent />
+      <MainNav />
+      <div className=' h-[100rem] ' >
+
+      </div>
 
     </div>
   )
