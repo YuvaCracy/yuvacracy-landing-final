@@ -97,10 +97,6 @@ const supportData = {
       title: 'Partner With Us',
       href: '/support/partner-with-us',
     },
-    {
-      title: 'Press Contact',
-      href: '/support/press-contact',
-    },
   ]
 }
 

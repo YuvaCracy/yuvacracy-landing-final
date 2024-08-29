@@ -2,6 +2,7 @@ import React from 'react'
 import useEmblaCarousel from 'embla-carousel-react'
 import Autoplay from "embla-carousel-autoplay";
 import Fade from 'embla-carousel-fade'
+import { useRouter } from "nextjs-toploader/app"
 
 const slides = [
   {
@@ -26,16 +27,17 @@ const option = { axis: 'y', loop: true };
 
 const AnimatedLogo = () => {
   const [emblaRef, emblaApi] = useEmblaCarousel(option, [Autoplay(true)]);
+  const router = useRouter();
   return (
-    <div className='flex flex-col gap-[.3rem] font-montserrat ' >
-      <div className='relative ' >
-        <h1 className=' text-primary text-[1.3rem] font-[700] ' >YUVACRACY</h1>
-        <p className=' absolute right-[-1.2rem] top-[-.3rem] font-openSans font-[500] text-[.59rem]    ' >TM</p>
+    <div onClick={() => router.push('/')} className='flex flex-col gap-[.3rem] font-montserrat cursor-pointer ' >
+      <div className='relative text-primary ' >
+        <h1 className='  text-[1.3rem] font-[700] ' >YUVACRACY</h1>
+        <p className=' absolute right-[-1.2rem] top-[-.3rem] font-openSans font-[600] text-[.59rem]    ' >TM</p>
       </div>
 
       {/* Animation code  */}
       <div className='flex relative items-center justify-between w-[100%] ' >
-        <div className=' h-[.25rem] w-[100%] max-w-[4rem] absolute   bg-primary ' />
+        <div className=' h-[.25rem] w-[100%] max-w-[4rem] absolute ml-[.1rem]   bg-primary ' />
 
         <div className="absolute right-[.2rem] flex w-fit h-fit animated-logo-embla">
           <div className="w-full animated-logo-embla__viewport" ref={emblaRef}>
@@ -43,8 +45,8 @@ const AnimatedLogo = () => {
               {slides.map((data, index) => (
                 <div className='  w-[100%] ' key={index}>
                   <div className="flex items-center justify-end animated-logo-embla__slide" >
-                    <div className=' bg-white   pl-[.5rem] font-montserrat font-[500]  ' >
-                      <h2 className=' text-[.7rem] font-montserrat font-[600]' >{data.title}</h2>
+                    <div className=' bg-white   pl-[.5rem] font-montserrat ' >
+                      <h2 className=' text-[.7rem] font-montserrat text-primary font-[600]' >{data.title}</h2>
                     </div>
                   </div>
                 </div>
