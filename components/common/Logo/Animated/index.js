@@ -38,7 +38,7 @@ const AnimatedLogo = ({ bg }) => {
 
       {/* Animation code  */}
       <div className='flex relative items-center justify-between w-[100%] ' >
-        <div className=' h-[.25rem] w-[100%] max-w-[4rem] absolute ml-[.1rem]   bg-primary ' />
+        <div className=' h-[.25rem] w-[100%] max-w-[3.6rem] absolute ml-[.35rem]   bg-primary ' />
 
         <div className="absolute right-[.2rem] flex w-fit h-fit animated-logo-embla">
           <div className="w-full animated-logo-embla__viewport" ref={emblaRef}>

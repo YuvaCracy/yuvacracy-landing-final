@@ -9,7 +9,7 @@ import { AiFillInstagram } from "react-icons/ai";
 const Footer = () => {
   return (
     <footer className=" px-[8rem] py-[2rem] mt-[8rem] text-gray-700 bg-[#F8FCFF] border-t-[1px]  ">
-      <div className=" mt-[4rem] mx-auto ">
+      <div className=" mt-[3rem] mx-auto ">
         <div className=" w-fit mb-[3rem] " >
           <AnimatedLogo bg={"bg-[#F8FCFF]"} />
         </div>
@@ -19,22 +19,22 @@ const Footer = () => {
             <h2 className=" font-montserrat font-[600] text-[1.15rem] text-primary ">About</h2>
             <ul>
               <li>
-                <Link href={''} className="text-black hover:underline font-openSans text-[.9rem] text-opacity-[.8] ">
+                <Link href={'/org/yuvacracy'} className="text-black hover:underline font-openSans text-[.9rem] text-opacity-[.8] ">
                   About YuvaCracy
                 </Link>
               </li>
               <li>
-                <Link href={''} className="text-black hover:underline font-openSans text-[.9rem] text-opacity-[.8] ">
+                <Link href={'/org/code-of-conduct'} className="text-black hover:underline font-openSans text-[.9rem] text-opacity-[.8] ">
                   Code Of Conduct
                 </Link>
               </li>
               <li>
-                <Link href={''} className="text-black hover:underline font-openSans text-[.9rem] text-opacity-[.8] ">
+                <Link href={'/org/social-media-advisory'} className="text-black hover:underline font-openSans text-[.9rem] text-opacity-[.8] ">
                   Social Media Advisory
                 </Link>
               </li>
               <li>
-                <Link href={''} className="text-black hover:underline font-openSans text-[.9rem] text-opacity-[.8] ">
+                <Link href={'/org/yuvacracy-a-safe-place'} className="text-black hover:underline font-openSans text-[.9rem] text-opacity-[.8] ">
                   YuvaCracy - A Safe Place
                 </Link>
               </li>
@@ -42,17 +42,17 @@ const Footer = () => {
             <h2 className="mt-6  font-montserrat font-[600] text-[1.15rem] text-primary ">The People</h2>
             <ul>
               <li>
-                <Link href={''} className="text-black hover:underline font-openSans text-[.9rem] text-opacity-[.8] ">
+                <Link href={'/people/advisors'} className="text-black hover:underline font-openSans text-[.9rem] text-opacity-[.8] ">
                   Our Advisors
                 </Link>
               </li>
               <li>
-                <Link href={''} className="text-black hover:underline font-openSans text-[.9rem] text-opacity-[.8] ">
+                <Link href={'/people/partners'} className="text-black hover:underline font-openSans text-[.9rem] text-opacity-[.8] ">
                   Our Partners
                 </Link>
               </li>
               <li>
-                <Link href={''} className="text-black hover:underline font-openSans text-[.9rem] text-opacity-[.8] ">
+                <Link href={'/people/our-team'} className="text-black hover:underline font-openSans text-[.9rem] text-opacity-[.8] ">
                   Our Team
                 </Link>
               </li>
@@ -65,12 +65,12 @@ const Footer = () => {
               <h2 className=" font-montserrat font-[600] text-[1.15rem] text-primary ">Centres</h2>
               <ul>
                 <li>
-                  <Link href={''} className="text-black hover:underline font-openSans text-[.9rem] text-opacity-[.8] ">
+                  <Link href={'/centres/ycpr'} className="text-black hover:underline font-openSans text-[.9rem] text-opacity-[.8] ">
                     YCPR
                   </Link>
                 </li>
                 <li>
-                  <Link href={''} className="text-black hover:underline font-openSans text-[.9rem] text-opacity-[.8] ">
+                  <Link href={'/centres/ycla'} className="text-black hover:underline font-openSans text-[.9rem] text-opacity-[.8] ">
                     YCLA
                   </Link>
                 </li>
@@ -80,22 +80,22 @@ const Footer = () => {
               <h2 className=" font-montserrat font-[600] text-[1.15rem] text-primary ">Careers</h2>
               <ul>
                 <li>
-                  <Link href={''} className="text-black hover:underline font-openSans text-[.9rem] text-opacity-[.8] ">
+                  <Link href={'/careers/internships'} className="text-black hover:underline font-openSans text-[.9rem] text-opacity-[.8] ">
                     Internships
                   </Link>
                 </li>
                 <li>
-                  <Link href={''} className="text-black hover:underline font-openSans text-[.9rem] text-opacity-[.8] ">
+                  <Link href={'/careers/work-with-us'} className="text-black hover:underline font-openSans text-[.9rem] text-opacity-[.8] ">
                     Work With Us
                   </Link>
                 </li>
                 <li>
-                  <Link href={''} className="text-black hover:underline font-openSans text-[.9rem] text-opacity-[.8] ">
+                  <Link href={'/careers/write-for-us'} className="text-black hover:underline font-openSans text-[.9rem] text-opacity-[.8] ">
                     Write For Us
                   </Link>
                 </li>
                 <li>
-                  <Link href={''} className="text-black hover:underline font-openSans text-[.9rem] text-opacity-[.8] ">
+                  <Link href={'/careers/opportunities'} className="text-black hover:underline font-openSans text-[.9rem] text-opacity-[.8] ">
                     Career Opportunities
                   </Link>
                 </li>
@@ -109,17 +109,17 @@ const Footer = () => {
               <h2 className=" font-montserrat font-[600] text-[1.15rem] text-primary ">Events</h2>
               <ul>
                 <li>
-                  <Link href={''} className="text-black hover:underline font-openSans text-[.9rem] text-opacity-[.8] ">
+                  <Link href={'/events/upcoming-events'} className="text-black hover:underline font-openSans text-[.9rem] text-opacity-[.8] ">
                     Upcoming Events
                   </Link>
                 </li>
                 <li>
-                  <Link href={''} className="text-black hover:underline font-openSans text-[.9rem] text-opacity-[.8] ">
+                  <Link href={'/events/past-events'} className="text-black hover:underline font-openSans text-[.9rem] text-opacity-[.8] ">
                     Past Events
                   </Link>
                 </li>
                 <li>
-                  <Link href={''} className="text-black hover:underline font-openSans text-[.9rem] text-opacity-[.8] ">
+                  <Link href={'/events/yuvacracy-dialogues'} className="text-black hover:underline font-openSans text-[.9rem] text-opacity-[.8] ">
                     YuvaCracy Dialogues
                   </Link>
                 </li>
@@ -129,17 +129,17 @@ const Footer = () => {
               <h2 className=" font-montserrat font-[600] text-[1.15rem] text-primary ">Support Us</h2>
               <ul>
                 <li>
-                  <Link href={''} className="text-black hover:underline font-openSans text-[.9rem] text-opacity-[.8] ">
+                  <Link href={'/support/donate'} className="text-black hover:underline font-openSans text-[.9rem] text-opacity-[.8] ">
                     Donate
                   </Link>
                 </li>
                 <li>
-                  <Link href={''} className="text-black hover:underline font-openSans text-[.9rem] text-opacity-[.8] ">
+                  <Link href={'/support/collaboration'} className="text-black hover:underline font-openSans text-[.9rem] text-opacity-[.8] ">
                     Collaboration
                   </Link>
                 </li>
                 <li>
-                  <Link href={''} className="text-black hover:underline font-openSans text-[.9rem] text-opacity-[.8] ">
+                  <Link href={'/support/partner-with-us'} className="text-black hover:underline font-openSans text-[.9rem] text-opacity-[.8] ">
                     Partner With Us
                   </Link>
                 </li>
@@ -151,42 +151,42 @@ const Footer = () => {
           <div className="flex-1">
             <h2 className=" font-montserrat font-[600] text-[1.15rem] text-primary ">Contact Us</h2>
             <ul>
-              <li>Phone: +91-XXXXXXX</li>
+              <li>Phone: +91 8987476709</li>
               <li>
                 <a href="mailto:info@yuvacracy.org" className="text-black hover:underline font-openSans text-[.9rem] text-opacity-[.8] ">
-                  Email: info@yuvacracy.org
+                  Email: yuvacracyorg@gmail.com
                 </a>
               </li>
             </ul>
             <h2 className="mt-6  font-montserrat font-[600] text-[1.15rem] text-primary ">Follow Us</h2>
             <div className="flex mt-[1rem] space-x-4">
-              <Link href={''} aria-label="Facebook">
+              <Link href={'https://www.facebook.com/YuvaCracyOrg'} target="_blank" aria-label="Facebook">
                 <FaFacebookF />
                 {/* <img src="/icons/facebook.svg" alt="Facebook" className="w-6 h-6" /> */}
               </Link>
-              <Link href={''} aria-label="Instagram">
+              <Link href={'https://www.instagram.com/YuvaCracyOrg'} target="_blank" aria-label="Instagram">
                 <AiFillInstagram />
               </Link>
-              <Link href={''} aria-label="Twitter">
+              <Link href={'https://www.twitter.com/YuvaCracyOrg'} target="_blank" aria-label="Twitter">
                 <FaTwitter />
               </Link>
-              <Link href={''} aria-label="YouTube">
+              <Link href={'https://www.youtube.com/@YuvaCracyOrg'} target="_blank" aria-label="YouTube">
                 <FaYoutube />
               </Link>
-              <Link href={''} aria-label="LinkedIn">
+              <Link href={'https://in.linkedin.com/company/YuvaCracyOrg'} target="_blank" aria-label="LinkedIn">
                 <FaLinkedinIn />
               </Link>
-              <Link href={''} aria-label="Medium">
+              <Link href={'https://medium.com/@YuvaCracyOrg/'} target="_blank" aria-label="Medium">
                 <FaMedium />
               </Link>
             </div>
           </div>
         </div>
 
-        <div className="flex items-center text-primary font-openSans font-[600] text-[.92rem] justify-between mt-[2rem] pt-[1rem] border-t-[1px]  ">
+        <div className="flex items-center text-primary font-openSans font-[600] text-[.92rem] justify-between mt-[4rem] pt-[1rem] border-t-[1px]  ">
           <p>
             Copyright © YuvaCracy Foundation | All Rights Reserved | Designed and Developed by{" "}
-            <Link href={''} className=" hover:underline font-openSans text-[.9rem] text-opacity-[.8] ">
+            <Link href={'/careers/work-with-us?scroll=tech'} className=" hover:underline font-openSans text-[.9rem] text-opacity-[.8] ">
               YuvaCracy Tech
             </Link>.
           </p>

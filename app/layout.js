@@ -3,7 +3,7 @@ import Providers from "@/components/Providers/Providers.js";
 import "./globals.css";
 
 export const metadata = {
-  title: "Yucacracy",
+  title: "YuvaCracy",
   description: "Youth Led organization",
 };
 

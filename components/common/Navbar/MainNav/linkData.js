@@ -5,10 +5,10 @@ const aboutLinksData = {
     {
       title: 'The Organization',
       sublinks: [
-        { title: 'YuvaCracy', href: '/org/yuvacracy' },
+        { title: 'About YuvaCracy', href: '/org/yuvacracy' },
         { title: 'Code of Conduct', href: '/org/code-of-conduct' },
         { title: 'Social Media Advisory', href: '/org/social-media-advisory' },
-        { title: 'YuvaCracy a Safe Place', href: '/org/yuvacracy-a-safe-place' },
+        { title: 'YuvaCracy - A Safe Place', href: '/org/yuvacracy-a-safe-place' },
       ]
     },
     {
