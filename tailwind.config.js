@@ -9,7 +9,7 @@ module.exports = {
     extend: {
       fontFamily: {
         montserrat: ["var(--font-montserrat)"],
-        openSans: ["var(--font-open-sans)"]
+        openSans: ["var(--font-open-sans)"],
       },
       colors: {
         primary: "#003366",
@@ -22,7 +22,16 @@ module.exports = {
         border: "#CCCCCC",
         Border_Primary_BG: "#333333",
         Nav_Link_Primary_BG: "##FF9B3F",
-        textSecond: "#5c616c" 
+        textSecond: "#5c616c",
+      },
+      keyframes: {
+        marquee: {
+          "0%": { transform: "translateX(0%)" },
+          "100%": { transform: "translateX(-100%)" },
+        },
+      },
+      animation: {
+        marquee: "marquee 16s linear infinite",
       },
     },
   },

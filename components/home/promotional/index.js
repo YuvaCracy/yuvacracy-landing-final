@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from 'react'
 import useEmblaCarousel from 'embla-carousel-react'
-import { NextButton, PrevButton, usePrevNextButtons } from "./slider/ArrowButton.js"
+import { NextButton, PrevButton, usePrevNextButtons } from "../../common/slider/ArrowButton.js"
 import Autoplay from "embla-carousel-autoplay";
 import { IoClose } from "react-icons/io5";
 
