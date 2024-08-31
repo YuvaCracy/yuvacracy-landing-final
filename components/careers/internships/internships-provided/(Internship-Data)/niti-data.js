@@ -21,6 +21,7 @@ const nitiData = {
     ],
     link: "",
     image: InternshipImage1,
+    id: "niti"
   };
 
   export default nitiData;

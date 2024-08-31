@@ -57,7 +57,7 @@ const CareersData = {
     },
     {
       title: 'Career Opportunities',
-      href: '/careers/opportunities',
+      href: '/careers/career-opportunities',
     }
   ]
 }

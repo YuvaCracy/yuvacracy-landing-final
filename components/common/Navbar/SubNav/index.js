@@ -7,8 +7,8 @@ const SubNav = ({navItems, children}) => {
     const router = useRouter();
     const path = usePathname();
   
-    const handleClick = (link) => {
-      router.push(link);
+    const handleClick = (link, id) => {
+      router.push(`${link}?scroll=${id}`);
     };
   
     return (
@@ -16,13 +16,13 @@ const SubNav = ({navItems, children}) => {
         {/* Sub Navigation Bar */}
         <div className="font-montserrat font-[500] bg-primary text-subheading_Blue_BG h-[4rem] w-full">
           <div className="pl-[8rem] flex gap-10 items-center h-full">
-            {navItems.map(({ name, link }, index) => (
+            {navItems.map(({ name, link, id }, index) => (
               <div
                 className={`text-xl cursor-pointer ${
                   path.includes(link) ? "text-[#ff9b3f] font-[500]" : ""
                 }`}
                 key={index}
-                onClick={() => handleClick(link)}
+                onClick={() => handleClick(link, id)}
               >
                 <div className="px-2 py-1">
                   <div className="uppercase tracking-wide font-bold text-[0.94rem]">

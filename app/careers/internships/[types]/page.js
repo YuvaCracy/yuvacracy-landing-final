@@ -6,8 +6,8 @@ import vidhiData from "@/components/careers/internships/internships-provided/(In
 import CareerLayout from "../../Layout";
 import InternshipNav from "@/components/careers/internships/internships-provided/internshipNav";
 import {useRouter} from "nextjs-toploader/app";
-import { usePathname } from "next/navigation";
 import Process from "@/components/careers/internships/process/process";
+import { usePathname } from "next/navigation";
 
 const InternshipTypes = ({ params }) => {
   const router = useRouter();

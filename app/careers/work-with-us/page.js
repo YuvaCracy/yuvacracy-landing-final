@@ -10,11 +10,11 @@ import { GetInvolved } from "@/public/assetManager";
 import SubHead from "@/components/common/SubHeadings/SubHead";
 import StepImageComponent from "@/components/careers/WorkWithUs/StepImageComponent";
 import { p1, p2, p3, p4, p5, p6 } from "@/public/assetManager";
-import PartnersMarquee from "@/components/careers/common/Marquee"
+import PartnersMarquee from "@/components/careers/common/Marquee";
 import SmoothScroll from "@/utils/SmoothScroll";
-import { useSearchParams } from 'next/navigation'
+import { useSearchParams } from "next/navigation";
+import CareerSliderComponent from "@/components/careers/common/Slider/CareerSliderComponent";
 const images = [p1, p2, p3, p4, p5, p6];
-
 
 const heading = "Why Partner with Us?";
 const text =
@@ -51,22 +51,23 @@ const steps = [
   },
 ];
 
-
-
 const WorkWithUs = () => {
-  // const searchParams = useSearchParams()
-  // const scrollTo = searchParams.get('scroll')
-  // console.log("queyr value before if : ", scrollTo)
-  // if (scrollTo) {
-  //   console.log("queyr value in if : ", scrollTo,)
-  //   SmoothScroll(scrollTo);
-  // }
-
+  const searchParams = useSearchParams();
+  const scrollTo = searchParams.get("scroll");
+  console.log("queyr value before if : ", scrollTo);
+  if (scrollTo) {
+    SmoothScroll(scrollTo);
+  }
 
   return (
     <CareerLayout>
-      <div className="px-[10rem] pb-[16rem]">
-        <SubHead title={"Collaborate with YuvaCracy"} subtitle={"Join forces with us to empower the next generation of leaders and changemakers. By collaborating, we can provide the tools, resources, and support needed to inspire and equip young people to lead with purpose and drive meaningful change. Together, we can foster a future where emerging leaders are not only prepared to face the challenges ahead but are also empowered to create a lasting impact on their communities and the world. Let's unite our efforts to nurture and uplift the leaders of tomorrow."} />
+      <div id="work-div" className="px-[10rem]">
+        <SubHead
+          title={"Collaborate with YuvaCracy"}
+          subtitle={
+            "Join forces with us to empower the next generation of leaders and changemakers. By collaborating, we can provide the tools, resources, and support needed to inspire and equip young people to lead with purpose and drive meaningful change. Together, we can foster a future where emerging leaders are not only prepared to face the challenges ahead but are also empowered to create a lasting impact on their communities and the world. Let's unite our efforts to nurture and uplift the leaders of tomorrow."
+          }
+        />
 
         {/* Vision for collab */}
         <div className="mt-20">
@@ -101,7 +102,9 @@ const WorkWithUs = () => {
         </div>
 
         {/* Slider Component */}
-        <div className="py-20">Slider Here</div>
+        <div className="py-6">
+          <CareerSliderComponent />
+        </div>
         {/* Get Involved */}
         <div className="flex flex-col py-2">
           <div className="flex flex-col py-8 space-y-2">

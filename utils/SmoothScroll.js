@@ -1,8 +1,9 @@
 'use client'
-
 import React, { useEffect, useRef } from 'react';
+import { useRouter } from 'next/navigation';
 
 const SmoothScroll = (scrollToId) => {
+  const router = useRouter();
   console.log("I am in smooth scroll mode:", scrollToId)
   const scrollRef = useRef(null);
 
@@ -14,7 +15,7 @@ const SmoothScroll = (scrollToId) => {
 
       window.scrollTo({ top: y, behavior: 'smooth' });
     }
-  }, [scrollToId]);
+  }, [scrollToId, router]);
 
   return null;
 };
