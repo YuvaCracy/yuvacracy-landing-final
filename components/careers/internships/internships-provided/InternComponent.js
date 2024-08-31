@@ -1,5 +1,7 @@
+import PrimaryButton from "@/components/common/Button/PrimaryButton";
 import Image from "next/image";
 import React from "react";
+import { GoArrowUp } from "react-icons/go";
 
 const Box = () => {
   return (
@@ -54,9 +56,7 @@ const InternComponent = ({ title, subtitle, desc, list, link, image }) => {
 
         {/* Apply Button */}
         <div className="mt-6">
-          <button className="font-montserrat py-3 px-6 bg-primary rounded-md text-white text-[1.4rem]">
-            Apply
-          </button>
+          <PrimaryButton data={{title: "Apply", execute: () => {}}} icon={<GoArrowUp />} />
         </div>
       </div>
 
@@ -65,6 +65,7 @@ const InternComponent = ({ title, subtitle, desc, list, link, image }) => {
         <Image
           src={image}
           alt={title}
+          
           className="rounded-xl object-cover w-[25rem]"
         />
         <Box />

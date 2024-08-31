@@ -5,7 +5,6 @@ import InternComponent from "./internships-provided/InternComponent";
 import nitiData from "./internships-provided/(Internship-Data)/niti-data";
 import vidhiData from "./internships-provided/(Internship-Data)/vidhi-data";
 import InternshipNav from "./internships-provided/internshipNav";
-import Process from "./process/process";
 
 const Internships = () => {
   const router = useRouter();
