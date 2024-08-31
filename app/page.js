@@ -9,6 +9,10 @@ import OurMission from '@/components/home/mission'
 import HomeWhatWeDo from '@/components/home/what-we-do'
 import HomeRecentContribution from '@/components/home/recent-contribution'
 import HomeStoriesOfImpact from '@/components/home/stories-of-impact'
+import HomeGetInvolved from '@/components/home/get-involved'
+import Faq from '@/components/common/faq'
+import HomeSubsribeNewsLetter from '@/components/home/subsribe-newsletter'
+import Footer from '@/components/common/Footer'
 
 
 const AppPage = () => {
@@ -24,9 +28,13 @@ const AppPage = () => {
       <HomeWhatWeDo />
       <HomeRecentContribution />
       <HomeStoriesOfImpact />
-      <div className=' h-[100rem] ' >
+      <HomeGetInvolved />
+      <Faq />
+      <HomeSubsribeNewsLetter />
+      <Footer />
+      {/* <div className=' h-[100rem] ' >
 
-      </div>
+      </div> */}
       {/* <DevModeOn /> */}
 
     </div>

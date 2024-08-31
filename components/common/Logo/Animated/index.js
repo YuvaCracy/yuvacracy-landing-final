@@ -25,9 +25,10 @@ const slides = [
 
 const option = { axis: 'y', loop: true };
 
-const AnimatedLogo = () => {
+const AnimatedLogo = ({ bg }) => {
   const [emblaRef, emblaApi] = useEmblaCarousel(option, [Autoplay(true)]);
   const router = useRouter();
+  const slideBgStyle = `  ${bg ? bg : "bg-white"} pl-[.5rem] font-montserrat`
   return (
     <div onClick={() => router.push('/')} className='flex flex-col gap-[.3rem] font-montserrat cursor-pointer ' >
       <div className='relative text-primary ' >
@@ -45,7 +46,7 @@ const AnimatedLogo = () => {
               {slides.map((data, index) => (
                 <div className='  w-[100%] ' key={index}>
                   <div className="flex items-center justify-end animated-logo-embla__slide" >
-                    <div className=' bg-white   pl-[.5rem] font-montserrat ' >
+                    <div className={slideBgStyle} >
                       <h2 className=' text-[.7rem] font-montserrat text-primary font-[600]' >{data.title}</h2>
                     </div>
                   </div>

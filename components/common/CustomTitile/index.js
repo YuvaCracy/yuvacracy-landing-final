@@ -3,7 +3,7 @@ import React from "react";
 const CustomTitle = ({ title, subtitle }) => {
   return (
     <div>
-      <div className="flex py-12 pt-2">
+      <div className="flex py-8 pt-2">
         <div>
           <span className="text-3xl font-bold font-montserrat">{title}</span>
           <div className="flex items-center py-2">
