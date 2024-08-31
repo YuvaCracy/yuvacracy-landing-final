@@ -11,7 +11,7 @@ import Link from 'next/link';
 
 const EventCard = ({ data }) => {
   return (
-    <div className=' w-[22rem] rounded-md shadow-md flex flex-col group cursor-pointer hover:scale-[1.02] duration-300 ' >
+    <div className=' w-[22rem] h-[22rem] flex-shrink-0  rounded-md shadow-md flex flex-col group cursor-pointer hover:scale-[1.02] duration-300 justify-between ' >
       <div>
         <Image
           src={data.thumbnail ? data.thumbnail[0] : EventFallbackImage}
@@ -19,7 +19,7 @@ const EventCard = ({ data }) => {
           className=' w-[100%] h-[13rem] rounded-tr-md rounded-tl-md object-cover '
         />
       </div>
-      <div className=' px-[1rem] py-[1rem] ' >
+      <div className=' px-[1rem] py-[1rem] flex flex-col justify-center ' >
 
         <h2 className=' text-heading font-openSans text-[1.1rem] font-[600]  line-clamp-2 ' >{data.title}</h2>
 
