@@ -12,7 +12,7 @@ const SubNav = ({navItems, children}) => {
     };
   
     return (
-      <div className="w-[100%] flex flex-col sticky top-[4rem] z-[899]">
+      <div className="w-[100%] flex flex-col sticky top-[4rem] z-[499]">
         {/* Sub Navigation Bar */}
         <div className="font-montserrat font-[500] bg-primary text-subheading_Blue_BG h-[4rem] w-full">
           <div className="pl-[8rem] flex gap-10 items-center h-full">

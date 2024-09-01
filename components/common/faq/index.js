@@ -24,7 +24,7 @@ const faqs = [
 
 const Faq = () => {
   return (
-    <div className=' flex flex-col mt-[9rem] px-[8rem] justify-center  ' >
+    <div className=' flex flex-col mt-[9rem] xl:px-[8rem] px-[6rem] justify-center  ' >
       <CustomTitle title={"FAQs  (Frequently asked questions)"} />
       <p className=' font-openSans text-[1.05rem] text-subheading  ' >Everything you need to know about the product and billing.</p>
       <div className=" flex flex-col gap-[1rem] mt-[4rem]  ">

@@ -26,7 +26,9 @@ const AppPage = () => {
       <HomeEventsComponent />
       <OurMission />
       <HomeWhatWeDo />
-      <HomeRecentContribution />
+      <div className='xl:px-[8rem] px-[6rem]'>
+        <HomeRecentContribution />
+      </div>
       <HomeStoriesOfImpact />
       <HomeGetInvolved />
       <Faq />

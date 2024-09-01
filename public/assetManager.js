@@ -22,6 +22,10 @@ import WhatWeDoImage from "./assets/home/what-we-do/what-we-do.png"
 import StoriesImpactImage from "./assets/home/stories-of-impact/stories-impact.png"
 import GetInvolvedImage from "./assets/home/get-involved/get-involved.png"
 import CareerOpportunityImage from "./assets/careers/CareerOpportunities/LaptopCareers.png"
+import HeroImg from "./assets/events/EventHeroImg.png"
+import YuvaDialoguesImg from "./assets/events/yuvacracyDialogues/Dialogues.png"
+import YuvaDialoguesCrowd from "./assets/events/yuvacracyDialogues/Crowd.png"
+
 export {
   HomeHeroImage,
   ProjectUnderConstruction,
@@ -41,5 +45,8 @@ export {
   GroupStudyImg,
   p1, p2, p3, p4, p5, p6,
   GetInvolvedImage,
-  CareerOpportunityImage
+  CareerOpportunityImage,
+  HeroImg,
+  YuvaDialoguesImg,
+  YuvaDialoguesCrowd
 }

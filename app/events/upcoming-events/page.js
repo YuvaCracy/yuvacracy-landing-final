@@ -1,11 +1,14 @@
 'use client'
 import React from 'react'
-import DevModeOn from '@/components/DevModeOn'
+import EventLayout from '../Layout'
+import HomeEventsComponent from '@/components/events/HomeEventsComponent'
 const UpcomingEvents = () => {
   return (
-    <div>
-      <DevModeOn />
-    </div>
+    <EventLayout>
+      <div className=" pt-20 flex flex-col">
+      <HomeEventsComponent />
+      </div>
+    </EventLayout>
   )
 }
 

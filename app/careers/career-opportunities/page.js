@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { Suspense } from "react";
 import CareerLayout from "../Layout";
 import SubHead from "@/components/common/SubHeadings/SubHead";
 import CustomTitle from "@/components/common/CustomTitile";
@@ -18,15 +18,14 @@ const text =
 const CareerOpportunities = () => {
   const searchParams = useSearchParams();
   const scrollTo = searchParams.get("scroll");
-  console.log("queyr value before if : ", scrollTo);
   if (scrollTo) {
-    console.log("query value in if : ", scrollTo);
     SmoothScroll(scrollTo);
   }
 
   return (
+    <Suspense fallback={<div>Loading...</div>}>
     <CareerLayout>
-      <div id="career-div" className="px-[8rem] flex flex-col">
+      <div id="career-div" className="xl:px-[8rem] px-[6rem] flex flex-col">
         {/* Page Title */}
         <div className="">
           <SubHead
@@ -64,9 +63,8 @@ const CareerOpportunities = () => {
           ;
         </div>
       </div>
-
-      {/* Subtitle */}
     </CareerLayout>
+    </Suspense>
   );
 };
 

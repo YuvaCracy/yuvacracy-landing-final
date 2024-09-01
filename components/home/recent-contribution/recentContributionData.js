@@ -1,5 +1,3 @@
-
-
 const recentContributionData = {
   title: "Recent Contributions",
   subheading: "In YuvaCracy",
