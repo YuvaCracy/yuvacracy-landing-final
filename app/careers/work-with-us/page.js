@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { Suspense } from "react";
 import CareerLayout from "../Layout";
 import CustomTitle from "@/components/common/CustomTitile";
 import TextComponent1 from "@/components/careers/common/TextComponent/TextComponent1";
@@ -10,11 +10,11 @@ import { GetInvolved } from "@/public/assetManager";
 import SubHead from "@/components/common/SubHeadings/SubHead";
 import StepImageComponent from "@/components/careers/WorkWithUs/StepImageComponent";
 import { p1, p2, p3, p4, p5, p6 } from "@/public/assetManager";
-import PartnersMarquee from "@/components/careers/common/Marquee"
-import SmoothScroll from "@/utils/SmoothScroll";
-// import { useSearchParams } from 'next/navigation'
-const images = [p1, p2, p3, p4, p5, p6];
+import PartnersMarquee from "@/components/careers/common/Marquee";
+import SuspenseHandler from "@/utils/SuspenseHandler";
+import ScrollHandler from "@/utils/ScrollHandler";
 
+const images = [p1, p2, p3, p4, p5, p6];
 
 const heading = "Why Partner with Us?";
 const text =
@@ -51,22 +51,19 @@ const steps = [
   },
 ];
 
-
-
 const WorkWithUs = () => {
-  // const searchParams = useSearchParams()
-  // const scrollTo = searchParams.get('scroll')
-  // console.log("queyr value before if : ", scrollTo)
-  // if (scrollTo) {
-  //   console.log("queyr value in if : ", scrollTo,)
-  //   SmoothScroll(scrollTo);
-  // }
-
-
   return (
     <CareerLayout>
-      <div className="xl:px-[8rem] px-[6rem] pb-[16rem]">
-        <SubHead title={"Collaborate with YuvaCracy"} subtitle={"Join forces with us to empower the next generation of leaders and changemakers. By collaborating, we can provide the tools, resources, and support needed to inspire and equip young people to lead with purpose and drive meaningful change. Together, we can foster a future where emerging leaders are not only prepared to face the challenges ahead but are also empowered to create a lasting impact on their communities and the world. Let's unite our efforts to nurture and uplift the leaders of tomorrow."} />
+      <SuspenseHandler>
+        <ScrollHandler />
+      </SuspenseHandler>
+      <div id="work" className="xl:px-[8rem] px-[6rem] pb-[16rem]">
+        <SubHead
+          title={"Collaborate with YuvaCracy"}
+          subtitle={
+            "Join forces with us to empower the next generation of leaders and changemakers. By collaborating, we can provide the tools, resources, and support needed to inspire and equip young people to lead with purpose and drive meaningful change. Together, we can foster a future where emerging leaders are not only prepared to face the challenges ahead but are also empowered to create a lasting impact on their communities and the world. Let's unite our efforts to nurture and uplift the leaders of tomorrow."
+          }
+        />
 
         {/* Vision for collab */}
         <div className="mt-20">
