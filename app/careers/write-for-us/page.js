@@ -47,6 +47,7 @@ const WriteForUs = () => {
 
   return (
     <CareerLayout>
+    {/* Suspense builder */}
       <SuspenseHandler>
         <ScrollHandler />
       </SuspenseHandler>
