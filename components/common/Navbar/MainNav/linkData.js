@@ -15,7 +15,7 @@ const aboutLinksData = {
       title: 'The People',
       sublinks: [
         { title: 'Our Advisors', href: '/people/advisors' },
-        { title: 'Partners', href: '/people/partners' },
+        { title: 'Our Partners', href: '/people/partners' },
         { title: 'Our Team', href: '/people/our-team' },
       ]
     }

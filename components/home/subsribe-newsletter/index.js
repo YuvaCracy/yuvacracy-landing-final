@@ -16,7 +16,7 @@ const HomeSubsribeNewsLetter = () => {
 
   return (
 
-    <div className=' w-[100%] flex justify-center px-[8rem] mt-[8rem] h-[22rem]  ' >
+    <div className=' w-[100%] flex justify-center xl:px-[8rem] px-[6rem] mt-[8rem] h-[22rem]  ' >
       <div className="w-[100%] relative overflow-clip h-[23rem] flex flex-col items-center justify-center   bg-primary rounded-xl ">
 
         <div className=' size-[16rem] absolute rounded-full bg-transparent border-[4px] border-white top-[-9rem] left-[-9rem] border-opacity-[.4]   ' />

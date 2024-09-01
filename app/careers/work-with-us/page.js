@@ -12,7 +12,7 @@ import StepImageComponent from "@/components/careers/WorkWithUs/StepImageCompone
 import { p1, p2, p3, p4, p5, p6 } from "@/public/assetManager";
 import PartnersMarquee from "@/components/careers/common/Marquee"
 import SmoothScroll from "@/utils/SmoothScroll";
-import { useSearchParams } from 'next/navigation'
+// import { useSearchParams } from 'next/navigation'
 const images = [p1, p2, p3, p4, p5, p6];
 
 
@@ -65,7 +65,7 @@ const WorkWithUs = () => {
 
   return (
     <CareerLayout>
-      <div className="px-[10rem] pb-[16rem]">
+      <div className="xl:px-[8rem] px-[6rem] pb-[16rem]">
         <SubHead title={"Collaborate with YuvaCracy"} subtitle={"Join forces with us to empower the next generation of leaders and changemakers. By collaborating, we can provide the tools, resources, and support needed to inspire and equip young people to lead with purpose and drive meaningful change. Together, we can foster a future where emerging leaders are not only prepared to face the challenges ahead but are also empowered to create a lasting impact on their communities and the world. Let's unite our efforts to nurture and uplift the leaders of tomorrow."} />
 
         {/* Vision for collab */}
