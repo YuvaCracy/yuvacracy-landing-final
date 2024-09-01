@@ -5,7 +5,7 @@ import Image from 'next/image'
 
 const HomeWhatWeDo = () => {
   return (
-    <div className=' px-[8rem] mt-[8rem] w-[100%] flex justify-between gap-[2rem]  ' >
+    <div className=' xl:px-[8rem] px-[6rem] mt-[8rem] w-[100%] flex justify-between gap-[2rem]  ' >
 
 
       <div className=' w-[50%] flex  ' >

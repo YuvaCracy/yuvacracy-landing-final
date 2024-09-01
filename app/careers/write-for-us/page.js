@@ -31,12 +31,12 @@ const steps = [
   },
 ];
 
-const href="testLink"
+const href = "testLink"
 
 const page = () => {
   return (
     <CareerLayout>
-      <div className="px-[10rem] pb-[16rem] flex flex-col">
+      <div className="xl:px-[8rem] px-[6rem] pb-[16rem] flex flex-col">
         {/* Page Title */}
         <SubHead
           title={"Write for Us"}
@@ -47,16 +47,16 @@ const page = () => {
 
         {/* Title */}
         <div className="mt-16">
-        <CustomTitle
-          title={"Creating a Safe and Inclusive Space"}
-          subtitle={
-            "Advancing Justice Through Law \xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0"
-          }
-        />
+          <CustomTitle
+            title={"Creating a Safe and Inclusive Space"}
+            subtitle={
+              "Advancing Justice Through Law \xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0"
+            }
+          />
         </div>
 
         {/* Comp1 */}
-        <div className="w-full flex justify-end">
+        <div className="flex justify-end w-full">
           <div className="px-12">
             <TextComponent1
               heading={"Make an Impact with Your Ideas"}
@@ -81,20 +81,20 @@ const page = () => {
           title={"Submission Guidelines"}
           subtitle={"How to Contribute \xa0 \xa0"}
         />
-        <span className=" -mt-6 text-lg text-textSecond font-openSans">
+        <span className="-mt-6 text-lg  text-textSecond font-openSans">
           We encourage anyone passionate about youth leadership and civic
           engagement to submit their work. Follow these guidelines for a
           successful submission:
         </span>
 
-        <Link className="py-8 flex items-center" href={href}>
-          <span className="text-lg text-primary font-montserrat flex font-bold">
+        <Link className="flex items-center py-8" href={href}>
+          <span className="flex text-lg font-bold text-primary font-montserrat">
             YuvaCracy Editorial Guidlines <GoArrowUpRight className="font-bold mt-[0.1rem] h-7 w-7" />
           </span>
         </Link>
         <div className="w-24">
 
-        <PrimaryButton data={{title:"Submit" }} icon={<GoArrowUpRight className="h-6 w-6" />} />
+          <PrimaryButton data={{ title: "Submit" }} icon={<GoArrowUpRight className="w-6 h-6" />} />
         </div>
       </div>
     </CareerLayout>

@@ -8,7 +8,7 @@ import Link from 'next/link';
 
 const HomeGetInvolved = () => {
   return (
-    <div className=' w-[100%] flex justify-center px-[8rem] mt-[8rem] h-[22rem]  ' >
+    <div className=' w-[100%] flex justify-center xl:px-[8rem] px-[6rem] mt-[8rem] h-[22rem]  ' >
       <div className='rounded-[.9rem] relative  bg-primary  w-[100%] flex justify-between  ' >
 
         <div className='flex flex-col  w-[50%] pl-[4.5rem] py-[2.5rem]  ' >

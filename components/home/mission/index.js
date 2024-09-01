@@ -7,7 +7,7 @@ import { HiMiniCheckCircle } from "react-icons/hi2";
 
 const OurMission = () => {
   return (
-    <div className=' px-[8rem] mt-[8rem] w-[100%] flex justify-between  ' >
+    <div className=' xl:px-[8rem] px-[6rem] mt-[8rem] w-[100%] flex justify-between  ' >
       <div className=' w-[50%] ' >
         <CustomTitle title={missionData.title} />
         <div>

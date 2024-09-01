@@ -27,11 +27,11 @@ const HomeRecentContribution = () => {
   }, []);
 
   return (
-    <div className='w-[100%] px-[8rem] mt-[8rem]'>
+    <div className='w-[100%] xl:px-[8rem] px-[6rem] mt-[8rem]'>
       <CustomTitle title={recentContributionData.title} subtitle={recentContributionData.subheading} />
 
       <div className='flex flex-nowrap gap-[1.5rem] mt-[2rem]'>
-        {recentContributionData.list && recentContributionData.list.slice(0, visibleCards).map((data, index) => {
+        {recentContributionData.list && recentContributionData.list.slice(0, 3).map((data, index) => {
           return (
             <RecentContributionCard key={index} data={data} />
           )
