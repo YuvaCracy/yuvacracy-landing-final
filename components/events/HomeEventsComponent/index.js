@@ -24,7 +24,6 @@ const HomeEventsComponent = ({ pastEvents = false }) => {
       : eventEndDate >= currentDate;
   });
 
-  console.log("Filtered Events: ", filteredEvents);
 
   useEffect(() => {
     const updateVisibleCards = () => {

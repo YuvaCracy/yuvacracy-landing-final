@@ -48,7 +48,7 @@ const YuvaCracyDialgues = () => {
             </span>
           </div>
           <div className="w-[50%] flex justify-center">
-            <Image className="w-[24rem]" src={YuvaDialoguesImg} />
+            <Image alt="YuvaCracy is a foundation for Youth" className="w-[24rem]" src={YuvaDialoguesImg} />
           </div>
         </div>
 
@@ -64,7 +64,7 @@ const YuvaCracyDialgues = () => {
                 Stay informed and engaged with our upcoming dialogues. Be a part
                 of the conversation that shapes the future.
               </span>
-              <Image className="pt-14" src={YuvaDialoguesCrowd} />
+              <Image alt="YuvaCracy is a foundation for Youth" className="pt-14" src={YuvaDialoguesCrowd} />
             </div>
           </div>
           <div className="w-[50%] flex flex-col justify-center gap-4 px-10">

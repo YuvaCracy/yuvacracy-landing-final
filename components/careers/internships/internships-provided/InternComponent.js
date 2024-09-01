@@ -1,7 +1,5 @@
 import PrimaryButton from "@/components/common/Button/PrimaryButton";
-import SmoothScroll from "@/utils/SmoothScroll";
 import Image from "next/image";
-import { useSearchParams } from "next/navigation";
 import React from "react";
 import { GoArrowUpRight } from "react-icons/go";
 
@@ -22,13 +20,6 @@ const Box = () => {
 };
 
 const InternComponent = ({ title, subtitle, desc, list, link, image, id }) => {
-  const searchParams = useSearchParams();
-  const scrollTo = searchParams.get("scroll");
-  console.log("queyr value before if : ", scrollTo);
-  if (scrollTo && SmoothScroll) {
-    console.log("queyr value in if : ", scrollTo);
-    SmoothScroll(scrollTo);
-  }
 
   return (
     <div id={id} className="flex mx-5 border-2 rounded-xl p-7 my-20 relative">

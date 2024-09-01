@@ -9,8 +9,6 @@ import SectionCountComponent from "@/components/careers/WorkWithUs/SectionCountC
 import Link from "next/link";
 import PrimaryButton from "@/components/common/Button/PrimaryButton";
 import { GoArrowUpRight } from "react-icons/go";
-import { useSearchParams } from "next/navigation";
-import SmoothScroll from "@/utils/SmoothScroll";
 import HomeRecentContribution from "@/components/home/recent-contribution";
 import SuspenseHandler from "@/utils/SuspenseHandler";
 import ScrollHandler from "@/utils/ScrollHandler";
@@ -39,15 +37,9 @@ const steps = [
 const href = "testLink";
 
 const WriteForUs = () => {
-  const searchParams = useSearchParams();
-  const scrollTo = searchParams.get("scroll");
-  if (scrollTo) {
-    SmoothScroll(scrollTo);
-  }
 
   return (
     <CareerLayout>
-    {/* Suspense builder */}
       <SuspenseHandler>
         <ScrollHandler />
       </SuspenseHandler>

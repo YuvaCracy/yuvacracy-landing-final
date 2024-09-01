@@ -8,8 +8,6 @@ import InternshipNav from "@/components/careers/internships/internships-provided
 import { useRouter } from "nextjs-toploader/app";
 import { usePathname } from "next/navigation";
 import Process from "@/components/careers/internships/process/process";
-import SuspenseHandler from "@/utils/SuspenseHandler";
-import ScrollHandler from "@/utils/ScrollHandler";
 
 const InternshipTypes = ({ params }) => {
   const router = useRouter();
@@ -19,9 +17,6 @@ const InternshipTypes = ({ params }) => {
     case "niti":
       return (
         <CareerLayout>
-          <SuspenseHandler>
-            <ScrollHandler />
-          </SuspenseHandler>
           <div className="xl:px-[8rem] px-[6rem]">
             <InternshipNav router={router} path={path} />
             <InternComponent {...nitiData} />
