@@ -10,22 +10,22 @@ const CareerLayout = ({ children }) => {
   const navItems = [
     {
       name: "INTERNSHIPS",
-      link: "internships",
+      link: "/careers/internships",
       id: "internship-div"
     },
     {
       name: "WORK WITH US",
-      link: "work-with-us",
+      link: "/careers/work-with-us",
       id: "work-div"
     },
     {
       name: "WRITE FOR US",
-      link: "write-for-us",
+      link: "/careers/write-for-us",
       id: "write-div"
     },
     {
       name: "CAREER OPPORTUNITES",
-      link: "career-opportunities",
+      link: "/careers/career-opportunities",
       id: "career-div"
     },
   ];
