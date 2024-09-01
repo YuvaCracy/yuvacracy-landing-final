@@ -44,7 +44,10 @@ const PromotionalContent = () => {
   }
 
   return (
-    <Suspense fallback={<div>Promo Loading...</div>}>
+    <Suspense
+      fallback={
+        <div className={` ${showPromo ? " mt-0 relative " : " mt-[-4rem] "} duration-700 relative flex items-center justify-center w-full h-16 px-32 bg-primary`} />
+      }>
       <div className={` ${showPromo ? " mt-0 relative " : " mt-[-4rem] "} duration-700 relative flex items-center justify-center w-full h-16 px-32 bg-primary`}>
         {/* Slider code */}
         <div className='flex w-full'>
