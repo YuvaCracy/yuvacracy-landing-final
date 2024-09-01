@@ -5,6 +5,8 @@ import CustomTitle from "@/components/common/CustomTitile";
 import Image from "next/image";
 import { YuvaDialoguesCrowd, YuvaDialoguesImg } from "@/public/assetManager";
 import { PiChatCircleDots } from "react-icons/pi";
+import SuspenseHandler from "@/utils/SuspenseHandler";
+import ScrollHandler from "@/utils/ScrollHandler";
 
 const dialogueEventData = [
   {
@@ -27,8 +29,11 @@ const dialogueEventData = [
 const YuvaCracyDialgues = () => {
   return (
     <EventLayout>
-      <div className="xl:px-[8rem] px-[6rem] py-20 flex flex-col">
-        <div className="flex items-center">
+      <SuspenseHandler>
+        <ScrollHandler />
+      </SuspenseHandler>
+      <div id="yuvacracy-diag-div" className="xl:px-[8rem] px-[6rem] py-20 flex flex-col">
+        <div className="flex items-center pb-14">
           <div className="flex flex-col w-[50%]">
             <CustomTitle
               title={"About YuvaCracy Dialogues"}
@@ -43,15 +48,15 @@ const YuvaCracyDialgues = () => {
             </span>
           </div>
           <div className="w-[50%] flex justify-center">
-            <Image src={YuvaDialoguesImg} />
+            <Image className="w-[24rem]" src={YuvaDialoguesImg} />
           </div>
         </div>
 
         {/* Upcoming Dialogues */}
         <CustomTitle
-              title={"Upcoming Dialogues"}
-              subtitle={"Join the Conversation"}
-            />
+          title={"Upcoming Dialogues"}
+          subtitle={"Join the Conversation"}
+        />
         <div className="flex items-center">
           <div className="flex flex-col w-[50%]">
             <div>
@@ -68,7 +73,10 @@ const YuvaCracyDialgues = () => {
                 key={ind}
                 className=" flex rounded-lg shadow-md bg-[#f8fafe]"
               >
-                <div className="h-[6rem] flex items-center px-2"> <PiChatCircleDots className="w-10 h-10" /></div>
+                <div className="h-[6rem] flex items-center px-2">
+                  {" "}
+                  <PiChatCircleDots className="w-10 h-10" />
+                </div>
                 <div className="flex flex-col justify-center">
                   <span className="text-lg font-montserrat font-semibold">
                     {data.name} ({data.date})

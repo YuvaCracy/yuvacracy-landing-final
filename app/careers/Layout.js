@@ -4,7 +4,7 @@ import MainNav from "@/components/common/Navbar/MainNav";
 import PromotionalContent from "@/components/home/promotional";
 import Footer from "@/components/common/Footer";
 import { CareersHero1 } from "@/public/assetManager";
-import SubHero from "@/components/common/SubHero";
+import SubHero from "@/components/common/Hero";
 
 const CareerLayout = ({ children }) => {
   const navItems = [

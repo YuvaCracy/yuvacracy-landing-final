@@ -48,22 +48,18 @@ const HomeEventsComponent = ({ pastEvents = false }) => {
 
   return (
     <div className="w-[100%] xl:px-[8rem] px-[6rem]">
-      <CustomTitle
-        title={`${pastEvents ? "Past Events" : "Upcoming Events"}`}
-      />
+      
+      {!pastEvents && <CustomTitle
+        title={"Upcoming Events"}
+      />}
 
-      {pastEvents ? (
-        <p className="text-subheading font-openSans">
-        Explore our past events that immersed participants in a world of learning and connection. Attendees engaged with renowned thought leaders who shaped the future across various industries and gained valuable insights that inspired their personal and professional growth.
-        </p>
-      ) : (
+      {!pastEvents &&
         <p className="text-subheading font-openSans">
           Explore our upcoming events designed to immerse you in a world of
           learning and connection. Engage with renowned thought leaders who are
           shaping the future across various industries, and gain valuable
           insights that will inspire your personal and professional growth.
-        </p>
-      )}
+        </p>}
 
       {/* Event cards */}
       <div className="flex flex-nowrap gap-[1.5rem]  mt-[2rem]">

@@ -1,7 +1,7 @@
 import Footer from '@/components/common/Footer'
 import MainNav from '@/components/common/Navbar/MainNav'
 import SubNav from '@/components/common/Navbar/SubNav';
-import SubHero from '@/components/common/SubHero';
+import SubHero from '@/components/common/Hero';
 import { HeroImg } from '@/public/assetManager';
 import React from 'react'
 

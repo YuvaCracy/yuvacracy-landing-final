@@ -12,6 +12,8 @@ import { GoArrowUpRight } from "react-icons/go";
 import { useSearchParams } from "next/navigation";
 import SmoothScroll from "@/utils/SmoothScroll";
 import HomeRecentContribution from "@/components/home/recent-contribution";
+import SuspenseHandler from "@/utils/SuspenseHandler";
+import ScrollHandler from "@/utils/ScrollHandler";
 
 const text =
   "YuvaCracy welcomes diverse voices and fresh perspectives. By writing for us, you can share your insights on youth leadership, civic participation, and social justice, helping to shape conversations that matter.";
@@ -45,6 +47,9 @@ const WriteForUs = () => {
 
   return (
     <CareerLayout>
+      <SuspenseHandler>
+        <ScrollHandler />
+      </SuspenseHandler>
       <div id="write-div" className="xl:px-[8rem] px-[6rem] flex flex-col">
         {/* Page Title */}
         <SubHead

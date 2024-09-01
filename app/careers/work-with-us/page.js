@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect } from "react";
+import React, { Suspense } from "react";
 import CareerLayout from "../Layout";
 import CustomTitle from "@/components/common/CustomTitile";
 import TextComponent1 from "@/components/careers/common/TextComponent/TextComponent1";
@@ -11,6 +11,8 @@ import SubHead from "@/components/common/SubHeadings/SubHead";
 import StepImageComponent from "@/components/careers/WorkWithUs/StepImageComponent";
 import { p1, p2, p3, p4, p5, p6 } from "@/public/assetManager";
 import PartnersMarquee from "@/components/careers/common/Marquee";
+import SuspenseHandler from "@/utils/SuspenseHandler";
+import ScrollHandler from "@/utils/ScrollHandler";
 import CareerSliderComponent from "@/components/careers/common/Slider/CareerSliderComponent";
 
 const images = [p1, p2, p3, p4, p5, p6];
@@ -51,26 +53,12 @@ const steps = [
 ];
 
 const WorkWithUs = () => {
-
-  // useEffect(() => {
-  //   const fullUrl = window.location.href;
-  //   const queryString = window.location.search;
-  //   const params = new URLSearchParams(queryString);
-  //   for (const param of params) {
-  //     console.log(param); 
-  //   }
-  //   const scroll = params.get("scroll");
-
-  //   if(scroll){
-  //     SmoothScroll(params.get("scroll"), router);
-  //   }
-    
-  // }, []);
-
-  
   return (
     <CareerLayout>
-      <div id="work-div" className="xl:px-[8rem] px-[6rem]">
+      <SuspenseHandler>
+        <ScrollHandler />
+      </SuspenseHandler>
+      <div id="work-div" className="xl:px-[8rem] px-[6rem] pb-[16rem]">
         <SubHead
           title={"Collaborate with YuvaCracy"}
           subtitle={

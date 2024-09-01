@@ -5,26 +5,21 @@ import SubHead from "@/components/common/SubHeadings/SubHead";
 import CustomTitle from "@/components/common/CustomTitile";
 import { GroupStudyImg } from "@/public/assetManager";
 import TextComponent1 from "@/components/careers/common/TextComponent/TextComponent1";
-import PrimaryButton from "@/components/common/Button/PrimaryButton";
 import { GoArrowUpRight } from "react-icons/go";
-import { useSearchParams } from "next/navigation";
-import SmoothScroll from "@/utils/SmoothScroll";
 import CareerOppCard from "@/components/careers/careerOpportunities/CareerOppCard";
 import CareerCardData from "@/components/careers/careerOpportunities/CareerCardData";
+import SuspenseHandler from "@/utils/SuspenseHandler";
+import ScrollHandler from "@/utils/ScrollHandler";
 
 const text =
   "YuvaCracy welcomes diverse voices and fresh perspectives. By writing for us, you can share your insights on youth leadership, civic participation, and social justice, helping to shape conversations that matter.";
 
 const CareerOpportunities = () => {
-  const searchParams = useSearchParams();
-  const scrollTo = searchParams.get("scroll");
-  if (scrollTo) {
-    SmoothScroll(scrollTo);
-  }
-
   return (
-    <Suspense fallback={<div>Loading...</div>}>
     <CareerLayout>
+      <SuspenseHandler>
+        <ScrollHandler />
+      </SuspenseHandler>
       <div id="career-div" className="xl:px-[8rem] px-[6rem] flex flex-col">
         {/* Page Title */}
         <div className="">
@@ -64,7 +59,6 @@ const CareerOpportunities = () => {
         </div>
       </div>
     </CareerLayout>
-    </Suspense>
   );
 };
 
