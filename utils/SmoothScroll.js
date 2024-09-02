@@ -1,22 +1,17 @@
 'use client'
+import { useEffect } from 'react';
 
-import React, { useEffect, useRef } from 'react';
-
-const SmoothScroll = (scrollToId) => {
-  console.log("I am in smooth scroll mode:", scrollToId)
-  const scrollRef = useRef(null);
-
+const useSmoothScroll = (scrollToId = "") => {
   useEffect(() => {
-    const targetElement = document.getElementById(scrollToId);
-    if (targetElement) {
-      const offset = -150;
-      const y = targetElement.getBoundingClientRect().top + window.scrollY + offset;
-
-      window.scrollTo({ top: y, behavior: 'smooth' });
+    if (scrollToId) {
+      const targetElement = document.getElementById(scrollToId);
+      if (targetElement) {
+        const offset = -150;
+        const y = targetElement.getBoundingClientRect().top + window.scrollY + offset;
+        window.scrollTo({ top: y, behavior: 'smooth' });
+      }
     }
   }, [scrollToId]);
-
-  return null;
 };
 
-export default SmoothScroll;
+export default useSmoothScroll;
