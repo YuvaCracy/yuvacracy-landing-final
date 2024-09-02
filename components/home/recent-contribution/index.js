@@ -27,7 +27,7 @@ const HomeRecentContribution = () => {
   }, []);
 
   return (
-    <div className='w-[100%] xl:px-[8rem] px-[6rem] mt-[8rem]'>
+    <div className='w-[100%] mt-[8rem]'>
       <CustomTitle title={recentContributionData.title} subtitle={recentContributionData.subheading} />
 
       <div className='flex flex-nowrap gap-[1.5rem] mt-[2rem]'>

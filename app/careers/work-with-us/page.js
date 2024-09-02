@@ -13,6 +13,7 @@ import { p1, p2, p3, p4, p5, p6 } from "@/public/assetManager";
 import PartnersMarquee from "@/components/careers/common/Marquee";
 import SuspenseHandler from "@/utils/SuspenseHandler";
 import ScrollHandler from "@/utils/ScrollHandler";
+import CareerSliderComponent from "@/components/careers/common/Slider/CareerSliderComponent";
 
 const images = [p1, p2, p3, p4, p5, p6];
 
@@ -57,7 +58,7 @@ const WorkWithUs = () => {
       <SuspenseHandler>
         <ScrollHandler />
       </SuspenseHandler>
-      <div id="work" className="xl:px-[8rem] px-[6rem] pb-[16rem]">
+      <div id="work-div" className="xl:px-[8rem] px-[6rem] pb-[16rem]">
         <SubHead
           title={"Collaborate with YuvaCracy"}
           subtitle={
@@ -98,7 +99,9 @@ const WorkWithUs = () => {
         </div>
 
         {/* Slider Component */}
-        <div className="py-20">Slider Here</div>
+        <div className="py-6">
+          <CareerSliderComponent />
+        </div>
         {/* Get Involved */}
         <div className="flex flex-col py-2">
           <div className="flex flex-col py-8 space-y-2">
