@@ -8,7 +8,6 @@ import { PiMapPinArea } from "react-icons/pi";
 import Link from 'next/link';
 
 
-
 const EventCard = ({ data }) => {
   return (
     <div className=' w-[22rem]    rounded-md shadow-md flex flex-col group cursor-pointer hover:scale-[1.02] duration-300 justify-between ' >

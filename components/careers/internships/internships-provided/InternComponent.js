@@ -1,16 +1,16 @@
 import PrimaryButton from "@/components/common/Button/PrimaryButton";
 import Image from "next/image";
 import React from "react";
-import { GoArrowUp } from "react-icons/go";
+import { GoArrowUpRight } from "react-icons/go";
 
 const Box = () => {
   return (
     <div className="bg-[#f1f3ff] rounded-lg p-4 absolute -bottom-[1rem] right-[12rem] z-10 shadow-md">
-      <div className="text-4xl text-[#003366] font-bold ">
-        100<span className="text-4xl -mt-[0.5rem]">+</span>
+      <div className="text-3xl text-[#003366] font-bold ">
+        100<span className="text-3xl -mt-[0.5rem]">+</span>
       </div>
-      <div className=" w-[16rem]">
-        <div className="text-[#003366] text-xl mt-2">
+      <div className=" w-[13rem]">
+        <div className="text-[#003366] text-lg mt-2">
           Students, Young People <br />
           Changed their career With Us
         </div>
@@ -19,9 +19,10 @@ const Box = () => {
   );
 };
 
-const InternComponent = ({ title, subtitle, desc, list, link, image }) => {
+const InternComponent = ({ title, subtitle, desc, list, link, image, id }) => {
+
   return (
-    <div className="flex border-2 rounded-xl p-7 my-20 relative">
+    <div id={id} className="flex mx-5 border-2 rounded-xl p-7 my-20 relative">
       <div className="flex-1 font-openSans flex flex-col justify-between">
         {/* Title */}
         <div>
@@ -39,7 +40,7 @@ const InternComponent = ({ title, subtitle, desc, list, link, image }) => {
             </div>
           </div>
 
-          <div className="mt-4 text-lg pt-2 pb-3 pr-12 text-gray-700">
+          <div className="mt-4 text-md pt-2 pb-3 pr-14 text-gray-700">
             {desc}
           </div>
 
@@ -48,7 +49,7 @@ const InternComponent = ({ title, subtitle, desc, list, link, image }) => {
             {list.map(({ head, detail }, index) => (
               <div key={index}>
                 <div className="text-lg font-semibold">{head}</div>
-                <div className="text-lg">{detail}</div>
+                <div className="text-md">{detail}</div>
               </div>
             ))}
           </ul>
@@ -56,7 +57,10 @@ const InternComponent = ({ title, subtitle, desc, list, link, image }) => {
 
         {/* Apply Button */}
         <div className="mt-6">
-          <PrimaryButton data={{title: "Apply", execute: () => {}}} icon={<GoArrowUp />} />
+          <PrimaryButton
+            data={{ title: "Apply", execute: () => {} }}
+            icon={<GoArrowUpRight className="h-7 w-7" />}
+          />
         </div>
       </div>
 
@@ -65,8 +69,7 @@ const InternComponent = ({ title, subtitle, desc, list, link, image }) => {
         <Image
           src={image}
           alt={title}
-          
-          className="rounded-xl object-cover w-[25rem]"
+          className="rounded-xl object-cover w-[20rem]"
         />
         <Box />
       </div>

@@ -1,20 +1,26 @@
 "use client";
-import React from "react";
+import React, { Suspense } from "react";
 import CareerLayout from "../Layout";
 import SubHead from "@/components/common/SubHeadings/SubHead";
 import CustomTitle from "@/components/common/CustomTitile";
 import { GroupStudyImg } from "@/public/assetManager";
 import TextComponent1 from "@/components/careers/common/TextComponent/TextComponent1";
-import PrimaryButton from "@/components/common/Button/PrimaryButton";
 import { GoArrowUpRight } from "react-icons/go";
+import CareerOppCard from "@/components/careers/careerOpportunities/CareerOppCard";
+import CareerCardData from "@/components/careers/careerOpportunities/CareerCardData";
+import SuspenseHandler from "@/utils/SuspenseHandler";
+import ScrollHandler from "@/utils/ScrollHandler";
 
 const text =
   "YuvaCracy welcomes diverse voices and fresh perspectives. By writing for us, you can share your insights on youth leadership, civic participation, and social justice, helping to shape conversations that matter.";
 
-const page = () => {
+const CareerOpportunities = () => {
   return (
     <CareerLayout>
-      <div className="xl:px-[8rem] px-[6rem] pb-[16rem] flex flex-col">
+      <SuspenseHandler>
+        <ScrollHandler />
+      </SuspenseHandler>
+      <div id="career-div" className="xl:px-[8rem] px-[6rem] flex flex-col">
         {/* Page Title */}
         <div className="">
           <SubHead
@@ -24,18 +30,15 @@ const page = () => {
             }
           />
         </div>
-
         {/* Title */}
         <div className="mt-20">
-
           <CustomTitle
             title={"Why Work at YuvaCracy?"}
             subtitle={"Advancing Justice Through Law"}
           />
         </div>
-
         {/* Comp 1 */}
-        <div className="flex flex-col justify-end w-full">
+        <div className="w-full flex flex-col justify-end">
           <TextComponent1
             heading={"A Mission-Driven Workplace"}
             text={text}
@@ -47,11 +50,16 @@ const page = () => {
         <div className="pt-20">
           <CustomTitle title={" Current Openings"} subtitle={"In YuvaCracy"} />
         </div>
-      </div>
 
-      {/* Subtitle */}
+        <div className="flex justify-between">
+          {CareerCardData.list.slice(0, 3).map((item, ind) => {
+            return <CareerOppCard key={ind} data={item} />;
+          })}
+          ;
+        </div>
+      </div>
     </CareerLayout>
   );
 };
 
-export default page;
+export default CareerOpportunities;

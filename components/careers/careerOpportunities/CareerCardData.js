@@ -1,4 +1,6 @@
-const recentContributionData = {
+import { CareerOpportunityImage } from "@/public/assetManager";
+
+const CareerCardData = {
   title: "Recent Contributions",
   subheading: "In YuvaCracy",
   list: [
@@ -8,7 +10,12 @@ const recentContributionData = {
       desc: "In this article, Priya explores the transformative power of civic education in shaping responsible and active citizens. She highlights successful programs that have empowered young people to take charge of their communities. In this article, she highlights programs that have historically been promoted and promoted to the community and have established relationships with the community and have established relationships with the community and have established relationships with the community",
       userName: "priya-sharma",
       user: "Priya Sharma",
-      slug: "empowering-youth-civic-education"
+      slug: "empowering-youth-civic-education",
+      images: [
+        {
+          src: CareerOpportunityImage,
+        },
+      ],
     },
     {
       id: 2,
@@ -16,7 +23,12 @@ const recentContributionData = {
       desc: "Ravi Patel discusses the impact of the Digital India initiative in bridging the gap between urban and rural areas, focusing on the benefits of increased connectivity and digital literacy. She highlights successful programs that have grandchildren to take charge of their communities",
       userName: "ravi-patel",
       user: "Ravi Patel",
-      slug: "digital-india-urban-rural-divide"
+      slug: "digital-india-urban-rural-divide",
+      images: [
+        {
+          src: CareerOpportunityImage,
+        },
+      ],
     },
     {
       id: 3,
@@ -24,7 +36,12 @@ const recentContributionData = {
       desc: "Anjali Verma explores various sustainable farming practices that are gaining popularity in India, and how they contribute to the environment and the economy. She highlights successful programs that have grandchildren to take charge of their communities",
       userName: "anjali-verma",
       user: "Anjali Verma",
-      slug: "sustainable-farming-practices-india"
+      slug: "sustainable-farming-practices-india",
+      images: [
+        {
+          src: CareerOpportunityImage,
+        },
+      ],
     },
     {
       id: 4,
@@ -32,7 +49,12 @@ const recentContributionData = {
       desc: "Sunita Rao examines the challenges and successes of women entrepreneurs in India, shedding light on inspiring stories and the changing landscape of business.",
       userName: "sunita-rao",
       user: "Sunita Rao",
-      slug: "rise-women-entrepreneurs-india"
+      slug: "rise-women-entrepreneurs-india",
+      images: [
+        {
+          src: CareerOpportunityImage,
+        },
+      ],
     },
     {
       id: 5,
@@ -40,7 +62,12 @@ const recentContributionData = {
       desc: "Arjun Mehta takes readers on a journey through the rich and diverse art and cultural heritage of India, highlighting its evolution and contemporary significance.",
       userName: "arjun-mehta",
       user: "Arjun Mehta",
-      slug: "indian-art-culture-journey"
+      slug: "indian-art-culture-journey",
+      images: [
+        {
+          src: CareerOpportunityImage,
+        },
+      ],
     },
     {
       id: 6,
@@ -48,7 +75,12 @@ const recentContributionData = {
       desc: "Sanjay Gupta provides an in-depth analysis of the National Education Policy (NEP) 2020 and its potential to revolutionize the Indian education system.",
       userName: "sanjay-gupta",
       user: "Sanjay Gupta",
-      slug: "education-reforms-india-nep-2020"
+      slug: "education-reforms-india-nep-2020",
+      images: [
+        {
+          src: CareerOpportunityImage,
+        },
+      ],
     },
     {
       id: 7,
@@ -56,7 +88,12 @@ const recentContributionData = {
       desc: "Nisha Kapoor discusses the implications of the Goods and Services Tax (GST) on small businesses in India, including both challenges and opportunities.",
       userName: "nisha-kapoor",
       user: "Nisha Kapoor",
-      slug: "impact-gst-small-businesses-india"
+      slug: "impact-gst-small-businesses-india",
+      images: [
+        {
+          src: CareerOpportunityImage,
+        },
+      ],
     },
     {
       id: 8,
@@ -64,7 +101,12 @@ const recentContributionData = {
       desc: "Rohan Desai delves into the effects of climate change on Indian agriculture, exploring how farmers are adapting to changing weather patterns.",
       userName: "rohan-desai",
       user: "Rohan Desai",
-      slug: "climate-change-effects-indian-agriculture"
+      slug: "climate-change-effects-indian-agriculture",
+      images: [
+        {
+          src: CareerOpportunityImage,
+        },
+      ],
     },
     {
       id: 9,
@@ -72,7 +114,12 @@ const recentContributionData = {
       desc: "Kavita Joshi highlights the growing role of technology in education, particularly in the context of remote learning and digital classrooms in India.",
       userName: "kavita-joshi",
       user: "Kavita Joshi",
-      slug: "role-technology-modern-indian-education"
+      slug: "role-technology-modern-indian-education",
+      images: [
+        {
+          src: CareerOpportunityImage,
+        },
+      ],
     },
     {
       id: 10,
@@ -80,10 +127,14 @@ const recentContributionData = {
       desc: "Neha Kapoor discusses efforts to revive traditional Indian crafts and their integration into the modern market, focusing on sustainability and economic growth.",
       userName: "neha-kapoor",
       user: "Neha Kapoor",
-      slug: "reviving-traditional-indian-crafts"
-    }
+      slug: "reviving-traditional-indian-crafts",
+      images: [
+        {
+          src: CareerOpportunityImage,
+        },
+      ],
+    },
   ],
+};
 
-}
-
-export default recentContributionData
+export default CareerCardData;

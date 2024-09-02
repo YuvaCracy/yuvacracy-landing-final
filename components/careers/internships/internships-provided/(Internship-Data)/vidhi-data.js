@@ -21,6 +21,7 @@ const vidhiData = {
     ],
     link: "",
     image: InternshipImage2,
+    id: "vidhi"
   };
 
   export default vidhiData;

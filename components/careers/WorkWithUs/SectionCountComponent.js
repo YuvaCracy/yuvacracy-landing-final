@@ -3,7 +3,7 @@ import React from 'react';
 
 const SectionCountComponent = ({ imageSrc, title, sections }) => {
   return (
-    <div className="flex flex-row items-center py-24 rounded-lg ">
+    <div className="flex flex-row items-center pt-20 rounded-lg ">
       <div className="w-[29rem]">
         <Image src={imageSrc} alt="Yuvacracy is foundation for youth" />
       </div>

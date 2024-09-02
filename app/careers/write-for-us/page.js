@@ -9,6 +9,9 @@ import SectionCountComponent from "@/components/careers/WorkWithUs/SectionCountC
 import Link from "next/link";
 import PrimaryButton from "@/components/common/Button/PrimaryButton";
 import { GoArrowUpRight } from "react-icons/go";
+import HomeRecentContribution from "@/components/home/recent-contribution";
+import SuspenseHandler from "@/utils/SuspenseHandler";
+import ScrollHandler from "@/utils/ScrollHandler";
 
 const text =
   "YuvaCracy welcomes diverse voices and fresh perspectives. By writing for us, you can share your insights on youth leadership, civic participation, and social justice, helping to shape conversations that matter.";
@@ -31,12 +34,16 @@ const steps = [
   },
 ];
 
-const href = "testLink"
+const href = "testLink";
 
-const page = () => {
+const WriteForUs = () => {
+
   return (
     <CareerLayout>
-      <div className="xl:px-[8rem] px-[6rem] pb-[16rem] flex flex-col">
+      <SuspenseHandler>
+        <ScrollHandler />
+      </SuspenseHandler>
+      <div id="write-div" className="xl:px-[8rem] px-[6rem] flex flex-col">
         {/* Page Title */}
         <SubHead
           title={"Write for Us"}
@@ -49,14 +56,12 @@ const page = () => {
         <div className="mt-16">
           <CustomTitle
             title={"Creating a Safe and Inclusive Space"}
-            subtitle={
-              "Advancing Justice Through Law \xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0"
-            }
+            subtitle={"Advancing Justice Through Law"}
           />
         </div>
 
         {/* Comp1 */}
-        <div className="flex justify-end w-full">
+        <div className="w-full flex justify-end">
           <div className="px-12">
             <TextComponent1
               heading={"Make an Impact with Your Ideas"}
@@ -66,7 +71,7 @@ const page = () => {
           </div>
         </div>
 
-        {/* Comp  2 */}
+        {/* Comp 2 */}
         <SectionCountComponent
           imageSrc={Study}
           title={title}
@@ -74,13 +79,16 @@ const page = () => {
         />
 
         {/* 3 Cards */}
-        <div className="py-12">3 Cards</div>
+          <HomeRecentContribution />
 
         {/* Submission Guidelines */}
+        
+        <div className="pt-20">
         <CustomTitle
           title={"Submission Guidelines"}
           subtitle={"How to Contribute \xa0 \xa0"}
         />
+        </div>
         <span className="-mt-6 text-lg  text-textSecond font-openSans">
           We encourage anyone passionate about youth leadership and civic
           engagement to submit their work. Follow these guidelines for a
@@ -89,16 +97,19 @@ const page = () => {
 
         <Link className="flex items-center py-8" href={href}>
           <span className="flex text-lg font-bold text-primary font-montserrat">
-            YuvaCracy Editorial Guidlines <GoArrowUpRight className="font-bold mt-[0.1rem] h-7 w-7" />
+            YuvaCracy Editorial Guidlines{" "}
+            <GoArrowUpRight className="font-bold mt-[0.1rem] h-7 w-7" />
           </span>
         </Link>
         <div className="w-24">
-
-          <PrimaryButton data={{ title: "Submit" }} icon={<GoArrowUpRight className="w-6 h-6" />} />
+          <PrimaryButton
+            data={{ title: "Submit" }}
+            icon={<GoArrowUpRight className="w-6 h-6" />}
+          />
         </div>
       </div>
     </CareerLayout>
   );
 };
 
-export default page;
+export default WriteForUs;

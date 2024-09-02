@@ -1,10 +1,29 @@
-import React, { useState, useEffect } from 'react'
-import CustomTitle from '@/components/common/CustomTitile'
-import eventData from '../data/EventData'
-import EventCard from '../common/EventCard'
+import React, { useState, useEffect } from "react";
+import CustomTitle from "@/components/common/CustomTitile";
+import eventData from "../data/EventData";
+import EventCard from "../common/EventCard";
 
-const HomeEventsComponent = () => {
+function convertToDate(dateStr) {
+  const [day, month, year] = dateStr.split("/").map(Number);
+
+  const fullYear = year < 100 ? 2000 + year : year;
+
+  return new Date(fullYear, month - 1, day);
+}
+
+const HomeEventsComponent = ({ pastEvents = false }) => {
   const [visibleCards, setVisibleCards] = useState(2); // default to 3 cards
+  const currentDate = new Date();
+
+  const filteredEvents = eventData.filter((event) => {
+    const date = event.end.split(" ");
+    const eventEndDate = new Date(convertToDate(date[0]));
+    // console.log("Event End Date:", eventEndDate);
+    return pastEvents
+      ? eventEndDate < currentDate
+      : eventEndDate >= currentDate;
+  });
+
 
   useEffect(() => {
     const updateVisibleCards = () => {
@@ -19,27 +38,34 @@ const HomeEventsComponent = () => {
 
     updateVisibleCards(); // Initial check
 
-    window.addEventListener('resize', updateVisibleCards);
+    window.addEventListener("resize", updateVisibleCards);
 
     return () => {
-      window.removeEventListener('resize', updateVisibleCards);
+      window.removeEventListener("resize", updateVisibleCards);
     };
   }, []);
 
   return (
-    <div className='w-[100%] xl:px-[8rem] px-[6rem]'>
-      <CustomTitle title='Upcoming Events' />
-      <p className='text-subheading font-openSans'>
-        Explore our upcoming events designed to immerse you in a world of learning and connection. Engage with renowned thought leaders who are shaping the future across various industries, and gain valuable insights that will inspire your personal and professional growth.
-      </p>
+    <div className="w-[100%] xl:px-[8rem] px-[6rem]">
+      
+      {!pastEvents && <CustomTitle
+        title={"Upcoming Events"}
+      />}
+
+      {!pastEvents &&
+        <p className="text-subheading font-openSans">
+          Explore our upcoming events designed to immerse you in a world of
+          learning and connection. Engage with renowned thought leaders who are
+          shaping the future across various industries, and gain valuable
+          insights that will inspire your personal and professional growth.
+        </p>}
 
       {/* Event cards */}
-      <div className='flex flex-nowrap gap-[1.5rem]  mt-[2rem]'>
-        {eventData && eventData.slice(0, 3).map((data, index) => {
-          return (
-            <EventCard key={index} data={data} />
-          );
-        })}
+      <div className="flex flex-nowrap gap-[1.5rem]  mt-[2rem]">
+        {filteredEvents &&
+          filteredEvents.slice(0, 3).map((data, index) => {
+            return <EventCard key={index} data={data} />;
+          })}
       </div>
     </div>
   );
