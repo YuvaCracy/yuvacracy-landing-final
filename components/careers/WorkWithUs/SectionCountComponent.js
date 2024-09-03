@@ -5,10 +5,10 @@ const SectionCountComponent = ({ imageSrc, title, sections }) => {
   return (
     <div className="flex flex-row items-center pt-20 rounded-lg ">
       <div className="w-[29rem]">
-        <Image src={imageSrc} alt="Yuvacracy is foundation for youth" />
+        <Image src={imageSrc} alt="Yuvacracy is foundation for youth" className='pointer-events-none select-none' />
       </div>
       <div className="w-2/3 pl-[12rem] mt-6 ">
-        <h2 className="text-2xl font-montserrat font-bold text-gray-800 mb-4">{title}</h2>
+        <h2 className="mb-4 text-2xl font-bold text-gray-800 font-montserrat">{title}</h2>
         <ul className=" text-lg pl-6 font-openSans space-y-4 w-[33rem]">
           {sections.map((partnership, index) => (
             <li key={index}>

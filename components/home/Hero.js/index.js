@@ -70,7 +70,7 @@ const HomeHero = () => {
         <Image
           src={HeroImage}
           alt='YuvaCracy'
-          className=''
+          className='pointer-events-none select-none '
         />
       </div>
 
