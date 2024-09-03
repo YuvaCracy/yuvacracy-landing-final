@@ -12,7 +12,7 @@ const HomeWhatWeDo = () => {
         <Image
           src={whatWeDoData.images && whatWeDoData.images[0].src}
           alt={whatWeDoData.title}
-          className=' w-[95%] '
+          className=' w-[95%] pointer-events-none select-none '
         />
       </div>
 

@@ -3,11 +3,11 @@ import Image from "next/image";
 
 const StepImageComponent = ({ image, steps, buttonText }) => {
   return (
-    <div className="flex flex-row bg-white justify-center mt-16 ">
+    <div className="flex flex-row justify-center mt-16 bg-white ">
       <div className="flex flex-col md:w-2/5">
-        <Image src={image} alt="Yuvacracy is a foundation powered by youth" />
+        <Image src={image} alt="Yuvacracy is a foundation powered by youth" className="pointer-events-none select-none" />
       </div>
-      <div className=" pl-24 flex flex-col">
+      <div className="flex flex-col pl-24 ">
         <div className="flex flex-col justify-between h-full w-[34rem]">
           {steps.map((step, index) => (
             <div key={index} className="flex items-start">
@@ -15,7 +15,7 @@ const StepImageComponent = ({ image, steps, buttonText }) => {
                 {index + 1}
               </div>
               <div>
-                <strong className="text-gray-800 font-montserrat text-lg">
+                <strong className="text-lg text-gray-800 font-montserrat">
                   {step.heading}:
                 </strong>
                 <p className="text-gray-600 font-openSans text-md">

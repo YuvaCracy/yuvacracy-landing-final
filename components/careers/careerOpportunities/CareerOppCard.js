@@ -10,7 +10,7 @@ const CareerOppCard = ({ data }) => {
         <Image
           src={data.images[0].src}
           alt={data.title}
-          className="object-cover w-full h-full"
+          className="object-cover w-full h-full pointer-events-none select-none"
         />
       </div>
       <div className="flex flex-col ">

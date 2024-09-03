@@ -31,7 +31,7 @@ const OurMission = () => {
         <Image
           src={missionData.images && missionData.images[0].src}
           alt={missionData.title}
-          className=' w-[28rem] '
+          className=' w-[28rem] pointer-events-none select-none '
         />
       </div>
 
