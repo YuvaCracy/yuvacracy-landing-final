@@ -7,6 +7,7 @@ import { YuvaDialoguesCrowd, YuvaDialoguesImg } from "@/public/assetManager";
 import { PiChatCircleDots } from "react-icons/pi";
 import SuspenseHandler from "@/utils/SuspenseHandler";
 import ScrollHandler from "@/utils/ScrollHandler";
+import ImageTextComp1 from "@/components/common/TextComponents/ImageTextComp1";
 
 const dialogueEventData = [
   {
@@ -33,24 +34,7 @@ const YuvaCracyDialgues = () => {
         <ScrollHandler />
       </SuspenseHandler>
       <div id="yuvacracy-diag-div" className="xl:px-[8rem] px-[6rem] py-20 flex flex-col">
-        <div className="flex items-center pb-14">
-          <div className="flex flex-col w-[50%]">
-            <CustomTitle
-              title={"About YuvaCracy Dialogues"}
-              subtitle={"What Are YuvaCracy Dialogues?"}
-            />
-            <span className=" text-lg text-textSecond">
-              YuvaCracy Dialogues is our flagship initiative that brings
-              together thought leaders, policymakers, activists, and youth from
-              diverse backgrounds to discuss critical issues affecting our
-              society. Through these conversations, we aim to inspire action and
-              foster a culture of informed civic engagement.
-            </span>
-          </div>
-          <div className="w-[50%] flex justify-center">
-            <Image alt="YuvaCracy is a foundation for Youth" className="w-[24rem]" src={YuvaDialoguesImg} />
-          </div>
-        </div>
+        <ImageTextComp1 title={"About YuvaCracy Dialogues"} subtitle={"What Are YuvaCracy Dialogues?"} desc={"YuvaCracy Dialogues is our flagship initiative that brings together thought leaders, policymakers, activists, and youth from diverse backgrounds to discuss critical issues affecting our society. Through these conversations, we aim to inspire action and foster a culture of informed civic engagement."} imgSrc={YuvaDialoguesImg} />
 
         {/* Upcoming Dialogues */}
         <CustomTitle

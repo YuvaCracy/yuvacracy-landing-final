@@ -1,11 +1,11 @@
 'use client'
 import React from 'react'
-import DevModeOn from '@/components/DevModeOn'
+import CentreLayout from '../Layout'
 const Ycla = () => {
   return (
-    <div>
-      <DevModeOn />
-    </div>
+    <CentreLayout>
+      YCLA
+    </CentreLayout>
   )
 }
 

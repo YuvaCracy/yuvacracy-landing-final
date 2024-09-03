@@ -25,7 +25,12 @@ import CareerOpportunityImage from "./assets/careers/CareerOpportunities/LaptopC
 import HeroImg from "./assets/events/EventHeroImg.png"
 import YuvaDialoguesImg from "./assets/events/yuvacracyDialogues/Dialogues.png"
 import YuvaDialoguesCrowd from "./assets/events/yuvacracyDialogues/Crowd.png"
-
+import SupportHeroImg from "./assets/support/Hero.png"
+import DonateUs from "./assets/support/DonateUs.png"
+import DonateImg2 from "./assets/support/DonateImg2.png"
+import CollabImg from "./assets/support/collab.png"
+import CenterHero from "./assets/centres/CentreHeroImg.png" 
+import MeetingImg from "./assets/centres/Meeting.png" 
 export {
   HomeHeroImage,
   ProjectUnderConstruction,
@@ -48,5 +53,11 @@ export {
   CareerOpportunityImage,
   HeroImg,
   YuvaDialoguesImg,
-  YuvaDialoguesCrowd
+  YuvaDialoguesCrowd,
+  SupportHeroImg,
+  DonateUs,
+  DonateImg2,
+  CollabImg,
+  CenterHero,
+  MeetingImg
 }
