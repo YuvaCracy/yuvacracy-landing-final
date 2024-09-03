@@ -25,9 +25,11 @@ import CareerOpportunityImage from "./assets/careers/CareerOpportunities/LaptopC
 import HeroImg from "./assets/events/EventHeroImg.png"
 import YuvaDialoguesImg from "./assets/events/yuvacracyDialogues/Dialogues.png"
 import YuvaDialoguesCrowd from "./assets/events/yuvacracyDialogues/Crowd.png"
+import HeroImage from "./assets/home/hero/hero.svg"
+import Celebrate from "./assets/animation/celebrate.json"
 
 export {
-  HomeHeroImage,
+  HeroImage,
   ProjectUnderConstruction,
   CareersHero1,
   InternshipImage1,
@@ -48,5 +50,6 @@ export {
   CareerOpportunityImage,
   HeroImg,
   YuvaDialoguesImg,
-  YuvaDialoguesCrowd
+  YuvaDialoguesCrowd,
+  Celebrate
 }
