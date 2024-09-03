@@ -10,7 +10,7 @@ const HomeHero = () => {
 
   return (
     <div className=' flex relative w-[100%]  h-[100%]   ' >
-      <div className=' pl-[8rem] flex flex-col gap-[.5rem] z-[20] w-[46rem] mt-[3rem] h-fit ' >
+      <div className=' xl:pl-[8rem] pl-[6rem] flex flex-col gap-[.5rem] z-[20] w-[46rem] mt-[3rem] h-fit ' >
         <h2 className=' font-montserrat font-[800] text-[3rem] text-primary leading-[3.5rem] ' >Empowering the Young Generation</h2>
         <p className=' font-openSans text-[#474B4F] text-[.9rem] mt-[.5rem]  ' >Dive into legal education, policy research, and civic engagement, mentorship, and valuable networking opportunities.</p>
         <div className='flex gap-[2rem] mt-[1.5rem] ' >
@@ -18,7 +18,7 @@ const HomeHero = () => {
           <SecondaryButton data={{ title: "Upcoming events", execute: () => router.push('/events/upcoming-events?scroll=upcoming-div') }} />
         </div>
 
-        <div className='flex w-[100%] mt-[1.5rem] ' >
+        <div className='flex gap-[1rem] w-[25rem] mt-[1.5rem] ' >
 
           <div className=' flex flex-col w-[50%] gap-[.5rem]  ' >
             <div className=' flex gap-[.4rem] ' >
@@ -36,7 +36,7 @@ const HomeHero = () => {
               </svg>
             </div>
 
-            <p className=' font-openSans text-[.95rem] text-primary font-[500]  ' >Community projects initiated by youth leaders.</p>
+            <p className=' font-openSans text-[.8rem] text-primary font-[500]  ' >Community projects initiated by youth leaders.</p>
           </div>
 
 
@@ -56,7 +56,7 @@ const HomeHero = () => {
               </svg>
             </div>
 
-            <p className=' font-openSans text-[.95rem] text-primary font-[500]  ' >Young leaders trained through our programs.</p>
+            <p className=' font-openSans text-[.8rem] text-primary font-[500]  ' >Young leaders trained through our programs.</p>
           </div>
 
         </div>
