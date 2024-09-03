@@ -2,7 +2,7 @@
 import React from "react";
 import CareerLayout from "../Layout";
 import SubHead from "@/components/common/SubHeadings/SubHead";
-import CustomTitle from "@/components/common/CustomTitile";
+import CustomTitle from "@/components/docs/CustomTitle";
 import TextComponent1 from "@/components/careers/common/TextComponent/TextComponent1";
 import { ImpactImg, Study } from "@/public/assetManager";
 import SectionCountComponent from "@/components/careers/WorkWithUs/SectionCountComponent";
@@ -79,15 +79,15 @@ const WriteForUs = () => {
         />
 
         {/* 3 Cards */}
-          <HomeRecentContribution />
+        <HomeRecentContribution />
 
         {/* Submission Guidelines */}
-        
+
         <div className="pt-20">
-        <CustomTitle
-          title={"Submission Guidelines"}
-          subtitle={"How to Contribute \xa0 \xa0"}
-        />
+          <CustomTitle
+            title={"Submission Guidelines"}
+            subtitle={"How to Contribute \xa0 \xa0"}
+          />
         </div>
         <span className="-mt-6 text-lg  text-textSecond font-openSans">
           We encourage anyone passionate about youth leadership and civic

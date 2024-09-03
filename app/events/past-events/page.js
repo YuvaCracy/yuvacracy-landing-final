@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import EventLayout from "../Layout";
-import CustomTitle from "@/components/common/CustomTitile";
+import CustomTitle from "@/components/docs/CustomTitle";
 import HomeEventsComponent from "@/components/events/HomeEventsComponent";
 import SuspenseHandler from "@/utils/SuspenseHandler";
 import ScrollHandler from "@/utils/ScrollHandler";

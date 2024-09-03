@@ -1,5 +1,5 @@
 import React from 'react'
-import CustomTitle from '@/components/common/CustomTitile'
+import CustomTitle from '@/components/docs/CustomTitle'
 import Image from 'next/image'
 import { GetInvolvedImage } from '@/public/assetManager'
 import { MdOutlineArrowOutward } from "react-icons/md";

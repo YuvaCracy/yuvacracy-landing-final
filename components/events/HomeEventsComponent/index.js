@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import CustomTitle from "@/components/common/CustomTitile";
+import CustomTitle from "@/components/docs/CustomTitle";
 import eventData from "../data/EventData";
 import EventCard from "../common/EventCard";
 
@@ -47,7 +47,7 @@ const HomeEventsComponent = ({ pastEvents = false }) => {
 
   return (
     <div className="w-[100%] xl:px-[8rem] px-[6rem]">
-      
+
       {!pastEvents && <CustomTitle
         title={"Upcoming Events"}
       />}

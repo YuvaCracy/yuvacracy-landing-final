@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import EventLayout from "../Layout";
-import CustomTitle from "@/components/common/CustomTitile";
+import CustomTitle from "@/components/docs/CustomTitle";
 import Image from "next/image";
 import { YuvaDialoguesCrowd, YuvaDialoguesImg } from "@/public/assetManager";
 import { PiChatCircleDots } from "react-icons/pi";

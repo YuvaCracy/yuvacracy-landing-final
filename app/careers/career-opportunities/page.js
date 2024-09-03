@@ -2,7 +2,7 @@
 import React, { Suspense } from "react";
 import CareerLayout from "../Layout";
 import SubHead from "@/components/common/SubHeadings/SubHead";
-import CustomTitle from "@/components/common/CustomTitile";
+import CustomTitle from "@/components/docs/CustomTitle";
 import { GroupStudyImg } from "@/public/assetManager";
 import TextComponent1 from "@/components/careers/common/TextComponent/TextComponent1";
 import { GoArrowUpRight } from "react-icons/go";

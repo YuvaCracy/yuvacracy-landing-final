@@ -1,7 +1,7 @@
 "use client";
 import React, { Suspense } from "react";
 import CareerLayout from "../Layout";
-import CustomTitle from "@/components/common/CustomTitile";
+import CustomTitle from "@/components/docs/CustomTitle";
 import TextComponent1 from "@/components/careers/common/TextComponent/TextComponent1";
 import { PartnerWithUsImg } from "@/public/assetManager";
 import SectionCountComponent from "@/components/careers/WorkWithUs/SectionCountComponent";
