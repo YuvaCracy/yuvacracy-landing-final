@@ -8,7 +8,7 @@ const People = () => {
 
   useEffect(() => {
     router.push('/people/advisors')
-  }, [])
+  }, [router])
   return null;
 }
 

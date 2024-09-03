@@ -8,7 +8,7 @@ const Org = () => {
 
   useEffect(() => {
     router.push('/org/yuvacracy')
-  }, [])
+  }, [router])
   return null;
 }
 

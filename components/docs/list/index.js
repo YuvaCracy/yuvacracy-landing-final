@@ -12,7 +12,7 @@ const List = ({ items, styles = "", ordered = false }) => {
             {
               items && items.map((data, index) => {
                 return (
-                  <li className={customStyles} >
+                  <li className={customStyles} key={index} >
                     <span className='  font-openSans text-[.95rem] font-[600] ' >
                       {data.head && data.head}
                     </span>
@@ -29,7 +29,7 @@ const List = ({ items, styles = "", ordered = false }) => {
             {
               items && items.map((data, index) => {
                 return (
-                  <li className={customStyles} >
+                  <li className={customStyles} key={index} >
                     <span className='  font-openSans text-[.95rem] font-[600] ' >
                       {data.head && data.head}
                     </span>
