@@ -1,12 +1,13 @@
 "use client";
 import React from "react";
 import EventLayout from "../Layout";
-import CustomTitle from "@/components/common/CustomTitile";
+import CustomTitle from "@/components/docs/CustomTitle";
 import Image from "next/image";
 import { YuvaDialoguesCrowd, YuvaDialoguesImg } from "@/public/assetManager";
 import { PiChatCircleDots } from "react-icons/pi";
 import SuspenseHandler from "@/utils/SuspenseHandler";
 import ScrollHandler from "@/utils/ScrollHandler";
+import ImageTextComp1 from "@/components/common/TextComponents/ImageTextComp1";
 
 const dialogueEventData = [
   {

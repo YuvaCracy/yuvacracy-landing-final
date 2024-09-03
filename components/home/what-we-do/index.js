@@ -1,6 +1,6 @@
 import React from 'react'
 import whatWeDoData from './whatWeDoData'
-import CustomTitle from '@/components/common/CustomTitile'
+import CustomTitle from '@/components/docs/CustomTitle'
 import Image from 'next/image'
 
 const HomeWhatWeDo = () => {

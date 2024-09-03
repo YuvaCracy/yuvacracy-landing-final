@@ -1,6 +1,6 @@
 import React from 'react'
 import FaqlistComponent from './FaqlistComponent'
-import CustomTitle from '../CustomTitile'
+import CustomTitle from '../../docs/CustomTitle'
 
 const faqs = [
   {

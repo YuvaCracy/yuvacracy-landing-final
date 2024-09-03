@@ -1,6 +1,6 @@
 'use client'
 import React from 'react'
-import CustomTitle from '@/components/common/CustomTitile'
+import CustomTitle from '@/components/docs/CustomTitle'
 import storiesOfImpactData from './storiesOfImpactData'
 import useEmblaCarousel from 'embla-carousel-react'
 import { DotButton, useDotButton } from '@/components/common/slider/DotButton'

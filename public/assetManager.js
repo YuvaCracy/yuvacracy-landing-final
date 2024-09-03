@@ -27,6 +27,20 @@ import YuvaDialoguesImg from "./assets/events/yuvacracyDialogues/Dialogues.png"
 import YuvaDialoguesCrowd from "./assets/events/yuvacracyDialogues/Crowd.png"
 import HeroImage from "./assets/home/hero/hero.svg"
 import Celebrate from "./assets/animation/celebrate.json"
+import SupportHeroImg from "./assets/support/Hero.png"
+import DonateUs from "./assets/support/DonateUs.png"
+import DonateImg2 from "./assets/support/DonateImg2.png"
+import CollabImg from "./assets/support/collab.png"
+import CenterHero from "./assets/centres/CentreHeroImg.png"
+import MeetingImg from "./assets/centres/Meeting.png"
+import PeopleGroup1 from "./assets/centres/PeopleGroup1.png"
+import PeopleGroup2 from "./assets/centres/PeopleGroup2.png"
+import AdvisorImage from "./assets/about/people/advisor/advisor.png"
+import PartnerImage from "./assets/about/people/partner/partner.png"
+import TeamMemberImage from "./assets/about/people/team/team-member.png"
+import YuvaCracyAboutImage1 from "./assets/about/org/yuvacracy/about.png"
+import YuvaCracyAboutImage2 from "./assets/about/org/yuvacracy/about-1.png"
+import YuvaCracyAboutImage3 from "./assets/about/org/yuvacracy/abaout-2.png"
 
 export {
   HeroImage,
@@ -51,5 +65,19 @@ export {
   HeroImg,
   YuvaDialoguesImg,
   YuvaDialoguesCrowd,
-  Celebrate
+  Celebrate,
+  SupportHeroImg,
+  DonateUs,
+  DonateImg2,
+  CollabImg,
+  CenterHero,
+  MeetingImg,
+  PeopleGroup1,
+  PeopleGroup2,
+  AdvisorImage,
+  PartnerImage,
+  TeamMemberImage,
+  YuvaCracyAboutImage1,
+  YuvaCracyAboutImage2,
+  YuvaCracyAboutImage3,
 }
