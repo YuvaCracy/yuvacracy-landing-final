@@ -8,7 +8,7 @@ import { AiFillInstagram } from "react-icons/ai";
 
 const Footer = () => {
   return (
-    <footer className=" xl:px-[8rem] px-[6rem] py-[2rem] mt-[8rem] text-gray-700 bg-[#F8FCFF] border-t-[1px]  ">
+    <footer id="footer-div" className=" xl:px-[8rem] px-[6rem] py-[2rem] mt-[8rem] text-gray-700 bg-[#F8FCFF] border-t-[1px]  ">
       <div className=" mt-[3rem] mx-auto ">
         <div className=" w-fit mb-[3rem] " >
           <AnimatedLogo bg={"bg-[#F8FCFF]"} />
