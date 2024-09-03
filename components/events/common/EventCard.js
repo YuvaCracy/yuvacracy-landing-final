@@ -15,7 +15,7 @@ const EventCard = ({ data }) => {
         <Image
           src={data.thumbnail ? data.thumbnail[0] : EventFallbackImage}
           alt={data.title}
-          className=' w-[100%] h-[13rem] rounded-tr-md rounded-tl-md object-cover '
+          className=' w-[100%] h-[13rem] rounded-tr-md rounded-tl-md object-cover pointer-events-none select-none '
         />
       </div>
       <div className=' px-[1rem] py-[1rem] flex flex-col justify-center ' >

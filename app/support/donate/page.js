@@ -5,18 +5,26 @@ import { DonateImg2, DonateUs } from "@/public/assetManager";
 import ImageTextComp2 from "@/components/common/TextComponents/ImageTextComp2";
 import { BsBarChartLine } from "react-icons/bs";
 import Image from "next/image";
+import SuspenseHandler from "@/utils/SuspenseHandler";
+import ScrollHandler from "@/utils/ScrollHandler";
 
 const data = [
-  {desc: "Funds educational workshops and leadership training for young people."},
-  {desc: "Supports community projects led by youth leaders."},
-  {desc: "Amplifies youth voices through dialogues and public speaking events."},
-]
+  {
+    desc: "Funds educational workshops and leadership training for young people.",
+  },
+  { desc: "Supports community projects led by youth leaders." },
+  {
+    desc: "Amplifies youth voices through dialogues and public speaking events.",
+  },
+];
 
 const Donate = () => {
   return (
     <SupportLayout>
+      <SuspenseHandler>
+        <ScrollHandler />
+      </SuspenseHandler>
       <div
-        id="donate-div"
         className="xl:px-[8rem] px-[6rem] pt-20 flex flex-col"
       >
         <ImageTextComp2
@@ -29,7 +37,7 @@ const Donate = () => {
         />
 
         <div className="flex items-center h-[38rem] mt-[12rem]">
-          <Image className="w-[50%] h-[38rem]" src={DonateImg2} />
+          <Image alt="YuvaCracy is a foundation for youth" className="w-[50%] h-[38rem]" src={DonateImg2} />
           <div className="bg-primary h-full flex flex-col justify-around text-white py-8 px-12 rounded-r-lg w-[50%]">
             <div>
               <span className="text-3xl font-bold font-montserrat">
@@ -43,10 +51,13 @@ const Donate = () => {
               </div>
             </div>
 
-            <div className="flex flex-col p-4 space-y-4 mt-3">
+            <div className="flex flex-col p-4 mt-3 space-y-4">
               {data.map((item, ind) => (
-                <div key={ind} className="flex font-montserrat items-center text-md text-[#E0E0E0]">
-                  <BsBarChartLine className=" w-6 h-6 m-2 mr-4" /> {item.desc}
+                <div
+                  key={ind}
+                  className="flex font-montserrat items-center text-md text-[#E0E0E0]"
+                >
+                  <BsBarChartLine className="w-6 h-6 m-2 mr-4 " /> {item.desc}
                 </div>
               ))}
             </div>
@@ -66,7 +77,7 @@ const Donate = () => {
               </button>
             </div>
 
-            <button className="mt-8 w-full bg-white text-blue-900 font-bold py-2 rounded">
+            <button className="w-full py-2 mt-8 font-bold text-blue-900 bg-white rounded">
               DONATE
             </button>
           </div>

@@ -13,6 +13,7 @@ import HomeGetInvolved from '@/components/home/get-involved'
 import Faq from '@/components/common/faq'
 import HomeSubsribeNewsLetter from '@/components/home/subsribe-newsletter'
 import Footer from '@/components/common/Footer'
+import HomeHero from '@/components/home/Hero.js'
 
 
 const AppPage = () => {
@@ -20,10 +21,13 @@ const AppPage = () => {
     <div className=' w-[100%]  bg-white'>
       <PromotionalContent />
       <MainNav />
-      <div className=' h-[calc(100vh-8rem)] w-[100%] ' >
-
+      <div className=' h-[calc(100vh-3.5rem)] w-[100%] ' >
+        <HomeHero />
       </div>
-      <HomeEventsComponent />
+      <div className=' mt-[8rem] ' >
+
+        <HomeEventsComponent />
+      </div>
       <OurMission />
       <HomeWhatWeDo />
       <div className='xl:px-[8rem] px-[6rem]'>

@@ -8,12 +8,12 @@ import React from 'react'
 
 const navItems = [
       {
-        name: "YCPR",
+        name: "YuvaCracy Centre for Policy Research (YCPR)",
         link: "/centres/ycpr",
         id: "ycpr-div"
       },
       {
-        name: "YCLA",
+        name: "YuvaCracy Centre for Legal Affairs (YCLA)",
         link: "/centres/ycla",
         id: "ycla-div"
       },

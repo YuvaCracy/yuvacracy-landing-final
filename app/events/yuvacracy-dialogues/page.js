@@ -34,7 +34,24 @@ const YuvaCracyDialgues = () => {
         <ScrollHandler />
       </SuspenseHandler>
       <div id="yuvacracy-diag-div" className="xl:px-[8rem] px-[6rem] py-20 flex flex-col">
-        <ImageTextComp1 title={"About YuvaCracy Dialogues"} subtitle={"What Are YuvaCracy Dialogues?"} desc={"YuvaCracy Dialogues is our flagship initiative that brings together thought leaders, policymakers, activists, and youth from diverse backgrounds to discuss critical issues affecting our society. Through these conversations, we aim to inspire action and foster a culture of informed civic engagement."} imgSrc={YuvaDialoguesImg} />
+        <div className="flex items-center pb-14">
+          <div className="flex flex-col w-[50%]">
+            <CustomTitle
+              title={"About YuvaCracy Dialogues"}
+              subtitle={"What Are YuvaCracy Dialogues?"}
+            />
+            <span className="text-lg text-textSecond">
+              YuvaCracy Dialogues is our flagship initiative that brings
+              together thought leaders, policymakers, activists, and youth from
+              diverse backgrounds to discuss critical issues affecting our
+              society. Through these conversations, we aim to inspire action and
+              foster a culture of informed civic engagement.
+            </span>
+          </div>
+          <div className="w-[50%] flex justify-center">
+            <Image alt="YuvaCracy is a foundation for Youth" className="w-[24rem] pointer-events-none select-none " src={YuvaDialoguesImg} />
+          </div>
+        </div>
 
         {/* Upcoming Dialogues */}
         <CustomTitle
@@ -44,11 +61,11 @@ const YuvaCracyDialgues = () => {
         <div className="flex items-center">
           <div className="flex flex-col w-[50%]">
             <div>
-              <span className=" text-lg text-textSecond">
+              <span className="text-lg text-textSecond">
                 Stay informed and engaged with our upcoming dialogues. Be a part
                 of the conversation that shapes the future.
               </span>
-              <Image alt="YuvaCracy is a foundation for Youth" className="pt-14" src={YuvaDialoguesCrowd} />
+              <Image alt="YuvaCracy is a foundation for Youth" className="pointer-events-none select-none pt-14 " src={YuvaDialoguesCrowd} />
             </div>
           </div>
           <div className="w-[50%] flex flex-col justify-center gap-4 px-10">
@@ -62,7 +79,7 @@ const YuvaCracyDialgues = () => {
                   <PiChatCircleDots className="w-10 h-10" />
                 </div>
                 <div className="flex flex-col justify-center">
-                  <span className="text-lg font-montserrat font-semibold">
+                  <span className="text-lg font-semibold font-montserrat">
                     {data.name} ({data.date})
                   </span>
                   <span>{data.desc}</span>

@@ -2,7 +2,7 @@
 import {useRouter} from "nextjs-toploader/app";
 import React, { useEffect } from "react";
 
-const page = () => {
+const SupportPage = () => {
   const router = useRouter();
   useEffect(() => {
     router.push("/support/donate");
@@ -10,4 +10,4 @@ const page = () => {
   return <div></div>;
 };
 
-export default page;
+export default SupportPage;

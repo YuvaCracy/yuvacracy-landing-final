@@ -30,7 +30,7 @@ const HomeGetInvolved = () => {
           <Image
             src={GetInvolvedImage}
             alt='get Involved'
-            className=' w-[20rem] '
+            className=' w-[20rem] pointer-events-none select-none '
           />
 
         </div>

@@ -45,19 +45,19 @@ const CareersData = {
   col: [
     {
       title: 'Internships',
-      href: '/careers/internships',
+      href: '/careers/internships?scroll=internship-div',
     },
     {
       title: 'Work With Us',
-      href: '/careers/work-with-us',
+      href: '/careers/work-with-us?scroll=work-div',
     },
     {
       title: 'Write For Us',
-      href: '/careers/write-for-us',
+      href: '/careers/write-for-us?scroll=write-div',
     },
     {
       title: 'Career Opportunities',
-      href: '/careers/career-opportunities',
+      href: '/careers/career-opportunities?scroll=career-div',
     }
   ]
 }
@@ -68,15 +68,15 @@ const eventsData = {
   col: [
     {
       title: 'Upcoming Events',
-      href: '/events/upcoming-events',
+      href: '/events/upcoming-events?scroll=upcoming-div',
     },
     {
       title: 'Past Events',
-      href: '/events/past-events',
+      href: '/events/past-events?scroll=past-div',
     },
     {
       title: 'Yuvacracy Dialogues',
-      href: '/events/yuvacracy-dialogues',
+      href: '/events/yuvacracy-dialogues?scroll=yuvacracy-diag-div',
     },
   ]
 }

@@ -4,33 +4,35 @@ import SubNav from '@/components/common/Navbar/SubNav';
 import SubHero from '@/components/common/Hero';
 import { HeroImg } from '@/public/assetManager';
 import React from 'react'
+import PromotionalContent from '@/components/home/promotional';
 
 const navItems = [
-    {
-      name: "Upcoming Events",
-      link: "upcoming-events",
-      id: "upcoming-div"
-    },
-    {
-      name: "Past Events",
-      link: "past-events",
-      id: "past-div"
-    },
-    {
-      name: "YuvaCracy dialogues",
-      link: "yuvacracy-dialogues",
-      id: "yuvacracy-diag-div"
-    },
-  ];
+  {
+    name: "Upcoming Events",
+    link: "upcoming-events",
+    id: "upcoming-div"
+  },
+  {
+    name: "Past Events",
+    link: "past-events",
+    id: "past-div"
+  },
+  {
+    name: "YuvaCracy dialogues",
+    link: "yuvacracy-dialogues",
+    id: "yuvacracy-diag-div"
+  },
+];
 
-const EventLayout = ({children}) => {
+const EventLayout = ({ children }) => {
   return (
     <div>
-        <MainNav />
-        <SubHero title={"Empowering the next generation YuvaCracy Events"} subtitle={"Inspiring youth leadership and innovation through engaging activities"} img={HeroImg}/>
-        <SubNav navItems={navItems}/>
-        {children}
-        <Footer />
+      <PromotionalContent />
+      <MainNav />
+      <SubHero title={"Empowering the next generation YuvaCracy Events"} subtitle={"Inspiring youth leadership and innovation through engaging activities"} img={HeroImg} />
+      <SubNav navItems={navItems} />
+      {children}
+      <Footer />
     </div>
   )
 }

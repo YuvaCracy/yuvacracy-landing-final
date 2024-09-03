@@ -5,6 +5,8 @@ import CustomTitle from "@/components/common/CustomTitile";
 import { MdAutoGraph } from "react-icons/md";
 import HomeStoriesOfImpact from "@/components/home/stories-of-impact";
 import GetInTouchCard from "@/components/support/GetInTouchCard";
+import SuspenseHandler from "@/utils/SuspenseHandler";
+import ScrollHandler from "@/utils/ScrollHandler";
 
 const data = [
   {
@@ -24,7 +26,13 @@ const data = [
 const Collaboration = () => {
   return (
     <SupportLayout>
-      <div id="collab-div" className="flex flex-col xl:px-[8rem] px-[6rem] pt-20">
+      <SuspenseHandler>
+        <ScrollHandler />
+      </SuspenseHandler>
+      <div
+        id="collab-div"
+        className="flex flex-col xl:px-[8rem] px-[6rem] pt-20"
+      >
         <CustomTitle
           title={"Types Of Collaboration"}
           subtitle={"In YuvaCracy"}
@@ -38,9 +46,7 @@ const Collaboration = () => {
               <span className="text-xl font-semibold font-montserrat">
                 {item.name}
               </span>
-              <span>
-                {item.desc}
-              </span>
+              <span>{item.desc}</span>
             </div>
           ))}
         </div>

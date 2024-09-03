@@ -8,7 +8,7 @@ import { AiFillInstagram } from "react-icons/ai";
 
 const Footer = () => {
   return (
-    <footer className=" xl:px-[8rem] px-[6rem] py-[2rem] mt-[8rem] text-gray-700 bg-[#F8FCFF] border-t-[1px]  ">
+    <footer id="footer-div" className=" xl:px-[8rem] px-[6rem] py-[2rem] mt-[8rem] text-gray-700 bg-[#F8FCFF] border-t-[1px]  ">
       <div className=" mt-[3rem] mx-auto ">
         <div className=" w-fit mb-[3rem] " >
           <AnimatedLogo bg={"bg-[#F8FCFF]"} />
@@ -80,22 +80,22 @@ const Footer = () => {
               <h2 className=" font-montserrat font-[600] text-[1.15rem] text-primary ">Careers</h2>
               <ul>
                 <li>
-                  <Link href={'/careers/internships'} className="text-black hover:underline font-openSans text-[.9rem] text-opacity-[.8] ">
+                  <Link href={'/careers/internships?scroll=internship-div'} className="text-black hover:underline font-openSans text-[.9rem] text-opacity-[.8] ">
                     Internships
                   </Link>
                 </li>
                 <li>
-                  <Link href={'/careers/work-with-us'} className="text-black hover:underline font-openSans text-[.9rem] text-opacity-[.8] ">
+                  <Link href={'/careers/work-with-us?scroll=work-div'} className="text-black hover:underline font-openSans text-[.9rem] text-opacity-[.8] ">
                     Work With Us
                   </Link>
                 </li>
                 <li>
-                  <Link href={'/careers/write-for-us'} className="text-black hover:underline font-openSans text-[.9rem] text-opacity-[.8] ">
+                  <Link href={'/careers/write-for-us?scroll=write-div'} className="text-black hover:underline font-openSans text-[.9rem] text-opacity-[.8] ">
                     Write For Us
                   </Link>
                 </li>
                 <li>
-                  <Link href={'/careers/opportunities'} className="text-black hover:underline font-openSans text-[.9rem] text-opacity-[.8] ">
+                  <Link href={'/careers/career-opportunities?scroll=career-div'} className="text-black hover:underline font-openSans text-[.9rem] text-opacity-[.8] ">
                     Career Opportunities
                   </Link>
                 </li>
@@ -109,17 +109,17 @@ const Footer = () => {
               <h2 className=" font-montserrat font-[600] text-[1.15rem] text-primary ">Events</h2>
               <ul>
                 <li>
-                  <Link href={'/events/upcoming-events'} className="text-black hover:underline font-openSans text-[.9rem] text-opacity-[.8] ">
+                  <Link href={'/events/upcoming-events?scroll=upcoming-div'} className="text-black hover:underline font-openSans text-[.9rem] text-opacity-[.8] ">
                     Upcoming Events
                   </Link>
                 </li>
                 <li>
-                  <Link href={'/events/past-events'} className="text-black hover:underline font-openSans text-[.9rem] text-opacity-[.8] ">
+                  <Link href={'/events/past-events?scroll=past-div'} className="text-black hover:underline font-openSans text-[.9rem] text-opacity-[.8] ">
                     Past Events
                   </Link>
                 </li>
                 <li>
-                  <Link href={'/events/yuvacracy-dialogues'} className="text-black hover:underline font-openSans text-[.9rem] text-opacity-[.8] ">
+                  <Link href={'/events/yuvacracy-dialogues?scroll=yuvacracy-diag-div'} className="text-black hover:underline font-openSans text-[.9rem] text-opacity-[.8] ">
                     YuvaCracy Dialogues
                   </Link>
                 </li>
