@@ -33,6 +33,9 @@ module.exports = {
       animation: {
         marquee: "marquee 16s linear infinite",
       },
+      screens: {
+        'md_desktop': '1200px'
+      },
     },
   },
   plugins: [],
