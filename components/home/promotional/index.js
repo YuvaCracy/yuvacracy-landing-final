@@ -48,14 +48,14 @@ const PromotionalContent = () => {
       fallback={
         <div className={` ${showPromo ? " mt-0 relative " : " mt-[-4rem] "} duration-700 relative flex items-center justify-center w-full h-16 px-32 bg-primary`} />
       }>
-      <div className={` ${showPromo ? " mt-0 relative " : " mt-[-4rem] "} duration-700 relative flex items-center justify-center w-full h-16 px-32 bg-primary`}>
+      <div className={` ${showPromo ? " mt-0 relative " : " mt-[-4rem] "} duration-700 relative flex items-center justify-center w-full h-16 md_desktop:px-32 px-20 bg-primary`}>
         {/* Slider code */}
         <div className='flex w-full'>
-          <div className="flex justify-between w-full promo-embla">
+          <div className="flex justify-between gap-[1rem] w-full promo-embla">
             <div className="w-full promo-embla__viewport" ref={emblaRef}>
               <div className="w-full promo-embla__container">
                 {promotionalData.map((data, index) => (
-                  <div className='w-[100%]  ' key={index}>
+                  <div className='w-[100%] flex  ' key={index}>
 
                     <div className="flex w-[100%] items-center gap-[1rem] justify-between promo-embla__slide" >
                       {/* Coundown timer code */}
@@ -88,7 +88,7 @@ const PromotionalContent = () => {
                         <button onClick={() => {
                           setShowPromo(true);
                           router.push(`${pathname}?promoId=${data.youtubeId}`)
-                        }} className=' active:scale-[.95] duration-300 flex text-[.8rem] border-[1px] border-white rounded-full px-[.8rem] py-[.2rem] justify-center items-center gap-[.3rem] ' >
+                        }} className=' text-nowrap active:scale-[.95] duration-300 flex text-[.8rem] border-[1px] border-white rounded-full px-[.8rem] py-[.2rem] justify-center items-center gap-[.3rem] ' >
                           <p>Play video</p>
                           <MdPlayCircle />
                         </button>

@@ -1,6 +1,6 @@
 import React from 'react'
 import missionData from './missionData'
-import CustomTitle from '@/components/common/CustomTitile'
+import CustomTitle from '@/components/docs/CustomTitle'
 import Image from 'next/image'
 import { HiMiniCheckCircle } from "react-icons/hi2";
 

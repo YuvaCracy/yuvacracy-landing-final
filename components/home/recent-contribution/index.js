@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import CustomTitle from '@/components/common/CustomTitile'
+import CustomTitle from '@/components/docs/CustomTitle'
 import recentContributionData from './recentContributionData'
 import RecentContributionCard from './RecentContributionCard'
 
