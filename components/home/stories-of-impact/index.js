@@ -18,7 +18,7 @@ const HomeStoriesOfImpact = () => {
   const { selectedIndex, scrollSnaps, onDotButtonClick } = useDotButton(emblaApi);
 
   return (
-    <div className='xl:px-[8rem] px-[6rem] mt-[8rem] w-full flex flex-col'>
+    <div className='xl:px-[8rem] md_desktop:px-[6rem] lg:px-[5rem] md:px-[3rem] md_phone:px-[2rem] px-[1rem] md:mt-[8rem] mt-[4rem] w-full flex flex-col'>
       <CustomTitle title={"Stories Of Impact"} subtitle={"Real Stories, Real Change"} />
 
       {/* slider code */}

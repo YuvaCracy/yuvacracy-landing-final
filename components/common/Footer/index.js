@@ -8,7 +8,7 @@ import { AiFillInstagram } from "react-icons/ai";
 
 const Footer = () => {
   return (
-    <footer id="footer-div" className=" xl:px-[8rem] px-[6rem] py-[2rem] mt-[8rem] text-gray-700 bg-[#F8FCFF] border-t-[1px]  ">
+    <footer id="footer-div" className=" xl:px-[8rem] md_desktop:px-[6rem] lg:px-[5rem] md:px-[3rem] md_phone:px-[2rem] px-[1rem] py-[2rem] mt-[8rem] text-gray-700 bg-[#F8FCFF] border-t-[1px]  ">
       <div className=" mt-[3rem] mx-auto ">
         <div className=" w-fit mb-[3rem] " >
           <AnimatedLogo bg={"bg-[#F8FCFF]"} />
@@ -183,21 +183,23 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="flex items-center text-primary font-openSans font-[600] text-[.92rem] justify-between mt-[4rem] pt-[1rem] border-t-[1px]  ">
-          <p>
-            Copyright © YuvaCracy Foundation | All Rights Reserved | Designed and Developed by{" "}
+        <div className="flex md_desktop:flex-row md_desktop:gap-0 gap-[.5rem] flex-col md_desktop:items-center text-primary font-openSans font-[600] text-[.92rem] justify-between mt-[4rem] pt-[1rem] border-t-[1px]  ">
+          <div className=" flex gap-[.5rem] flex-wrap text-nowrap " >
+            <h2>Copyright © YuvaCracy Foundation |</h2>
+            <h2>All Rights Reserved |</h2>
+            <h2>Designed and Developed by</h2>
             <Link href={'/careers/work-with-us?scroll=tech'} className=" hover:underline font-openSans text-[.9rem] text-opacity-[.8] ">
               YuvaCracy Tech
-            </Link>.
-          </p>
-          <div className="flex items-center justify-center space-x-4">
-            <Link href={''} className=" hover:underline font-openSans text-[.9rem] text-opacity-[.8] ">
+            </Link>
+          </div>
+          <div className="flex flex-wrap justify-start md_phone:space-x-4 md_phone:gap-0 gap-[1rem] md_phone:items-center md_phone:flex-nowrap md_desktop:justify-center ">
+            <Link href={''} className=" hover:underline md_phone:text-wrap text-nowrap font-openSans text-[.9rem] text-opacity-[.8] ">
               Privacy Policy
             </Link>
-            <Link href={''} className=" hover:underline font-openSans text-[.9rem] text-opacity-[.8] ">
+            <Link href={''} className=" hover:underline  md_phone:text-wrap text-nowrap font-openSans text-[.9rem] text-opacity-[.8] ">
               Terms of Service
             </Link>
-            <Link href={''} className=" hover:underline font-openSans text-[.9rem] text-opacity-[.8] ">
+            <Link href={''} className=" hover:underline  md_phone:text-wrap text-nowrap font-openSans text-[.9rem] text-opacity-[.8] ">
               Cookies Settings
             </Link>
           </div>

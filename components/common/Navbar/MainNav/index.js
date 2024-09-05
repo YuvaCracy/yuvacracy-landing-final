@@ -21,19 +21,7 @@ const MainNav = () => {
   const pathname = usePathname();
   const [active, setActive] = useState(1);
   const [showNav, setShowNav] = useState(false);
-  // useEffect(() => {
-  //   if (showNav) {
-  //     document.body.style.overflow = 'hidden';
-  //   } else {
-  //     document.body.style.overflow = 'auto';
-  //   }
-  //   return () => {
-  //     document.body.style.overflow = 'auto';
-  //   };
-  // }, [showNav]);
 
-
-  console.log("current active", active)
   return (
     <div className={` ${showNav ? "flex-col bg-primary fixed lg:sticky gap-[0rem] lg:min-h-[4rem] min-h-[100vh] h-auto justify-start  " : "sticky h-[4rem] bg-white  "} lg:bg-white top-0 z-[600]  shadow-md w-[100%] lg:min-h-[4rem] lg:h-[4rem] flex lg:flex-row  lg:gap-0  lg:justify-between lg:items-center xl:px-[8rem] md_desktop:px-[6rem] lg:px-[5rem] md:px-[3rem] md_phone:px-[2rem] px-[1rem] lg:py-0 duration-300  `} >
 
