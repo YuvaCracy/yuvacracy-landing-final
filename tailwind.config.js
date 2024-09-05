@@ -34,7 +34,11 @@ module.exports = {
         marquee: "marquee 16s linear infinite",
       },
       screens: {
-        'md_desktop': '1200px'
+        'md_desktop': '1200px',
+        'sm_desktop': '1100px',
+        'md_phone': '530px',
+        'phone': "470px",
+        'sm_phone': '380px',
       },
     },
   },

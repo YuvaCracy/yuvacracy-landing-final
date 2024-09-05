@@ -28,19 +28,19 @@ const AppPage = () => {
 
         <HomeEventsComponent />
       </div>
-      <OurMission />
-      <HomeWhatWeDo />
-      <div className='xl:px-[8rem] px-[6rem]'>
+      {/* <OurMission /> */}
+      {/* <HomeWhatWeDo /> */}
+      {/* <div className='xl:px-[8rem] px-[6rem]'>
         <HomeRecentContribution />
-      </div>
-      <HomeStoriesOfImpact />
-      <HomeGetInvolved />
-      <Faq />
-      <HomeSubsribeNewsLetter />
-      <Footer />
-      {/* <div className=' h-[100rem] ' >
-
       </div> */}
+      {/* <HomeStoriesOfImpact /> */}
+      {/* <HomeGetInvolved /> */}
+      {/* <Faq /> */}
+      {/* <HomeSubsribeNewsLetter /> */}
+      {/* <Footer /> */}
+      <div className=' h-[100rem] ' >
+
+      </div>
       {/* <DevModeOn /> */}
 
     </div>
