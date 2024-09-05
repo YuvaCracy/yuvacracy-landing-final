@@ -24,10 +24,10 @@ const faqs = [
 
 const Faq = () => {
   return (
-    <div className=' flex flex-col mt-[9rem] xl:px-[8rem] px-[6rem] justify-center  ' >
+    <div className=' flex flex-col md:mt-[9rem] mt-[5rem] xl:px-[8rem] md_desktop:px-[6rem] lg:px-[5rem] md:px-[3rem] md_phone:px-[2rem] px-[1rem] justify-center  ' >
       <CustomTitle title={"FAQs  (Frequently asked questions)"} />
       <p className=' font-openSans text-[1.05rem] text-subheading  ' >Everything you need to know about the product and billing.</p>
-      <div className=" flex flex-col gap-[1rem] mt-[4rem]  ">
+      <div className=" flex flex-col gap-[1rem] md_phone:mt-[4rem] mt-[2rem]  ">
         {faqs.map((faq, index) => (
           <FaqlistComponent key={index} data={faq} index={index} />
         ))}

@@ -10,7 +10,7 @@ import Link from 'next/link';
 
 const EventCard = ({ data }) => {
   return (
-    <div className=' w-[22rem]    rounded-md shadow-md flex flex-col group cursor-pointer hover:scale-[1.02] duration-300 justify-between ' >
+    <div className=' phone:w-[22rem] w-[100%]    rounded-md shadow-md flex flex-col group cursor-pointer hover:scale-[1.02] duration-300 justify-between ' >
       <div>
         <Image
           src={data.thumbnail ? data.thumbnail[0] : EventFallbackImage}
@@ -23,16 +23,26 @@ const EventCard = ({ data }) => {
         <h2 className=' text-heading font-openSans text-[1.1rem] font-[600]  line-clamp-2 ' >{data.title}</h2>
 
         <div className='flex justify-between mt-[.5rem] ' >
-          <div className=' flex flex-col gap-[.3rem]  text-subheading font-openSans font-[400] text-[.86rem] ' >
+          <div className=' flex flex-col gap-[.3rem]  text-subheading font-openSans  text-[.7rem] font-[600] ' >
             <div className=' flex items-center gap-[.3rem]   ' >
-              <MdCalendarMonth />
-              <h3 className='' >{data.start}</h3>
-              <p>-</p>
-              <h3>{data.end}</h3>
+              <MdCalendarMonth className=' text-[1.8rem] ' />
+              <div className='flex flex-col ' >
+                <h2 className=' text-[.75rem]   ' >{data.start}</h2>
+                <h2 className=' text-[.6rem]   ' >{data.startTime}</h2>
+              </div>
+              <p>---</p>
+              {/* <MdCalendarMonth className=' text-[1.6rem] ' /> */}
+              <div className='flex flex-col ' >
+                <h2 className=' text-[.75rem]   '>{data.end}</h2>
+                <h2 className=' text-[.6rem]  ' >{data.endTime}</h2>
+              </div>
             </div>
-            <div className=' flex items-center gap-[.3rem]   ' >
-              <PiMapPinArea />
-              {data.type}
+            <div className=' flex items-center gap-[1rem] text-[.7rem] ml-[.4rem]  ' >
+              <PiMapPinArea className=' text-[.8rem] font-[700]  ' />
+              <div>
+
+                {data.type}
+              </div>
             </div>
           </div>
           <div className='flex items-end duration-500 ' >
