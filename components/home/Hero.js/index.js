@@ -122,6 +122,7 @@ const HomeHero = () => {
                 hover:from-[#ebf3ff] hover:bg-gradient-to-r hover:via-[#ebf3ff] hover:to-transparent">
                   {/* This div will change background color only when hovered */}
                   <Link
+                    
                     className="flex items-center"
                     href={href}
                     target="_blank"
