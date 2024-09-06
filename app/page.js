@@ -24,13 +24,13 @@ const AppPage = () => {
       <div className=' h-[calc(100vh-3.5rem)] w-[100%] ' >
         <HomeHero />
       </div>
-      <div className=' mt-[8rem] ' >
+      <div className=' lg:mt-[8rem] mt-[4rem] ' >
 
         <HomeEventsComponent />
       </div>
       <OurMission />
       <HomeWhatWeDo />
-      <div className='xl:px-[8rem] px-[6rem]'>
+      <div className='xl:px-[8rem] md_desktop:px-[6rem]  lg:px-[5rem] md:px-[3rem] px-[2rem]  '>
         <HomeRecentContribution />
       </div>
       <HomeStoriesOfImpact />

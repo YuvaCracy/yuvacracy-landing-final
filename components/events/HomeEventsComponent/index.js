@@ -46,7 +46,7 @@ const HomeEventsComponent = ({ pastEvents = false }) => {
   }, []);
 
   return (
-    <div className="w-[100%] xl:px-[8rem] px-[6rem]">
+    <div className="w-[100%] xl:px-[8rem] md_desktop:px-[6rem] lg:px-[5rem] md:px-[3rem] md_phone:px-[2rem] px-[1rem]  ">
 
       {!pastEvents && <CustomTitle
         title={"Upcoming Events"}
@@ -61,7 +61,7 @@ const HomeEventsComponent = ({ pastEvents = false }) => {
         </p>}
 
       {/* Event cards */}
-      <div className="flex flex-nowrap gap-[1.5rem]  mt-[2rem]">
+      <div className="flex lg:flex-nowrap flex-wrap sm_desktop:gap-[1.5rem]  md:gap-[1rem] gap-[2rem] mt-[2rem]">
         {filteredEvents &&
           filteredEvents.slice(0, 3).map((data, index) => {
             return <EventCard key={index} data={data} />;
