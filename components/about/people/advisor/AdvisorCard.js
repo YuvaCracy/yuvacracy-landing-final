@@ -3,7 +3,7 @@ import React from 'react'
 
 const AdvisorCard = ({ data }) => {
   return (
-    <div className=' w-[100%] flex gap-[1rem] font-openSans text-[.95rem] ' >
+    <div className=' w-[100%] flex sm:flex-row flex-col gap-[1rem] font-openSans text-[.95rem] ' >
 
       <div className='flex   gap-[.8rem] flex-col w-[14rem] ' >
         <Image
@@ -18,7 +18,7 @@ const AdvisorCard = ({ data }) => {
 
       </div>
 
-      <div className=' flex flex-col gap-[1rem] w-[calc(100%-14rem)] ' >
+      <div className=' flex flex-col gap-[1rem] sm:w-[calc(100%-14rem)] ' >
         <div className='' >
           <span className='font-bold ' >Background:</span>
           <span className=' ml-[.3rem] text-opacity-[8]  ' >{data.bio}</span>
