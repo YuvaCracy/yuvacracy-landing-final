@@ -36,6 +36,7 @@ module.exports = {
       screens: {
         'md_desktop': '1200px',
         'sm_desktop': '1100px',
+        'xsm_desktop': '1060px',
         'md_phone': '530px',
         'phone': "470px",
         'sm_phone': '380px',

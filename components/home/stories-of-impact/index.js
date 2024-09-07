@@ -25,7 +25,7 @@ const HomeStoriesOfImpact = () => {
       <div className="w-full embla">
         <div className="w-full embla__viewport" ref={emblaRef}>
           <div className="flex w-full embla__container">
-            {storiesOfImpactData.map((data, index) => {
+            {storiesOfImpactData.slice(1, 4).map((data, index) => {
               return (
                 <div key={index} className="flex justify-center w-[100%] embla__slide">
                   <StoriesImpactCard data={data} />
