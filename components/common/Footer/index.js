@@ -150,7 +150,7 @@ const Footer = () => {
           {/* Contact and Social Section */}
           <div className="flex-1">
             <h2 className=" font-montserrat font-[600] text-[1.15rem] text-primary ">Contact Us</h2>
-            <ul>
+            <ul> 
               <li className="text-[.9rem]">Phone: +91 8987476709</li>
               <li>
                 <a href="mailto:info@yuvacracy.org" className="text-black hover:underline font-openSans text-[.9rem] text-opacity-[.8] ">
