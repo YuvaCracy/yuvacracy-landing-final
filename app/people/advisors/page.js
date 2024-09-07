@@ -49,7 +49,7 @@ const Advisor = () => {
           small={true}
         />
 
-        <div className=' mt-[1.5rem] flex flex-col gap-[2rem] ' >
+        <div className=' mt-[1.5rem] flex flex-col sm:gap-[2rem] gap-[3rem] ' >
           {
             advisorData.map((data, index) => {
               return (

@@ -40,8 +40,10 @@ import PartnerImage from "./assets/about/people/partner/partner.png"
 import TeamMemberImage from "./assets/about/people/team/team-member.png"
 import YuvaCracyAboutImage1 from "./assets/about/org/yuvacracy/about.png"
 import YuvaCracyAboutImage2 from "./assets/about/org/yuvacracy/about-1.png"
-import YuvaCracyAboutImage3 from "./assets/about/org/yuvacracy/abaout-2.png"
+import YuvaCracyAboutImage3 from "./assets/about/org/yuvacracy/about-2.png"
+import YuvaCracyAboutImage21 from "./assets/about/org/yuvacracy/about-12.png"
 import GetInvolved1Image from "./assets/home/get-involved/get-involved1.png"
+
 
 export {
   HeroImage,
@@ -81,5 +83,6 @@ export {
   YuvaCracyAboutImage1,
   YuvaCracyAboutImage2,
   YuvaCracyAboutImage3,
+  YuvaCracyAboutImage21,
   GetInvolved1Image
 }
