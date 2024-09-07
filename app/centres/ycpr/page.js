@@ -36,7 +36,7 @@ const Ycpr = () => {
       <SuspenseHandler>
         <ScrollHandler />
       </SuspenseHandler>
-      <div className="xl:px-[8rem] px-[6rem] flex flex-col">
+      <div className="xl:px-[8rem] md:px-[6rem] px-[1rem] flex flex-col">
         <SubHead
           title={"YuvaCracy Centre for Policy Research (YCPR)"}
           subtitle={
@@ -44,7 +44,7 @@ const Ycpr = () => {
           }
         />
 
-        <ImageTextComp1
+        <ImageTextComp1 
           title={"Youth Leadership Development"}
           subtitle={"Fostering the Next Generation of Leaders"}
           imgSrc={MeetingImg}

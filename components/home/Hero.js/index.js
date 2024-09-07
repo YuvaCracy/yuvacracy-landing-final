@@ -1,32 +1,91 @@
-import PrimaryButton from '@/components/common/Button/PrimaryButton'
-import SecondaryButton from '@/components/common/Button/SecondaryButton'
-import { HeroImage } from '@/public/assetManager'
-import Image from 'next/image'
-import React, { Suspense, useState } from 'react'
-import { useRouter } from "nextjs-toploader/app"
-import Link from 'next/link'
-import { FaFacebookF, FaLinkedinIn, FaTwitter, FaYoutube } from 'react-icons/fa'
+import PrimaryButton from "@/components/common/Button/PrimaryButton";
+import SecondaryButton from "@/components/common/Button/SecondaryButton";
+import { HeroImage } from "@/public/assetManager";
+import Image from "next/image";
+import React, { Suspense, useState } from "react";
+import { useRouter } from "nextjs-toploader/app";
+import Link from "next/link";
+import {
+  FaFacebookF,
+  FaLinkedinIn,
+  FaTwitter,
+  FaYoutube,
+} from "react-icons/fa";
 import { FaMedium } from "react-icons/fa6";
-import { AiFillInstagram } from 'react-icons/ai'
-import { MdClose } from 'react-icons/md'
+import { AiFillInstagram } from "react-icons/ai";
+import { MdClose } from "react-icons/md";
 
 const GrowthSVG = () => {
   return (
-    <>
-      <svg xmlns="http://www.w3.org/2000/svg" width="26" height="27" viewBox="0 0 26 27" fill="none">
-        <g clipPath="url(#clip0_3383_5502)">
-          <path d="M23.5625 5.89453L13.8125 15.6445L9.75 11.582L2.4375 18.8945" stroke="#13B900" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-          <path d="M23.5625 12.3945V5.89453H17.0625" stroke="#13B900" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-        </g>
-        <defs>
-          <clipPath id="clip0_3383_5502">
-            <rect width="26" height="26" fill="white" transform="translate(0 0.207031)" />
-          </clipPath>
-        </defs>
-      </svg>
-    </>
-  )
-}
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="26"
+      height="27"
+      viewBox="0 0 26 27"
+      fill="none"
+    >
+      <g clipPath="url(#clip0_3383_5502)">
+        <path
+          d="M23.5625 5.89453L13.8125 15.6445L9.75 11.582L2.4375 18.8945"
+          stroke="#13B900"
+          strokeWidth="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+        <path
+          d="M23.5625 12.3945V5.89453H17.0625"
+          stroke="#13B900"
+          strokeWidth="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+      </g>
+      <defs>
+        <clipPath id="clip0_3383_5502">
+          <rect
+            width="26"
+            height="26"
+            fill="white"
+            transform="translate(0 0.207031)"
+          />
+        </clipPath>
+      </defs>
+    </svg>
+  );
+};
+
+const socialIcons = [
+  {
+    icon: <FaFacebookF className="w-8 h-8" />,
+    href: "https://www.facebook.com/YuvaCracyOrg",
+    label: "Facebook",
+  },
+  {
+    icon: <AiFillInstagram className="w-8 h-8" />,
+    href: "https://www.instagram.com/YuvaCracyOrg",
+    label: "Instagram",
+  },
+  {
+    icon: <FaTwitter className="w-8 h-8" />,
+    href: "https://www.twitter.com/YuvaCracyOrg",
+    label: "Twitter",
+  },
+  {
+    icon: <FaYoutube className="w-8 h-8" />,
+    href: "https://www.youtube.com/@YuvaCracyOrg",
+    label: "YouTube",
+  },
+  {
+    icon: <FaLinkedinIn className="w-8 h-8" />,
+    href: "https://in.linkedin.com/company/YuvaCracyOrg",
+    label: "LinkedIn",
+  },
+  {
+    icon: <FaMedium className="w-8 h-8" />,
+    href: "https://medium.com/@YuvaCracyOrg/",
+    label: "Medium",
+  },
+];
 
 const HomeHero = () => {
   const router = useRouter();
@@ -68,8 +127,8 @@ const HomeHero = () => {
       <div className='absolute z-[10] bottom-0 right-[-5rem] lg:right-0 flex justify-end lg:w-[100%] md_phone:w-[180vw] sm_phone:w-[200vw] w-[230vw]  ' >
         <Image
           src={HeroImage}
-          alt='YuvaCracy'
-          className='pointer-events-none select-none '
+          alt="YuvaCracy"
+          className="pointer-events-none select-none"
         />
       </div>
 
@@ -106,7 +165,7 @@ const HomeHero = () => {
 
 
     </div>
-  )
-}
+  );
+};
 
-export default HomeHero
+export default HomeHero;

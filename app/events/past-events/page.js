@@ -13,7 +13,7 @@ const PastEvents = () => {
         <ScrollHandler />
       </SuspenseHandler>
 
-      <div id="past-div" className="xl:px-[8rem] px-[6rem] pt-20 flex flex-col">
+      <div id="past-div" className="xl:px-[8rem] md_desktop:px-[6rem] lg:px-[5rem] md:px-[3rem] md_phone:px-[2rem] px-[1rem] pt-20 ">
         <CustomTitle title={"Past Events"} subtitle={"By YuvaCracy"} />
         <span className=" text-textSecond font-openSans text-md">
           Explore our past events to engage with leading experts and gain fresh

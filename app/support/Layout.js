@@ -26,7 +26,7 @@ const navItems = [
 
 const SupportLayout = ({children}) => {
   return (
-    <div>
+    <div className='w-[100%] overflow-clip'>
         <MainNav />
         <SubHero title={"Support Our Mission"} subtitle={"Your support helps us empower the next generation of leaders. By contributing, you’re fueling youth-driven initiatives that inspire civic participation and community development. Together, we can make a lasting impact."} img={SupportHeroImg}/>
         <SubNav navItems={navItems} />

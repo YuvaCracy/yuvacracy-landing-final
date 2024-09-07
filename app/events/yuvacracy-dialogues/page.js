@@ -33,9 +33,12 @@ const YuvaCracyDialgues = () => {
       <SuspenseHandler>
         <ScrollHandler />
       </SuspenseHandler>
-      <div id="yuvacracy-diag-div" className="xl:px-[8rem] px-[6rem] py-20 flex flex-col">
-        <div className="flex items-center pb-14">
-          <div className="flex flex-col w-[50%]">
+      <div
+        id="yuvacracy-diag-div"
+        className="xl:px-[8rem] md_desktop:px-[6rem] lg:px-[5rem] md:px-[3rem] md_phone:px-[2rem] px-[1rem] py-20 flex flex-col"
+      >
+        <div className="flex flex-col items-center pb-14 md:flex-row">
+          <div className="flex flex-col md:w-[50%] w-full">
             <CustomTitle
               title={"About YuvaCracy Dialogues"}
               subtitle={"What Are YuvaCracy Dialogues?"}
@@ -48,8 +51,12 @@ const YuvaCracyDialgues = () => {
               foster a culture of informed civic engagement.
             </span>
           </div>
-          <div className="w-[50%] flex justify-center">
-            <Image alt="YuvaCracy is a foundation for Youth" className="w-[24rem] pointer-events-none select-none " src={YuvaDialoguesImg} />
+          <div className="md:w-[50%] mt-20 w-full flex justify-center">
+            <Image
+              alt="YuvaCracy is a foundation for Youth"
+              className="w-[24rem] pointer-events-none select-none "
+              src={YuvaDialoguesImg}
+            />
           </div>
         </div>
 
@@ -58,27 +65,30 @@ const YuvaCracyDialgues = () => {
           title={"Upcoming Dialogues"}
           subtitle={"Join the Conversation"}
         />
-        <div className="flex items-center">
-          <div className="flex flex-col w-[50%]">
-            <div>
+        <div className="flex flex-col md:flex-row">
+          <div className="flex flex-col md:w-[50%] w-full">
+            <div className="flex flex-col">
               <span className="text-lg text-textSecond">
                 Stay informed and engaged with our upcoming dialogues. Be a part
                 of the conversation that shapes the future.
               </span>
-              <Image alt="YuvaCracy is a foundation for Youth" className="pointer-events-none select-none pt-14 " src={YuvaDialoguesCrowd} />
+              <Image
+                alt="YuvaCracy is a foundation for Youth"
+                className="pointer-events-none select-none pt-14 "
+                src={YuvaDialoguesCrowd}
+              />
             </div>
           </div>
-          <div className="w-[50%] flex flex-col justify-center gap-4 px-10">
+          <div className="md:w-[50%] w-full mt-12 flex flex-col justify-center gap-4 md:px-10">
             {dialogueEventData.map((data, ind) => (
-              <div
-                key={ind}
-                className=" flex rounded-lg shadow-md bg-[#f8fafe]"
-              >
-                <div className="h-[6rem] flex items-center px-2">
-                  {" "}
+              <div key={ind} className="flex rounded-lg shadow-md bg-[#f8fafe]">
+                {/* Icon container */}
+                <div className="md:h-[6rem] h-auto w-[20%] flex items-center justify-center px-2">
                   <PiChatCircleDots className="w-10 h-10" />
                 </div>
-                <div className="flex flex-col justify-center">
+
+                {/* Text container */}
+                <div className="flex flex-col justify-center flex-grow px-4">
                   <span className="text-lg font-semibold font-montserrat">
                     {data.name} ({data.date})
                   </span>

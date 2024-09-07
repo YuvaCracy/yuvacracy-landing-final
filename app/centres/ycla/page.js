@@ -46,7 +46,7 @@ const Ycla = () => {
       <SuspenseHandler>
         <ScrollHandler />
       </SuspenseHandler>
-      <div id="ycla-div" className="xl:px-[8rem] px-[6rem] flex flex-col">
+      <div id="ycla-div" className="xl:px-[8rem] md_desktop:px-[6rem] lg:px-[5rem] md:px-[3rem] md_phone:px-[2rem] px-[1rem] flex flex-col">
         <SubHead
           title={"YuvaCracy Centre for Legal Affairs (YCLA)"}
           subtitle={

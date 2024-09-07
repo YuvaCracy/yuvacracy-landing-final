@@ -42,6 +42,7 @@ module.exports = {
         'sm_phone': '380px',
       },
     },
+    
   },
   plugins: [],
 };
