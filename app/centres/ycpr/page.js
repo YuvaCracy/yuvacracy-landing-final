@@ -44,7 +44,7 @@ const Ycpr = () => {
           }
         />
 
-        <ImageTextComp1
+        <ImageTextComp1 
           title={"Youth Leadership Development"}
           subtitle={"Fostering the Next Generation of Leaders"}
           imgSrc={MeetingImg}
