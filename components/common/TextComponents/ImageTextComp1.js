@@ -11,17 +11,17 @@ const ImageTextComp1 = ({
   mirror = false,
 }) => {
   return (
-    <div className="flex items-center pt-20">
+    <div className="flex flex-col items-center pt-20 pb-4 md:pb-12 md:flex-row">
       {mirror ? (
         <>
-          <div className="w-[50%] flex justify-left">
+          <div className="md:w-[50%] w-full flex md:justify-start order-2 md:order-none">
             <Image
               alt="YuvaCracy is a foundation for Youth"
-              className="w-[36rem]"
+              className="w-[36rem] md:mr-4 "
               src={imgSrc}
             />
           </div>
-          <div className="flex flex-col w-[50%]">
+          <div className="flex flex-col md:w-[50%] w-full order-1 md:order-none">
             <CustomTitle title={title} subtitle={subtitle} />
             <span className="text-lg text-textSecond">{desc}</span>
 
@@ -41,7 +41,7 @@ const ImageTextComp1 = ({
         </>
       ) : (
         <>
-          <div className="flex flex-col w-[50%]">
+          <div className="flex flex-col md:w-[50%] w-full order-1 md:order-none">
             <CustomTitle title={title} subtitle={subtitle} />
             <span className="text-lg text-textSecond">{desc}</span>
 
@@ -58,10 +58,10 @@ const ImageTextComp1 = ({
               </div>
             )}
           </div>
-          <div className="w-[50%] flex justify-end">
+          <div className="md:w-[50%] w-full flex md:justify-end justify-center order-2 md:order-none">
             <Image
               alt="YuvaCracy is a foundation for Youth"
-              className="w-[28rem]"
+              className="md:w-[28rem] md:ml-4"
               src={imgSrc}
             />
           </div>

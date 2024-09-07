@@ -58,7 +58,7 @@ const WorkWithUs = () => {
       <SuspenseHandler>
         <ScrollHandler />
       </SuspenseHandler>
-      <div id="work-div" className="xl:px-[8rem] px-[6rem] pb-[16rem]">
+      <div id="work-div" className="xl:px-[8rem] md_desktop:px-[6rem] lg:px-[5rem] md:px-[3rem] md_phone:px-[2rem] px-[1rem] pb-[16rem]">
         <SubHead
           title={"Collaborate with YuvaCracy"}
           subtitle={
@@ -99,11 +99,9 @@ const WorkWithUs = () => {
         </div>
 
         {/* Slider Component */}
-        <div className="py-6">
           <CareerSliderComponent />
-        </div>
         {/* Get Involved */}
-        <div className="flex flex-col py-2">
+        <div className="flex flex-col w-full py-2">
           <div className="flex flex-col py-8 space-y-2">
             <span className="text-3xl font-bold text-center font-montserrat">
               How to get Involved

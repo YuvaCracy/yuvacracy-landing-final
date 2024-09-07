@@ -43,7 +43,7 @@ const WriteForUs = () => {
       <SuspenseHandler>
         <ScrollHandler />
       </SuspenseHandler>
-      <div id="write-div" className="xl:px-[8rem] px-[6rem] flex flex-col">
+      <div id="write-div" className="xl:px-[8rem] md_desktop:px-[6rem] lg:px-[5rem] md:px-[3rem] md_phone:px-[2rem] px-[1rem] flex flex-col">
         {/* Page Title */}
         <SubHead
           title={"Write for Us"}
@@ -61,8 +61,8 @@ const WriteForUs = () => {
         </div>
 
         {/* Comp1 */}
-        <div className="w-full flex justify-end">
-          <div className="px-12">
+        <div className="flex justify-end w-full">
+          <div className="md:px-12">
             <TextComponent1
               heading={"Make an Impact with Your Ideas"}
               text={text}
@@ -89,7 +89,7 @@ const WriteForUs = () => {
             subtitle={"How to Contribute \xa0 \xa0"}
           />
         </div>
-        <span className="-mt-6 text-lg  text-textSecond font-openSans">
+        <span className="-mt-6 text-lg text-textSecond font-openSans">
           We encourage anyone passionate about youth leadership and civic
           engagement to submit their work. Follow these guidelines for a
           successful submission:

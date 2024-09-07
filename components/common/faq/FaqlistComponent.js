@@ -11,12 +11,12 @@ const FaqlistComponent = ({ data, index }) => {
   };
 
   return (
-    <div onClick={toggleFaq} className="py-[1rem] cursor-pointer relative px-[2rem] rounded-xl border-[1px] border-gray-200">
+    <div onClick={toggleFaq} className="py-[1rem] cursor-pointer relative md_phone:px-[2rem] px-[1rem] rounded-xl border-[1px] border-gray-200">
       <button
-        className="flex items-center justify-between w-full text-left focus:outline-none"
+        className="flex items-center gap-[.5rem] justify-between w-full text-left focus:outline-none"
 
       >
-        <div className="font-[600] flex w-fit gap-[.4rem] font-montserrat"><span>{index + 1 + "."}</span> {data.question}</div>
+        <div className="font-[600] flex w-fit gap-[.4rem] mr-[1.5rem] font-montserrat"><span>{index + 1 + "."}</span> {data.question}</div>
         <div className={`absolute top-[1rem] duration-300 flex justify-center items-center right-[1rem] text-[1.2rem] size-[1.8rem] rounded-full border-[1px] ${isOpen ? 'rotate-180' : 'rotate-0'}`}>
           <IoIosArrowDown />
         </div>

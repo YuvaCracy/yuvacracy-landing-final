@@ -25,7 +25,7 @@ const PartnerWithUs = () => {
       </SuspenseHandler>
       <div
         id="partner-div"
-        className="flex flex-col xl:px-[8rem] px-[6rem] pt-20"
+        className="flex flex-col xl:px-[8rem] md_desktop:px-[6rem] lg:px-[5rem] md:px-[3rem] md_phone:px-[2rem] px-[1rem] pt-20"
       >
         <CustomTitle
           title={"Partner with Us"}
@@ -39,11 +39,11 @@ const PartnerWithUs = () => {
           informed civic engagement.
         </span>
 
-        <div className="flex w-full py-24">
-          <div className="w-[40%] flex justify-left">
-            <Image alt="YuvaCracy is a foundation for youth" className="w-[25rem]" src={CollabImg} />
+        <div className="flex flex-col w-full py-24 md:flex-row">
+          <div className="md:w-[40%] md:mr-12 w-full flex md:justify-left justify-center">
+            <Image alt="YuvaCracy is a foundation for youth" className="md:w-[28rem] w-[20rem]" src={CollabImg} />
           </div>
-          <div className="w-[60%] flex flex-col gap-4 px-4">
+          <div className="md:w-[40%] w-full flex flex-col gap-4 px-4">
             <CustomTitle
               title={"Why Collaborate With Us"}
               subtitle={"YuvaCracy"}

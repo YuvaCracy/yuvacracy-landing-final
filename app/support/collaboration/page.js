@@ -31,22 +31,27 @@ const Collaboration = () => {
       </SuspenseHandler>
       <div
         id="collab-div"
-        className="flex flex-col xl:px-[8rem] px-[6rem] pt-20"
+        className="flex flex-col xl:px-[8rem] md_desktop:px-[6rem] lg:px-[5rem] md:px-[3rem] md_phone:px-[2rem] px-[1rem]"
       >
+        <div className="pt-12 md:pt-0">
+
         <CustomTitle
           title={"Types Of Collaboration"}
           subtitle={"In YuvaCracy"}
         />
-        <div className="flex justify-between w-full">
+        </div>
+        <div className="flex flex-col justify-between w-full md:flex-row">
           {data.map((item, ind) => (
-            <div key={ind} className="flex flex-col gap-4 p-4 mx-4">
+            <div key={ind} className="flex flex-row gap-4 p-4 m x-4 md:flex-col">
               <div className="w-14 h-14 bg-[#eef4ff] rounded-full flex items-center justify-center ">
                 <MdAutoGraph className="w-8 h-8" />
               </div>
-              <span className="text-xl font-semibold font-montserrat">
+              <div className=" md:flex-col">
+              <div className="text-xl font-semibold font-montserrat">
                 {item.name}
-              </span>
+              </div>
               <span>{item.desc}</span>
+              </div>
             </div>
           ))}
         </div>

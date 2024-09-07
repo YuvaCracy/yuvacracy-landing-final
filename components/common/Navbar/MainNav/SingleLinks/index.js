@@ -1,9 +1,9 @@
 import React from 'react'
 import Link from 'next/link'
 
-const SingleLink = ({ data }) => {
+const SingleLink = ({ data, showNav, setShowNav = () => { } }) => {
   return (
-    <Link href={data.href} className='text-heading font-montserrat font-[500] ' >
+    <Link onClick={() => setShowNav(!showNav)} href={data.href} className='lg:text-heading text-white font-montserrat font-[500] ' >
       {data.title}
     </Link>
   )

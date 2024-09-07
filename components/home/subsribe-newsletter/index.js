@@ -18,17 +18,17 @@ const HomeSubsribeNewsLetter = () => {
   };
 
   return (
-    <div className='w-[100%] flex justify-center xl:px-[8rem] px-[6rem] mt-[8rem] h-[22rem]'>
-      <div className="w-[100%] relative overflow-hidden h-[23rem] flex flex-col items-center justify-center bg-primary rounded-xl">
-        <div className='size-[16rem] absolute rounded-full bg-transparent border-[4px] border-white top-[-9rem] left-[-9rem] border-opacity-[.4]' />
-        <div className='size-[16rem] absolute rounded-full bg-transparent border-[4px] border-white bottom-[-9rem] right-[-9rem]' />
+    <div className='w-[100%] flex justify-center xl:px-[8rem] md_desktop:px-[6rem] lg:px-[5rem] md:px-[3rem] md_phone:px-[2rem] px-[1rem] mt-[8rem] lg:h-[23rem] h-[30rem] '>
+      <div className="w-[100%] relative overflow-hidden lg:h-[23rem] h-[30rem] flex flex-col items-center justify-center p-[2rem] bg-primary rounded-xl">
+        <div className='lg:size-[16rem] size-[12rem] absolute rounded-full bg-transparent border-[4px] border-white top-[-9rem] left-[-9rem] border-opacity-[.4]' />
+        <div className='lg:size-[16rem] size-[12rem] absolute rounded-full bg-transparent border-[4px] border-white bottom-[-9rem] right-[-9rem]' />
 
         {!isSubscribed ? (
-          <>
-            <h2 className="text-[#E0E0E0] text-[2.5rem] font-montserrat font-[600] text-center">Subscribe to our Newsletter</h2>
-            <p className="mt-[.5rem] text-[1.04rem] font-openSans text-center text-[#B3B3B3]">Subscribe to our newsletter for the latest updates and events.</p>
+          <div className='flex flex-col md:block ' >
+            <h2 className="text-[#E0E0E0] md:text-[2.5rem]  text-[2rem] font-montserrat font-[600] text-center">Subscribe to our Newsletter</h2>
+            <p className="mt-[.5rem] md:text-[1.04rem] text-[.95rem]  font-openSans text-center text-[#B3B3B3]">Subscribe to our newsletter for the latest updates and events.</p>
 
-            <form onSubmit={handleSubmit} className="flex items-center justify-center gap-[1rem] mt-[3rem]">
+            <form onSubmit={handleSubmit} className="flex md:flex-row flex-col items-center justify-center gap-[1rem] mt-[3rem]">
               <input
                 type="text"
                 value={firstName}
@@ -52,7 +52,7 @@ const HomeSubsribeNewsLetter = () => {
                 Subscribe Now
               </button>
             </form>
-          </>
+          </div>
         ) : (
           <div className="flex flex-col items-center justify-center">
             <CelebrateAnimation />

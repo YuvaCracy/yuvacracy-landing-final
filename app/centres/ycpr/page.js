@@ -36,7 +36,7 @@ const Ycpr = () => {
       <SuspenseHandler>
         <ScrollHandler />
       </SuspenseHandler>
-      <div className="xl:px-[8rem] px-[6rem] flex flex-col">
+      <div className="xl:px-[8rem] px-[6rem] sm_phone:px-[1rem] flex flex-col">
         <SubHead
           title={"YuvaCracy Centre for Policy Research (YCPR)"}
           subtitle={

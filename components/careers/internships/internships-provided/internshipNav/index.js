@@ -1,11 +1,8 @@
-import { useSearchParams } from "next/navigation";
-import SmoothScroll from "@/utils/SmoothScroll";
-
 const InternshipNav = ({ router, path }) => {
   console.log("PathName", path);
   return (
-    <div className="pt-10">
-      <div className="inline-flex p-1 font-openSans text-lg font-semibold gap-1 border-2 rounded-lg">
+    <div className="flex justify-center pt-10 md:justify-normal">
+      <div className="inline-flex gap-1 p-1 text-lg font-semibold border-2 rounded-lg font-openSans">
         <button
           onClick={() => router.push("/careers/internships")}
           className={`px-6 py-2 rounded-md ${
