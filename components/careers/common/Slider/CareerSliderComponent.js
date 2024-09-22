@@ -13,7 +13,7 @@ const CareerSliderComponent = () => {
   const { selectedIndex, scrollSnaps, onDotButtonClick } = useDotButton(emblaApi);
 
   return (
-    <div className='px-[8rem] mt-[8rem] w-full flex flex-col'>
+    <div className='xl:px-[8rem] md_desktop:px-[6rem] lg:px-[5rem] md:px-[3rem] md_phone:px-[2rem] px-[1rem] w-full flex flex-col'>
       {/* slider code */}
       <div className="w-full embla">
         <div className="w-full embla__viewport" ref={emblaRef}>

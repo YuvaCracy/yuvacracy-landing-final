@@ -20,7 +20,7 @@ const CareerOpportunities = () => {
       <SuspenseHandler>
         <ScrollHandler />
       </SuspenseHandler>
-      <div id="career-div" className="xl:px-[8rem] px-[6rem] flex flex-col">
+      <div id="career-div" className="xl:px-[8rem] md_desktop:px-[6rem] lg:px-[5rem] md:px-[3rem] md_phone:px-[2rem] px-[1rem] flex flex-col">
         {/* Page Title */}
         <div className="">
           <SubHead
@@ -38,7 +38,7 @@ const CareerOpportunities = () => {
           />
         </div>
         {/* Comp 1 */}
-        <div className="w-full flex flex-col justify-end">
+        <div className="flex flex-col justify-end w-full">
           <TextComponent1
             heading={"A Mission-Driven Workplace"}
             text={text}
@@ -51,7 +51,7 @@ const CareerOpportunities = () => {
           <CustomTitle title={" Current Openings"} subtitle={"In YuvaCracy"} />
         </div>
 
-        <div className="flex justify-between">
+        <div className="flex flex-col gap-4 md:justify-between md:flex-row ">
           {CareerCardData.list.slice(0, 3).map((item, ind) => {
             return <CareerOppCard key={ind} data={item} />;
           })}

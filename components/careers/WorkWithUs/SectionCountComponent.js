@@ -3,17 +3,23 @@ import React from 'react';
 
 const SectionCountComponent = ({ imageSrc, title, sections }) => {
   return (
-    <div className="flex flex-row items-center pt-20 rounded-lg ">
-      <div className="w-[29rem]">
-        <Image src={imageSrc} alt="Yuvacracy is foundation for youth" className='pointer-events-none select-none' />
+    <div className="flex flex-col-reverse items-center mt-20 rounded-lg md:flex-row">
+      <div className="md:w-[50%] mt-12 w-full">
+        <Image
+          src={imageSrc}
+          alt="Yuvacracy is foundation for youth"
+          className="pointer-events-none select-none"
+        />
       </div>
-      <div className="w-2/3 pl-[12rem] mt-6 ">
+      <div className="md:w-[50%] w-full mt-6">
         <h2 className="mb-4 text-2xl font-bold text-gray-800 font-montserrat">{title}</h2>
-        <ul className=" text-lg pl-6 font-openSans space-y-4 w-[33rem]">
+        <ul className="pl-6 font-openSans space-y-4 md:w-[30rem] w-full">
           {sections.map((partnership, index) => (
-            <li key={index}>
-              <strong className="text-gray-800">{partnership.heading}:</strong>
-              <p className="text-gray-600">{partnership.description}</p>
+            <li key={index} className='md:w-[30rem]'>
+              <div className="text-lg text-gray-800 md:text-lg">
+                {partnership.heading}:
+              </div>
+              <div className="text-gray-600 md:text-lg text-wrap">{partnership.description}</div>
             </li>
           ))}
         </ul>

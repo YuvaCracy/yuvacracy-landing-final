@@ -19,7 +19,7 @@ const InternshipTypes = ({ params }) => {
     case "niti":
       return (
         <CareerLayout>
-          <div id="niti" className="xl:px-[8rem] px-[6rem]">
+          <div id="niti" className="xl:px-[8rem] md_desktop:px-[6rem] lg:px-[5rem] md:px-[3rem] md_phone:px-[2rem]">
             <SuspenseHandler>
               <ScrollHandler />
             </SuspenseHandler>
@@ -32,7 +32,7 @@ const InternshipTypes = ({ params }) => {
     case "vidhi":
       return (
         <CareerLayout>
-          <div id="vidhi" className="xl:px-[8rem] px-[6rem]">
+          <div id="vidhi" className="xl:px-[8rem] md_desktop:px-[6rem] lg:px-[5rem] md:px-[3rem] md_phone:px-[2rem] px-[1rem]">
             <SuspenseHandler>
               <ScrollHandler />
             </SuspenseHandler>

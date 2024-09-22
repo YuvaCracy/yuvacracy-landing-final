@@ -11,7 +11,7 @@ const Internships = () => {
   const path = usePathname();
 
   return (
-    <div className="xl:px-[8rem] px-[6rem]">
+    <div className="xl:px-[8rem] md_desktop:px-[6rem] lg:px-[5rem] md:px-[3rem] md_phone:px-[2rem]">
       <InternshipNav router={router} path={path} />
       <InternComponent {...nitiData} />
       <InternComponent {...vidhiData} />
