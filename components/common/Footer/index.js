@@ -151,14 +151,23 @@ const Footer = () => {
           <div className="flex-1">
             <h2 className=" font-montserrat font-[600] text-[1.15rem] text-primary ">Contact Us</h2>
             <ul>
-              <li>Phone: +91 8987476709</li>
+              <li className="text-black  font-openSans text-[.9rem] text-opacity-[.8] " >Phone: +91 8987476709</li>
               <li>
-                <a href="mailto:info@yuvacracy.org" className="text-black hover:underline font-openSans text-[.9rem] text-opacity-[.8] ">
+                <a href="mailto:yuvacracyorg@gmail.com" className="text-black hover:underline font-openSans text-[.9rem] text-opacity-[.8] ">
                   Email: yuvacracyorg@gmail.com
                 </a>
               </li>
             </ul>
-            <h2 className="mt-6  font-montserrat font-[600] text-[1.15rem] text-primary ">Follow Us</h2>
+
+            <h2 className=" mt-[1rem] font-montserrat font-[600] text-[1.15rem] text-primary ">Quick Links</h2>
+            <ul className="flex flex-col " >
+              <Link href={'https://drive.google.com/file/d/1L5f3bG4ZeCpKJeo6vcN5H1hxn1ERTkrf/view?usp=drive_link'} target="_blank" className="text-black hover:underline font-openSans text-[.9rem] w-fit text-opacity-[.8] " >Brand Identity Guide</Link>
+
+              <Link href={'/?scroll=faq-div'} className="text-black hover:underline font-openSans w-fit text-[.9rem] text-opacity-[.8] " >FAQs</Link>
+
+            </ul>
+
+            <h2 className=" mt-[1rem]  font-montserrat font-[600] text-[1.15rem] text-primary ">Follow Us</h2>
             <div className="flex mt-[1rem] space-x-4">
               <Link href={'https://www.facebook.com/YuvaCracyOrg'} target="_blank" aria-label="Facebook">
                 <FaFacebookF />
