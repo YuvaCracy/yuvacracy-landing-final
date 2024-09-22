@@ -8,7 +8,11 @@ import BreadCrumbs from '@/components/common/BreadCrumbs'
 import List from '@/components/docs/list'
 import advisorData from '@/components/about/people/advisor/advisorData'
 import AdvisorCard from '@/components/about/people/advisor/AdvisorCard'
+
+
+
 const Advisor = () => {
+
   return (
     <div className=' mt-[2rem] ' >
       <div className=' my-[1.5rem]  ' >

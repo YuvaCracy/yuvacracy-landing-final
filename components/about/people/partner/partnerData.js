@@ -1,4 +1,4 @@
-import { PartnerImage } from "@/public/assetManager"
+import { Partner1Image, Partner2Image, Partner3Image, Partner4Image, Partner5Image, Partner6Image, Partner7Image } from "@/public/assetManager"
 
 
 const partnerData = [
@@ -8,7 +8,7 @@ const partnerData = [
     desc: "Their financial support and expertise have enabled us to expand our reach and impact more young leaders across various regions.",
     images: [
       {
-        src: PartnerImage
+        src: Partner1Image
       }
     ]
   },
@@ -18,7 +18,7 @@ const partnerData = [
     desc: "Their financial support and expertise have enabled us to expand our reach and impact more young leaders across various regions.",
     images: [
       {
-        src: PartnerImage
+        src: Partner2Image
       }
     ]
   },
@@ -28,7 +28,7 @@ const partnerData = [
     desc: "Their financial support and expertise have enabled us to expand our reach and impact more young leaders across various regions.",
     images: [
       {
-        src: PartnerImage
+        src: Partner3Image
       }
     ]
   },
@@ -38,7 +38,7 @@ const partnerData = [
     desc: "Their financial support and expertise have enabled us to expand our reach and impact more young leaders across various regions.",
     images: [
       {
-        src: PartnerImage
+        src: Partner4Image
       }
     ]
   },
@@ -48,7 +48,7 @@ const partnerData = [
     desc: "Their financial support and expertise have enabled us to expand our reach and impact more young leaders across various regions.",
     images: [
       {
-        src: PartnerImage
+        src: Partner5Image
       }
     ]
   },
@@ -58,7 +58,17 @@ const partnerData = [
     desc: "Their financial support and expertise have enabled us to expand our reach and impact more young leaders across various regions.",
     images: [
       {
-        src: PartnerImage
+        src: Partner6Image
+      }
+    ]
+  },
+  {
+    name: "Global youth Foundation",
+    field: "Youth Leadership and Development",
+    desc: "Their financial support and expertise have enabled us to expand our reach and impact more young leaders across various regions.",
+    images: [
+      {
+        src: Partner7Image
       }
     ]
   },

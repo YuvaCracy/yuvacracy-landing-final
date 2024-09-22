@@ -9,6 +9,8 @@ import List from '@/components/docs/list'
 import partnerData from '@/components/about/people/partner/partnerData'
 import PartnerCard from '@/components/about/people/partner/PartnerCard'
 
+
+
 const Partner = () => {
   return (
     <div className=' mt-[2rem] ' >

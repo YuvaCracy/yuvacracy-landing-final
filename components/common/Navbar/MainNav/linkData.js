@@ -5,17 +5,17 @@ const aboutLinksData = {
     {
       title: 'The Organization',
       sublinks: [
-        { title: 'About YuvaCracy', href: '/org/yuvacracy' },
+        { title: 'About YuvaCracy', href: '/org/about-yuvacracy' },
         { title: 'Code of Conduct', href: '/org/code-of-conduct' },
         { title: 'Social Media Advisory', href: '/org/social-media-advisory' },
-        { title: 'YuvaCracy - A Safe Place', href: '/org/yuvacracy-a-safe-place' },
+        { title: 'YuvaCracy - A Safe Space', href: '/org/yuvacracy-a-safe-space' },
       ]
     },
     {
       title: 'The People',
       sublinks: [
-        { title: 'Our Advisors', href: '/people/advisors' },
-        { title: 'Our Partners', href: '/people/partners' },
+        { title: 'Our Advisors', href: '/' },
+        { title: 'Our Partners', href: '/people/our-partners' },
         { title: 'Our Team', href: '/people/our-team' },
       ]
     }
