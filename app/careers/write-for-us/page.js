@@ -84,16 +84,16 @@ const WriteForUs = () => {
         {/* Write For US new Component */}
         <div className="flex flex-col text-lg pt-8 space-y-3">
           <div>
-            <span className="font-semibold pr-2">Editorial Rights:</span> YuvaCracy Foundation reserves the right to publish or unpublish your contribution at any time. We may edit and refine your content to align with our editorial standards.
+            <span className="font-semibold">Editorial Rights:</span> YuvaCracy Foundation reserves the right to publish or unpublish your contribution at any time. We may edit and refine your content to align with our editorial standards.
           </div>
           <div>
-            <span className="font-semibold pr-2">Publication Platforms:</span> Your contribution may be published in our magazine, on our website, and across our social media channels.
+            <span className="font-semibold">Publication Platforms:</span> Your contribution may be published in our magazine, on our website, and across our social media channels.
           </div>
           <div>
-            <span className="font-semibold pr-2">Accuracy and Integrity:</span> We may unpublish your contribution if it contains incorrect data or sources.
+            <span className="font-semibold">Accuracy and Integrity:</span> We may unpublish your contribution if it contains incorrect data or sources.
           </div>
           <div>
-            <span className="font-semibold pr-2">Voluntary Contribution:</span> By submitting, you acknowledge that this does not create an employment or partnership relationship with YuvaCracy Foundation. Contributions are made on a voluntary basis and are not financially compensated. 
+            <span className="font-semibold">Voluntary Contribution:</span> By submitting, you acknowledge that this does not create an employment or partnership relationship with YuvaCracy Foundation. Contributions are made on a voluntary basis and are not financially compensated. 
           </div>
         </div>
 
