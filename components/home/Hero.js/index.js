@@ -102,7 +102,7 @@ const HomeHero = () => {
         }
       >
         <div
-          className={` lg:flex hidden group flex-col justify-center py-3 items-center gap-[1rem] xl:w-[7rem] duration-300 w-[4rem] h-[22rem] text-[#5d76a1]  text-[1.5rem]`}
+          className={` lg:flex hidden group flex-col justify-center py-3 items-center gap-[1rem] xl:w-[7rem] duration-300 w-[4rem] h-[22rem] text-[#5d76a1]/90  text-[1.5rem]`}
         >
           {socialIcons.map(({ icon, href, label }, index) => (
             <div
