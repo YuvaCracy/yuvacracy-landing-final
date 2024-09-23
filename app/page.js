@@ -3,7 +3,6 @@
 import React from 'react'
 import PromotionalContent from '@/components/home/promotional'
 import MainNav from '@/components/common/Navbar/MainNav'
-import DevModeOn from '@/components/DevModeOn'
 import HomeEventsComponent from '@/components/events/HomeEventsComponent'
 import OurMission from '@/components/home/mission'
 import HomeWhatWeDo from '@/components/home/what-we-do'
@@ -41,7 +40,7 @@ const AppPage = () => {
       {/* <div className=' h-[100rem] ' >
 
       </div> */}
-      {/* <DevModeOn /> */}
+
 
     </div>
   )

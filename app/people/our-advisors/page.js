@@ -1,6 +1,5 @@
 'use client'
 import React from 'react'
-import DevModeOn from '@/components/DevModeOn'
 import Para from '@/components/docs/para'
 import CustomTitle from '@/components/docs/CustomTitle'
 import Heading from '@/components/docs/Heading'

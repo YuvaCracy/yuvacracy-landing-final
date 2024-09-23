@@ -133,31 +133,26 @@ const HomeHero = () => {
       </div>
 
       <Suspense fallback={
-        <div className={` ${showSocial ? "my-auto" : " ml-[-5rem] "} absolute lg:flex hidden group flex-col justify-center items-center gap-[1rem] text-white xl:w-[4rem] duration-300 w-[3rem] h-[17rem]  top-[calc(50%-14rem)]  bg-primary text-[1.5rem] rounded-r-xl z-[30] `} />
+        <div className={` absolute lg:flex hidden group flex-col justify-center items-center gap-[1rem] text-white xl:w-[4rem] duration-300 w-[10rem] h-[17rem]  top-[calc(50%-14rem)]   text-[1.5rem] rounded-r-xl z-[30] `} />
       } >
-        <div className={` ${showSocial ? "my-auto" : " ml-[-5rem] "} absolute lg:flex hidden group flex-col justify-center items-center gap-[1rem] text-white xl:w-[4rem] duration-300 w-[3rem] h-[17rem]  top-[calc(50%-14rem)]  bg-primary text-[1.5rem] rounded-r-xl z-[30] `} >
-          <div onClick={() => setShowSocial(false)} className=' absolute z-[1]  invisible opacity-0 right-[-1rem] group-hover:visible  group-hover:opacity-100 cursor-pointer  duration-300 top-[-1rem] border-2 border-primary text-primary  bg-white size-[2rem] rounded-full flex items-center justify-center    ' >
-            <MdClose />
-          </div>
-          <Link href={'https://www.facebook.com/YuvaCracyOrg'} target="_blank" aria-label="Facebook">
-            <FaFacebookF />
-            {/* <img src="/icons/facebook.svg" alt="Facebook" className="w-6 h-6" /> */}
-          </Link>
-          <Link href={'https://www.instagram.com/YuvaCracyOrg'} target="_blank" aria-label="Instagram">
-            <AiFillInstagram />
-          </Link>
-          <Link href={'https://www.twitter.com/YuvaCracyOrg'} target="_blank" aria-label="Twitter">
-            <FaTwitter />
-          </Link>
-          <Link href={'https://www.youtube.com/@YuvaCracyOrg'} target="_blank" aria-label="YouTube">
-            <FaYoutube />
-          </Link>
-          <Link href={'https://in.linkedin.com/company/YuvaCracyOrg'} target="_blank" aria-label="LinkedIn">
-            <FaLinkedinIn />
-          </Link>
-          <Link href={'https://medium.com/@YuvaCracyOrg/'} target="_blank" aria-label="Medium">
-            <FaMedium />
-          </Link>
+        <div className={`absolute lg:flex hidden group flex-col justify-center py-3 items-center gap-[1rem] xl:w-[6rem] duration-300 w-[4rem] h-[22rem]  top-[calc(50%-19.5rem)] text-primary/20  text-[1.5rem] z-[30] `} >
+        {socialIcons.map(({ icon, href, label }, index) => (
+                <div
+                  key={index}
+                  className="flex w-full h-full pl-4 hover:border-l-[0.44rem] border-l-transparent border-t-transparent border-b-transparent border-r-transparent hover:border-l-primary transition-all duration-300 hover:text-primary
+                hover:from-[#ebf3ff] hover:bg-gradient-to-r hover:via-[#ebf3ff] hover:to-transparent"
+                >
+                  {/* This div will change background color only when hovered */}
+                  <Link
+                    className="flex items-center"
+                    href={href}
+                    target="_blank"
+                    aria-label={label}
+                  >
+                    <span className="pl-3">{icon}</span>
+                  </Link>
+                </div>
+              ))}
         </div>
 
       </Suspense>
