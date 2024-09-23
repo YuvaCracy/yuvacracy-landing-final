@@ -110,7 +110,7 @@ const HomeHero = () => {
               className="flex w-full h-full pl-4 hover:border-l-[0.44rem] border-l-transparent border-t-transparent border-b-transparent border-r-transparent hover:border-l-primary transition-all duration-300 hover:text-primary
                 hover:from-[#ebf3ff] hover:bg-gradient-to-r hover:via-[#ebf3ff] hover:to-transparent"
             >
-              {/* This div will change background color lol  only when hovered */}
+              {/* This div will change background color  only when hovered */}
               <Link
                 className="flex items-center"
                 href={href}
