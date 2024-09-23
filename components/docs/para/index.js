@@ -8,25 +8,33 @@ const Para = ({ data, styles = "" }) => {
     const parts = text.split('\n');
 
     return parts.map((part, index) => {
-      // Regex to match bold, italic, and content inside < > for URLs and emails
-      const boldItalicRegex = /(\*\*(.*?)\*\*)|(\*(.*?)\*)|<([^>]+)>/g;
+      // Regex to match bold, italic, underline, and content inside < > for URLs and emails
+      const formatRegex = /(\*\*(.*?)\*\*)|(\*(.*?)\*)|(__([^_]+)__)|<([^>]+)>/g;
 
       const formattedText = [];
       let lastIndex = 0;
 
       // Find matches and build the formatted text
-      part.replace(boldItalicRegex, (match, bold, boldText, italic, italicText, angleBracketContent, offset) => {
+      part.replace(formatRegex, (match, bold, boldText, italic, italicText, underline, underlineText, angleBracketContent, offset) => {
         // Push plain text before the match
         if (lastIndex < offset) {
           formattedText.push(part.slice(lastIndex, offset));
         }
 
-        // Handle bold and italic
+        // Handle bold
         if (bold) {
           formattedText.push(<strong key={formattedText.length}>{boldText}</strong>);
-        } else if (italic) {
+        }
+        // Handle italic
+        else if (italic) {
           formattedText.push(<em key={formattedText.length}>{italicText}</em>);
-        } else if (angleBracketContent) {
+        }
+        // Handle underline
+        else if (underline) {
+          formattedText.push(<u key={formattedText.length}>{underlineText}</u>);
+        }
+        // Handle URLs and emails
+        else if (angleBracketContent) {
           // Determine if the content is an email or a URL
           if (angleBracketContent.includes('@')) {
             // It's an email

@@ -31,12 +31,12 @@ const SocialMediaAdvisory = () => {
 
       <div className=' mt-[2rem] ' >
         <CustomTitle
-          title={'Navigating the Digital World with Responsibility'}
+          title={'Navigating the Digital Space with Responsibility'}
           small={true}
         />
         <Para
           data={{
-            para: "YuvaCracy Foundation encourages the responsible, fair, and secure use of social media by all its members. \n\nAs the social media plays a key role in promoting the organization’s events, publications, and initiatives, the organization would like to highlight few key principles and practices that each member should keep in mind to safeguard and enhance both the organization’s reputation and their own public image and career. "
+            para: "YuvaCracy Foundation encourages the responsible, fair, and secure use of social media by all its members. \n\nAs the social media plays a key role in promoting the organization’s events, publications, and initiatives, __the organization would like to highlight few key principles and practices__ that each member should keep in mind to safeguard and enhance both the organization’s reputation and their own public image and career. "
           }}
         />
         <div className=' mt-[.5rem] ' >
@@ -49,7 +49,7 @@ const SocialMediaAdvisory = () => {
                 },
                 {
 
-                  desc: "Your behaviour online should mirror the same standards of conduct expected offline. If a message would be inappropriate in face-to-face conversations, phone calls, or other such mediums, it is equally inappropriate on social media. Any form of abusive personal attacks, threats of violence, or harm will not be tolerated. You are also expected to follow the guidelines mentioned under the  YuvaCracy – A Safe Space."
+                  desc: "Your behaviour online should mirror the same standards of conduct expected offline. If a message would be inappropriate in face-to-face conversations, phone calls, or other such mediums, it is equally inappropriate on social media. Any form of abusive personal attacks, threats of violence, or harm will not be tolerated. You are also expected to follow the guidelines mentioned under the  <yuvacracy.org/org/yuvacracy-a-safe-space>"
                 },
                 {
                   desc: "Although your social media accounts are personal, they are not “private” spaces. Unlike text messages or WhatsApp chats shared with a limited audience, your posts are more public. Therefore, your online interactions should maintain a standard of basic civility. Personal insults and attacks aimed at individuals or organizations are unacceptable. Take a moment to think before posting, and avoid responding impulsively or spontaneously."
@@ -80,7 +80,7 @@ const SocialMediaAdvisory = () => {
         />
         <Para
           data={{
-            para: "We encourage everyone in the YuvaCracy community to follow these simple but important guidelines when engaging on social media:"
+            para: "We encourage everyone in the **YuvaCracy Community** to follow these simple but important guidelines when engaging on social media:"
           }}
         />
         <div className=' mt-[.5rem] ' >
@@ -93,7 +93,7 @@ const SocialMediaAdvisory = () => {
                 },
                 {
                   head: "Thoughtful Posting:",
-                  desc: "Before hitting the \"post\" button, consider the impact of your message. Is it helpful? Is it kind? Does it contribute to a positive conversation?"
+                  desc: "Before hitting the \"post\" button, consider the impact of your message. Is it helpful? Does it contribute to a positive conversation?"
                 },
                 {
                   head: "Responsible Sharing:",
@@ -124,12 +124,13 @@ const SocialMediaAdvisory = () => {
       <div className=' w-full flex flex-col gap-[.8rem] mt-[4rem] ' >
 
         <h3 className='  font-openSans font-[700] text-[1.4rem] ' >Read Also</h3>
-        <Link className="flex items-center font-[500] text-blue-800 font-openSans underline " href={'/org/social-media-advisory'}>
-          YuvaCracy Social Media Advisory{" "}
-        </Link>
         <Link className="flex items-center font-[500] text-blue-800 font-openSans underline " href={'/org/code-of-conduct'}>
           YuvaCracy Code of Conduct{" "}
         </Link>
+        <Link className="flex items-center font-[500] text-blue-800 font-openSans underline " href={'/org/yuvacracy-a-safe-space'}>
+          YuvaCracy – A Safe Space{" "}
+        </Link>
+
 
 
       </div>

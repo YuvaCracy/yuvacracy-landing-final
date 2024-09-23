@@ -286,7 +286,7 @@ const yclaTeamData = [
       phone: "+1 (555) 555-5555",
       youtue: "http://youtuebe.com/"
     },
-    position: "YCPR Team Member",
+    position: "YCLA Team Member",
     images: [
       {
         src: TeamMemberImage
@@ -306,7 +306,7 @@ const yclaTeamData = [
       phone: "+1 (555) 555-5555",
       youtue: "http://youtuebe.com/"
     },
-    position: "YCPR Team Member",
+    position: "YCLA Team Member",
     images: [
       {
         src: TeamMemberImage

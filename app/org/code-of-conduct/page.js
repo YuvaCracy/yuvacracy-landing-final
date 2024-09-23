@@ -20,7 +20,7 @@ const CodeOfConduct = () => {
       <div className='flex flex-col mt-[4rem] gap-[.5rem]  ' >
         <Heading
           data={{
-            head: "Code of Conduct"
+            head: "YUVACRACY Code of Conduct"
           }}
           styles=' uppercase '
         />
@@ -100,7 +100,7 @@ const CodeOfConduct = () => {
                 },
                 {
                   head: "Inappropriate Content:",
-                  desc: "Sharing or displaying offensive images, videos, or other media.You are also expected to follow the guidelines mentioned under the  <https://www.yuvacracy.org/org/yuvacracy-a-safe-place>"
+                  desc: "Sharing or displaying offensive images, videos, or other media.You are also expected to follow the guidelines mentioned under the  <yuvacracy.org/org/yuvacracy-a-safe-space>"
                 },
               ]
             }
@@ -119,7 +119,7 @@ const CodeOfConduct = () => {
         />
         <Para
           data={{
-            para: "We expect all members of the **YuvaCracy community** to conduct themselves with professionalism and integrity. This includes:"
+            para: "We expect all members of the **YuvaCracy Community** to conduct themselves with professionalism and integrity. This includes:"
           }}
         />
         <div className=' mt-[.5rem] ' >
@@ -209,7 +209,7 @@ const CodeOfConduct = () => {
                 },
                 {
                   head: "Expulsion:",
-                  desc: "Immediate removal from an event or the YuvaCracy community, if found guilty."
+                  desc: "Immediate removal from an event or the YuvaCracy Community, if found guilty."
                 },
                 {
                   head: "Reporting to Authorities:",
@@ -235,7 +235,7 @@ const CodeOfConduct = () => {
         />
         <Para
           data={{
-            para: "Your safety is our priority. We encourage everyone to look out for each other and to notify us if they see anything concerning. Weapons, violence, or organized disruptions are not permitted at any **YuvaCracy event.**"
+            para: "Your safety is our priority. We encourage everyone to look out for each other and to notify us if they see anything concerning. Weapons, violence, or organized disruptions are not permitted at any **YuvaCracy Event.**"
           }}
         />
       </div>
@@ -246,7 +246,7 @@ const CodeOfConduct = () => {
         <Link className="flex items-center font-[500] text-blue-800 font-openSans underline " href={'/org/social-media-advisory'}>
           YuvaCracy Social Media Advisory{" "}
         </Link>
-        <Link className="flex items-center font-[500] text-blue-800 font-openSans underline " href={'/org/yuvacracy-a-safe-place'}>
+        <Link className="flex items-center font-[500] text-blue-800 font-openSans underline " href={'/org/yuvacracy-a-safe-space'}>
           YuvaCracy – A Safe Space{" "}
         </Link>
 
