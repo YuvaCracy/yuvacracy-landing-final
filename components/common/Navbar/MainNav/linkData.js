@@ -56,8 +56,8 @@ const CareersData = {
       href: '/careers/write-for-us?scroll=write-div',
     },
     {
-      title: 'Career Opportunities',
-      href: '/careers/career-opportunities?scroll=career-div',
+      title: 'Career Databases',
+      href: '/careers/career-databases?scroll=career-div',
     }
   ]
 }

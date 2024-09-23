@@ -31,10 +31,9 @@ const Collaboration = () => {
       </SuspenseHandler>
       <div
         id="collab-div"
-        className="flex flex-col xl:px-[8rem] md_desktop:px-[6rem] lg:px-[5rem] md:px-[3rem] md_phone:px-[2rem] px-[1rem]"
+        className="flex flex-col xl:px-[8rem] md_desktop:px-[6rem] lg:px-[5rem] md:px-[3rem] md_phone:px-[2rem] px-[1rem] pt-20"
       >
-        <div className="pt-12 md:pt-0">
-
+        <div>
         <CustomTitle
           title={"Types Of Collaboration"}
           subtitle={"In YuvaCracy"}

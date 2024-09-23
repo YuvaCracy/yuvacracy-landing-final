@@ -1,6 +1,5 @@
 'use client'
 import React from 'react'
-import DevModeOn from '@/components/DevModeOn'
 import Para from '@/components/docs/para'
 import CustomTitle from '@/components/docs/CustomTitle'
 import Heading from '@/components/docs/Heading'
@@ -93,7 +92,7 @@ const OurTeam = () => {
           small={true}
         />
 
-        <div className=' mt-[2.5rem] flex flex-wrap  gap-[2rem] ' >
+        <div id='tech-team' className=' mt-[2.5rem] flex flex-wrap  gap-[2rem] ' >
           {
             techTeamData.map((data, index) => {
               return (

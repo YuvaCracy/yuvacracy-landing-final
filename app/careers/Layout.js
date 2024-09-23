@@ -23,8 +23,8 @@ const navItems = [
     id: "write-div",
   },
   {
-    name: "CAREER OPPORTUNITES",
-    link: "/careers/career-opportunities",
+    name: "CAREER DATABASES",
+    link: "/careers/career-databases",
     id: "career-div",
   },
 ];
@@ -37,7 +37,7 @@ const CareerLayout = ({ children }) => {
       <SubHero
         title={"YuvaCracy Careers"}
         subtitle={
-          "Lorem ipsum dolor sit amet consectetur. Semper velit aliquam ametnisl lectus. Integer quis et in vitae nibh nisl. Massa morbi dolorturpis faucibus enim nam. Augue cras posuere sed diam."
+          "Thank you for considering a career with us. We look forward to potentially working together to achieve great things!"
         }
         img={CareersHero1}
       />

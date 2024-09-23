@@ -3,7 +3,6 @@
 import React from 'react'
 import PromotionalContent from '@/components/home/promotional'
 import MainNav from '@/components/common/Navbar/MainNav'
-import DevModeOn from '@/components/DevModeOn'
 import HomeEventsComponent from '@/components/events/HomeEventsComponent'
 import OurMission from '@/components/home/mission'
 import HomeWhatWeDo from '@/components/home/what-we-do'
@@ -19,7 +18,7 @@ import HomeHero from '@/components/home/Hero.js'
 const AppPage = () => {
   return (
     <div className=' w-[100%]  bg-white'>
-      <PromotionalContent />
+      <PromotionalContent /> 
       <MainNav />
       <div className=' h-[calc(100vh-3.5rem)] w-[100%] ' >
         <HomeHero />
@@ -41,7 +40,7 @@ const AppPage = () => {
       {/* <div className=' h-[100rem] ' >
 
       </div> */}
-      {/* <DevModeOn /> */}
+
 
     </div>
   )

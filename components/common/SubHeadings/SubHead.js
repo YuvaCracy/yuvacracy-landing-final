@@ -1,8 +1,8 @@
 import React from "react";
 
-const SubHead = ({title, subtitle}) => {
+const SubHead = ({title, subtitle, noSpace = true}) => {
   return (
-    <div className="flex flex-col w-full pt-20">
+    <div className={`flex flex-col w-full ${noSpace? "pt-20" : ""}`}>
       <span className="text-3xl font-bold font-montserrat">
         {title}
       </span>

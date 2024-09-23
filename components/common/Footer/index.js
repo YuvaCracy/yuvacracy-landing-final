@@ -197,7 +197,7 @@ const Footer = () => {
             <h2>Copyright © YuvaCracy Foundation |</h2>
             <h2>All Rights Reserved |</h2>
             <h2>Designed and Developed by</h2>
-            <Link href={'/careers/work-with-us?scroll=tech'} className=" hover:underline font-openSans text-[.9rem] text-opacity-[.8] ">
+            <Link href={'/people/our-team?scroll=tech-team'} className=" hover:underline font-openSans text-[.9rem] text-opacity-[.8] ">
               YuvaCracy Tech
             </Link>
           </div>
