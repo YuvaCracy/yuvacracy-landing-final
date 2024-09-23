@@ -4,7 +4,7 @@ const nitiData = {
     title: "NITI Internship Program",
     subtitle: "Navigating Policy for Tomorrow",
     desc:
-      "Are you passionate about public policy? The NITI internship offers you the chance to dive deep into the world of governance and policy-making. You'll work alongside experts on critical issues, contributing to research, analysis, and the development of innovative solutions.",
+      "Are you passionate about public policy? The NITI internship offers you the chance to dive deep into the world of governance and policy-making. NITI aims to support research and foster the convergence of ideas, perspectives, and visions to strengthen the nation, uphold its unity and integrity, and drive its progress and comprehensive development.",
     list: [
       {
         head: "Research & Analysis:",

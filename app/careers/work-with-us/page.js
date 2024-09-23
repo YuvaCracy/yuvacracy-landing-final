@@ -1,56 +1,56 @@
 "use client";
-import React, { Suspense } from "react";
+import React from "react";
 import CareerLayout from "../Layout";
-import CustomTitle from "@/components/docs/CustomTitle";
-import TextComponent1 from "@/components/careers/common/TextComponent/TextComponent1";
-import { PartnerWithUsImg } from "@/public/assetManager";
-import SectionCountComponent from "@/components/careers/WorkWithUs/SectionCountComponent";
-import { PartnershipTypesImg } from "@/public/assetManager";
-import { GetInvolved } from "@/public/assetManager";
+// import CustomTitle from "@/components/docs/CustomTitle";
+// import TextComponent1 from "@/components/careers/common/TextComponent/TextComponent1";
+// import { PartnerWithUsImg } from "@/public/assetManager";
+// import SectionCountComponent from "@/components/careers/WorkWithUs/SectionCountComponent";
+// import { PartnershipTypesImg } from "@/public/assetManager";
+// import { GetInvolved } from "@/public/assetManager";
 import SubHead from "@/components/common/SubHeadings/SubHead";
-import StepImageComponent from "@/components/careers/WorkWithUs/StepImageComponent";
-import { p1, p2, p3, p4, p5, p6 } from "@/public/assetManager";
-import PartnersMarquee from "@/components/careers/common/Marquee";
+// import StepImageComponent from "@/components/careers/WorkWithUs/StepImageComponent";
+// import { p1, p2, p3, p4, p5, p6 } from "@/public/assetManager";
+// import PartnersMarquee from "@/components/careers/common/Marquee";
 import SuspenseHandler from "@/utils/SuspenseHandler";
 import ScrollHandler from "@/utils/ScrollHandler";
-import CareerSliderComponent from "@/components/careers/common/Slider/CareerSliderComponent";
+// import CareerSliderComponent from "@/components/careers/common/Slider/CareerSliderComponent";
 
-const images = [p1, p2, p3, p4, p5, p6];
+// const images = [p1, p2, p3, p4, p5, p6];
 
-const heading = "Why Partner with Us?";
-const text =
-  "At YuvaCracy, we believe in collective action for social good. Partnering with us means contributing to impactful projects that foster youth leadership and civic engagement. We invite organizations, educational institutions, and community groups to collaborate with us to create lasting change.";
-const partnerships = [
-  {
-    heading: "Program Support",
-    description: "Contribute resources or expertise to our youth initiatives.",
-  },
-  {
-    heading: "Event Collaboration",
-    description: "Co-host or sponsor events that align with our mission.",
-  },
-  {
-    heading: "Research & Innovation",
-    description:
-      "Work together on projects that drive new insights and solutions.",
-  },
-];
+// const heading = "Why Partner with Us?";
+// const text =
+//   "At YuvaCracy, we believe in collective action for social good. Partnering with us means contributing to impactful projects that foster youth leadership and civic engagement. We invite organizations, educational institutions, and community groups to collaborate with us to create lasting change.";
+// const partnerships = [
+//   {
+//     heading: "Program Support",
+//     description: "Contribute resources or expertise to our youth initiatives.",
+//   },
+//   {
+//     heading: "Event Collaboration",
+//     description: "Co-host or sponsor events that align with our mission.",
+//   },
+//   {
+//     heading: "Research & Innovation",
+//     description:
+//       "Work together on projects that drive new insights and solutions.",
+//   },
+// ];
 
-const steps = [
-  {
-    heading: "Initial Contact",
-    description:
-      "Reach out via our partnership inquiry form to discuss your interest.",
-  },
-  {
-    heading: "Strategic Alignment",
-    description: "We'll have a discussion to ensure our goals align.",
-  },
-  {
-    heading: "Collaboration Agreement",
-    description: "Formalize the partnership with clear objectives and roles.",
-  },
-];
+// const steps = [
+//   {
+//     heading: "Initial Contact",
+//     description:
+//       "Reach out via our partnership inquiry form to discuss your interest.",
+//   },
+//   {
+//     heading: "Strategic Alignment",
+//     description: "We'll have a discussion to ensure our goals align.",
+//   },
+//   {
+//     heading: "Collaboration Agreement",
+//     description: "Formalize the partnership with clear objectives and roles.",
+//   },
+// ];
 
 const WorkWithUs = () => {
   return (
@@ -62,46 +62,61 @@ const WorkWithUs = () => {
         <SubHead
           title={"Collaborate with YuvaCracy"}
           subtitle={
-            "Join forces with us to empower the next generation of leaders and changemakers. By collaborating, we can provide the tools, resources, and support needed to inspire and equip young people to lead with purpose and drive meaningful change. Together, we can foster a future where emerging leaders are not only prepared to face the challenges ahead but are also empowered to create a lasting impact on their communities and the world. Let's unite our efforts to nurture and uplift the leaders of tomorrow."
+            "There's a space for everyone in this movement. We believe in our youth's potential to be leaders and take initiative and accountability for their work, which will be at the heart of our engagement with you."
           }
         />
 
+        <SubHead
+          title={"How to get involved ?"}
+          subtitle={<>
+            {"Exciting times are ahead! We will soon be rolling out the application form for those eager to join us."}
+            <br />
+            <br />
+            <span className="font-bold">
+            {"Stay tuned and check back regularly for "}
+            <span className=" underline underline-offset-2">{"updates!"}</span>
+            </span>
+          </>
+          }
+        />
+
+
         {/* Vision for collab */}
-        <div className="mt-20">
+        {/* <div className="mt-20">
           <CustomTitle
             title={"Our Vision for Collaboration"}
             subtitle={"Advancing Justice Through Law \xa0 \xa0"}
           />
-        </div>
+        </div> */}
 
-        <TextComponent1
+        {/* <TextComponent1
           heading={heading}
           text={text}
           imageSrc={PartnerWithUsImg}
-        />
+        /> */}
 
         {/* Types of Partners */}
-        <SectionCountComponent
+        {/* <SectionCountComponent
           title={"Types of Partnerships"}
           imageSrc={PartnershipTypesImg}
           sections={partnerships}
-        />
+        /> */}
 
         {/* Our Partners */}
-        <div className="pt-20">
+        {/* <div className="pt-20">
           <CustomTitle
             title={"Our Partners in Action"}
             subtitle={"YuvaCracy \xa0 \xa0 \xa0"}
           />
-        </div>
-        <div className="flex items-center justify-between gap-4 py-10">
+        </div> */}
+        {/* <div className="flex items-center justify-between gap-4 py-10">
           <PartnersMarquee images={images} />
-        </div>
+        </div> */}
 
         {/* Slider Component */}
-          <CareerSliderComponent />
+          {/* <CareerSliderComponent /> */}
         {/* Get Involved */}
-        <div className="flex flex-col w-full py-2">
+        {/* <div className="flex flex-col w-full py-2">
           <div className="flex flex-col py-8 space-y-2">
             <span className="text-3xl font-bold text-center font-montserrat">
               How to get Involved
@@ -117,7 +132,7 @@ const WorkWithUs = () => {
             steps={steps}
             buttonText={"Partner With Us"}
           />
-        </div>
+        </div> */}
       </div>
     </CareerLayout>
   );

@@ -93,7 +93,7 @@ const OurTeam = () => {
           small={true}
         />
 
-        <div className=' mt-[2.5rem] flex flex-wrap  gap-[2rem] ' >
+        <div id='tech-team' className=' mt-[2.5rem] flex flex-wrap  gap-[2rem] ' >
           {
             techTeamData.map((data, index) => {
               return (

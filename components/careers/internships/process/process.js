@@ -10,8 +10,7 @@ const Process = () => {
           Process of Selection
         </div>
         <div className="text-md max-w-[35rem] text-textSecond text-center mx-auto">
-          Applying for the NITI and VIDHI internships is straightforward. Follow
-          these steps to start your journey with YuvaCracy.
+        Applying for our internship programs is easy. Just follow these simple steps to begin your journey with the YuvaCracy Foundation.
         </div>
       </div>
       <div className="flex flex-wrap justify-center w-full gap-6 sm_phone::gap-8 md:gap-12">
