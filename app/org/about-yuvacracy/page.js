@@ -70,7 +70,7 @@ const YuvaCracyPage = () => {
         />
         <Para
           data={{
-            para: "Our mission is to empower and position the youth at the nucleus of democracy, fostering their engagement in policy-making and legal spaces. With the guiding principle, \"Of the Youth, By the Youth, and For the Youth,\" we strive to create a lasting impact on the future by shaping informed and empowered leaders.Along with this, YuvaCracy Foundation also tends to cultivate a culture of civic responsibility among youth by equipping them with the knowledge, skills, and platforms to lead change in their communities. We envision a future where every youth of our country is an active participant in the democratic process, contributing to the nation's growth and prosperity. "
+            para: "Our mission is to empower and position the youth at the nucleus of democracy, fostering their engagement in policy-making and legal spaces. With the guiding principle, \"Of the Youth, By the Youth, and For the Youth,\" we strive to create a lasting impact on the future by shaping informed and empowered leaders.\n\nAlong with this, YuvaCracy Foundation also tends to cultivate a culture of civic responsibility among youth by equipping them with the knowledge, skills, and platforms to lead change in their communities. We envision a future where every youth of our country is an active participant in the democratic process, contributing to the nation's growth and prosperity. "
           }}
         />
       </div>
