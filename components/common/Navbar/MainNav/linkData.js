@@ -75,7 +75,7 @@ const eventsData = {
       href: '/events/past-events?scroll=past-div',
     },
     {
-      title: 'Yuvacracy Dialogues',
+      title: 'YuvaCracy Dialogues',
       href: '/events/yuvacracy-dialogues?scroll=yuvacracy-diag-div',
     },
   ]
