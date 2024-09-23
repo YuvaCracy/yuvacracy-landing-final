@@ -19,7 +19,7 @@ const Footer = () => {
             <h2 className=" font-montserrat font-[600] text-[1.15rem] text-primary ">About</h2>
             <ul>
               <li>
-                <Link href={'/org/yuvacracy'} className="text-black hover:underline font-openSans text-[.9rem] text-opacity-[.8] ">
+                <Link href={'/org/about-yuvacracy'} className="text-black hover:underline font-openSans text-[.9rem] text-opacity-[.8] ">
                   About YuvaCracy
                 </Link>
               </li>
