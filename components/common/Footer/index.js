@@ -34,8 +34,8 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link href={'/org/yuvacracy-a-safe-place'} className="text-black hover:underline font-openSans text-[.9rem] text-opacity-[.8] ">
-                  YuvaCracy - A Safe Place
+                <Link href={'/org/yuvacracy-a-safe-space'} className="text-black hover:underline font-openSans text-[.9rem] text-opacity-[.8] ">
+                  YuvaCracy - A Safe Space
                 </Link>
               </li>
             </ul>
