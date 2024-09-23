@@ -27,7 +27,7 @@ const CareerDatabases = () => {
         {/* Page Title */}
         <div className="">
           <SubHead
-            title={"Join the YuvaCracy Team"}
+            title={"Career Databases"}
             subtitle={
               <>
                 {
