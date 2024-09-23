@@ -27,7 +27,7 @@ const BreadCrumbs = () => {
             <div key={index} className="flex items-center">
               <span className=""> <IoIosArrowForward /> </span>
               {isLast ? (
-                <span className="text-gray-400 capitalize cursor-pointer ">{segment == "about-yuvacracy" ? "About-YuvaCracy" : segment}</span>
+                <span className="text-gray-400 capitalize cursor-pointer ">{segment == "about-yuvacracy" ? "About-YuvaCracy" : segment == "yuvacracy-a-safe-space" ? "YuvaCracy-A-Safe-Space" : segment}</span>
               ) : (
                 <Link href={href} className="capitalize hover:text-primary ">
                   {segment}
