@@ -27,7 +27,7 @@ const Partner = () => {
         />
         <Para
           data={{
-            para: "YuvaCracy thrives through the strong, collaborative relationships we have built with our partners. These organizations and individuals share our vision for a more connected, empowered, and inclusive community. Our partners bring diverse perspectives, resources, and expertise that enhance our ability to make a meaningful impact. Together, we work hand-in-hand to develop innovative initiatives, expand our reach, and create opportunities that benefit everyone in our community. We are grateful for their ongoing support and are committed to growing these partnerships as we continue to pursue our shared goals."
+            para: "The YuvaCracy Foundation thrives on the strength of our collaborative partnerships. We proudly work alongside non-profits, educational institutions, corporate sponsors, and government agencies, all of whom share a commitment to our organization's mission"
           }}
           styles=' text-[1rem] '
         />
