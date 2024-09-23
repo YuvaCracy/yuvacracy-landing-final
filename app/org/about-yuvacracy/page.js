@@ -57,7 +57,7 @@ const YuvaCracyPage = () => {
         />
         <Para
           data={{
-            para: "YuvaCracy Foundation is a non-profit organization registered under section 8 of The Companies Act, 2013, with approvals from the Ministry of Corporate Affairs, Ministry of Micro, Small & Medium Enterprises (MSME), and recognition on NGO Darpan (NITI Aayog, Government of India). Committed to excellence, we proudly hold ISO Certification 9001:2015.We are committed to drive meaningful change by empowering young minds to actively engage in the democratic process, fostering India-centric solutions to today’s most pressing challenges.We are continually expanding our reach, guided by the belief that the future of democracy depends on the active involvement and innovative thinking of the next generation."
+            para: "YuvaCracy Foundation is a non-profit organization registered under section 8 of The Companies Act, 2013, with approvals from the Ministry of Corporate Affairs, Ministry of Micro, Small & Medium Enterprises (MSME), and recognition on NGO Darpan (NITI Aayog, Government of India). Committed to excellence, we proudly hold ISO Certification 9001:2015.\n\nWe are committed to drive meaningful change by empowering young minds to actively engage in the democratic process, fostering India-centric solutions to today’s most pressing challenges. We are continually expanding our reach, guided by the belief that the future of democracy depends on the active involvement and innovative thinking of the next generation."
           }}
         />
       </div>

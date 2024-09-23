@@ -26,7 +26,7 @@ const YuvaCracySafePlace = () => {
         />
         <Para
           data={{
-            para: "At YuvaCracy, we are committed to fostering a work environment where every employee is treated with dignity, respect, and fairness. Our goal is to create a professional atmosphere that encourages growth, equal opportunities, and ensures that no employee is subjected to any form of harassment. To uphold this, YuvaCracy enforces a zero-tolerance policy against sexual harassment for all members of our community, as well as for any visitors to our premises."
+            para: "At YuvaCracy, we are committed to fostering a work environment where every employee is treated with dignity, respect, and fairness. Our goal is to create a professional atmosphere that encourages growth, equal opportunities, and ensures that no employee is subjected to any form of harassment. To uphold this, **YuvaCracy enforces a zero-tolerance policy against sexual harassment for all members of our community, as well as for any visitors to our premises.**"
           }}
           styles=' text-[1rem] '
         />
