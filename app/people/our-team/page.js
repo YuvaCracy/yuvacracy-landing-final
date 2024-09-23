@@ -5,7 +5,7 @@ import Para from '@/components/docs/para'
 import CustomTitle from '@/components/docs/CustomTitle'
 import Heading from '@/components/docs/Heading'
 import BreadCrumbs from '@/components/common/BreadCrumbs'
-import teamData from '@/components/about/people/team/teamData'
+import { boardOfDirectorData, teamHeadData, techTeamData, yclaTeamData, ycprTeamData } from '@/components/about/people/team/teamData'
 import TeamCard from '@/components/about/people/team/TeamCard'
 import { IoArrowForward } from 'react-icons/io5'
 import Link from 'next/link'
@@ -26,13 +26,13 @@ const OurTeam = () => {
         />
         <Para
           data={{
-            para: "The heart of YuvaCracy lies in our dedicated and passionate team. Comprising individuals from diverse backgrounds, our team members are united by a common goal: to inspire and empower our community. Each member brings unique skills, perspectives, and energy, contributing to the innovative and inclusive culture that defines YuvaCracy. With a strong commitment to our mission, our team works tirelessly to create a positive impact and foster meaningful connections. We take pride in our collaborative spirit, and together, we are building a platform where every voice is heard, and every individual can thrive."
+            para: "YuvaCracy Foundation is supported by a vibrant team of professionals and volunteers from various fields, including media, law, public policy, tech, and other academia. Our collective commitment to collaboration allows us to harness the strengths of each individual, building a movement that inspires and empowers the next generation of democratic leaders. Together, we are building a movement that empowers the youth to become the voice of tomorrow."
           }}
           styles=' text-[1rem] '
         />
       </div>
 
-      <div className=' mt-[2rem] ' >
+      {/* <div className=' mt-[2rem] ' >
         <CustomTitle
           title={'Meet the People Behind YuvaCracy'}
           small={true}
@@ -43,17 +43,17 @@ const OurTeam = () => {
           }}
         />
 
-      </div>
+      </div> */}
 
       <div className=' mt-[4rem] ' >
         <CustomTitle
-          title={'Our Dedicated Team Members'}
+          title={'Board of Directors'}
           small={true}
         />
 
         <div className=' mt-[2.5rem] flex flex-wrap  gap-[2rem] ' >
           {
-            teamData.map((data, index) => {
+            boardOfDirectorData.map((data, index) => {
               return (
                 <TeamCard
                   key={index}
@@ -64,6 +64,98 @@ const OurTeam = () => {
           }
         </div>
       </div>
+
+
+      <div className=' mt-[4rem] ' >
+        <CustomTitle
+          title={'Team Head (s)'}
+          small={true}
+        />
+
+        <div className=' mt-[2.5rem] flex flex-wrap  gap-[2rem] ' >
+          {
+            teamHeadData.map((data, index) => {
+              return (
+                <TeamCard
+                  key={index}
+                  data={data}
+                />
+              )
+            })
+          }
+        </div>
+      </div>
+
+
+      <div className=' mt-[4rem] ' >
+        <CustomTitle
+          title={'Tech Team'}
+          small={true}
+        />
+
+        <div className=' mt-[2.5rem] flex flex-wrap  gap-[2rem] ' >
+          {
+            techTeamData.map((data, index) => {
+              return (
+                <TeamCard
+                  key={index}
+                  data={data}
+                />
+              )
+            })
+          }
+        </div>
+      </div>
+
+
+      <div className=' mt-[4rem] ' >
+        <CustomTitle
+          title={'YCPR'}
+          small={true}
+        />
+
+        <div className=' mt-[2.5rem] flex flex-wrap  gap-[2rem] ' >
+          {
+            ycprTeamData.map((data, index) => {
+              return (
+                <TeamCard
+                  key={index}
+                  data={data}
+                />
+              )
+            })
+          }
+        </div>
+      </div>
+
+
+
+      <div className=' mt-[4rem] ' >
+        <CustomTitle
+          title={'YCLA'}
+          small={true}
+        />
+
+        <div className=' mt-[2.5rem] flex flex-wrap  gap-[2rem] ' >
+          {
+            yclaTeamData.map((data, index) => {
+              return (
+                <TeamCard
+                  key={index}
+                  data={data}
+                />
+              )
+            })
+          }
+        </div>
+      </div>
+
+      <Para
+        data={{
+          para: "All team members, including those in leadership roles, serve as voluntary contributors to advancing the organization's mission.*"
+        }}
+        styles=' mt-[2rem] text-[1.2rem] '
+      />
 
       <div className=' mt-[3rem] flex flex-col gap-[1rem] font-montserrat text-primary ' >
         <h2 className=' font-[600] text-[1.6rem] ' >Interested to join our team ?</h2>

@@ -9,6 +9,8 @@ import List from '@/components/docs/list'
 import partnerData from '@/components/about/people/partner/partnerData'
 import PartnerCard from '@/components/about/people/partner/PartnerCard'
 
+
+
 const Partner = () => {
   return (
     <div className=' mt-[2rem] ' >
@@ -32,15 +34,15 @@ const Partner = () => {
       </div>
 
       <div className=' mt-[2rem] ' >
-        <CustomTitle
+        {/* <CustomTitle
           title={'Building a Stronger Future Together'}
           small={true}
-        />
-        <Para
+        /> */}
+        {/* <Para
           data={{
             para: "YuvaCracy’s impact is magnified by the incredible partnerships we’ve forged with organizations across the globe. Our partners include non-profits, educational institutions, corporate sponsors, and government agencies, all of whom share our commitment to empowering youth and fostering positive change. Together, we are building a network of support that amplifies our efforts and extends our reach."
           }}
-        />
+        /> */}
         <div className=' mt-[2.5rem] flex flex-wrap  gap-[2rem] ' >
           {
             partnerData.map((data, index) => {
@@ -59,7 +61,7 @@ const Partner = () => {
 
 
 
-      <div className=' mt-[4rem] ' >
+      {/* <div className=' mt-[4rem] ' >
         <CustomTitle
           title={'Why Partner with YuvaCracy?'}
           small={true}
@@ -100,7 +102,7 @@ const Partner = () => {
             }}
           />
         </div>
-      </div>
+      </div> */}
 
     </div>
   )

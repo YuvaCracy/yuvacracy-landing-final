@@ -7,7 +7,7 @@ const Org = () => {
   const router = useRouter()
 
   useEffect(() => {
-    router.push('/org/yuvacracy')
+    router.push('/org/about-yuvacracy')
   }, [router])
   return null;
 }

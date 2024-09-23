@@ -1,9 +1,9 @@
 import { TeamMemberImage } from "@/public/assetManager"
 
 
-const teamData = [
+const boardOfDirectorData = [
   {
-    name: "Joe Bridges",
+    name: "Ashish Mishra",
     socials: {
       twitter: "@joebridges",
       instagram: "@joebridges",
@@ -23,7 +23,7 @@ const teamData = [
     ]
   },
   {
-    name: "Joe Bridges",
+    name: "Jyotsana Singh",
     socials: {
       twitter: "@joebridges",
       instagram: "@joebridges",
@@ -35,7 +35,30 @@ const teamData = [
       phone: "+1 (555) 555-5555",
       youtue: "http://youtuebe.com/"
     },
-    position: "Founder",
+    position: "Director",
+    images: [
+      {
+        src: TeamMemberImage
+      }
+    ]
+  },
+]
+
+const teamHeadData = [
+  {
+    name: "Shivashish Narayan",
+    socials: {
+      twitter: "@joebridges",
+      instagram: "@joebridges",
+      facebook: "joebridges",
+      linkedin: "https://www.linkedin.com/in/abhay-mishra-9669711b5/",
+      github: "https://github.com/joebridges",
+      website: "https://joebridges.com",
+      email: "joe.bridges@example.com",
+      phone: "+1 (555) 555-5555",
+      youtue: "http://youtuebe.com/"
+    },
+    position: "Head – Operations",
     images: [
       {
         src: TeamMemberImage
@@ -43,7 +66,7 @@ const teamData = [
     ]
   },
   {
-    name: "Joe Bridges",
+    name: "Muskan Chawda",
     socials: {
       twitter: "@joebridges",
       instagram: "@joebridges",
@@ -55,7 +78,7 @@ const teamData = [
       phone: "+1 (555) 555-5555",
       youtue: "http://youtuebe.com/"
     },
-    position: "Founder",
+    position: "Membership Head",
     images: [
       {
         src: TeamMemberImage
@@ -63,7 +86,7 @@ const teamData = [
     ]
   },
   {
-    name: "Joe Bridges",
+    name: "Shruti Pathania",
     socials: {
       twitter: "@joebridges",
       instagram: "@joebridges",
@@ -75,7 +98,7 @@ const teamData = [
       phone: "+1 (555) 555-5555",
       youtue: "http://youtuebe.com/"
     },
-    position: "Founder",
+    position: "Head – YCPR",
     images: [
       {
         src: TeamMemberImage
@@ -83,7 +106,7 @@ const teamData = [
     ]
   },
   {
-    name: "Joe Bridges",
+    name: "Abhay Mishra",
     socials: {
       twitter: "@joebridges",
       instagram: "@joebridges",
@@ -95,7 +118,7 @@ const teamData = [
       phone: "+1 (555) 555-5555",
       youtue: "http://youtuebe.com/"
     },
-    position: "Founder",
+    position: "Tech Head ",
     images: [
       {
         src: TeamMemberImage
@@ -103,7 +126,7 @@ const teamData = [
     ]
   },
   {
-    name: "Joe Bridges",
+    name: "Gaurav Pawar",
     socials: {
       twitter: "@joebridges",
       instagram: "@joebridges",
@@ -115,7 +138,30 @@ const teamData = [
       phone: "+1 (555) 555-5555",
       youtue: "http://youtuebe.com/"
     },
-    position: "Founder",
+    position: "PR and Outreach",
+    images: [
+      {
+        src: TeamMemberImage
+      }
+    ]
+  },
+]
+
+const techTeamData = [
+  {
+    name: "S. Eliya",
+    socials: {
+      twitter: "@joebridges",
+      instagram: "@joebridges",
+      facebook: "joebridges",
+      linkedin: "https://www.linkedin.com/in/abhay-mishra-9669711b5/",
+      github: "https://github.com/joebridges",
+      website: "https://joebridges.com",
+      email: "joe.bridges@example.com",
+      phone: "+1 (555) 555-5555",
+      youtue: "http://youtuebe.com/"
+    },
+    position: "UI/ UX Designer ",
     images: [
       {
         src: TeamMemberImage
@@ -123,7 +169,7 @@ const teamData = [
     ]
   },
   {
-    name: "Joe Bridges",
+    name: "Vikalp Sharma",
     socials: {
       twitter: "@joebridges",
       instagram: "@joebridges",
@@ -135,7 +181,30 @@ const teamData = [
       phone: "+1 (555) 555-5555",
       youtue: "http://youtuebe.com/"
     },
-    position: "Founder",
+    position: "Web Developer ",
+    images: [
+      {
+        src: TeamMemberImage
+      }
+    ]
+  },
+]
+
+const ycprTeamData = [
+  {
+    name: "Gayatri Pardeshi",
+    socials: {
+      twitter: "@joebridges",
+      instagram: "@joebridges",
+      facebook: "joebridges",
+      linkedin: "https://www.linkedin.com/in/abhay-mishra-9669711b5/",
+      github: "https://github.com/joebridges",
+      website: "https://joebridges.com",
+      email: "joe.bridges@example.com",
+      phone: "+1 (555) 555-5555",
+      youtue: "http://youtuebe.com/"
+    },
+    position: "YCPR Team Member",
     images: [
       {
         src: TeamMemberImage
@@ -143,7 +212,7 @@ const teamData = [
     ]
   },
   {
-    name: "Joe Bridges",
+    name: "Aryanshi Singh",
     socials: {
       twitter: "@joebridges",
       instagram: "@joebridges",
@@ -155,7 +224,89 @@ const teamData = [
       phone: "+1 (555) 555-5555",
       youtue: "http://youtuebe.com/"
     },
-    position: "Founder",
+    position: "YCPR Team Member",
+    images: [
+      {
+        src: TeamMemberImage
+      }
+    ]
+  },
+  {
+    name: "Suraj S. Sugandhi",
+    socials: {
+      twitter: "@joebridges",
+      instagram: "@joebridges",
+      facebook: "joebridges",
+      linkedin: "https://www.linkedin.com/in/abhay-mishra-9669711b5/",
+      github: "https://github.com/joebridges",
+      website: "https://joebridges.com",
+      email: "joe.bridges@example.com",
+      phone: "+1 (555) 555-5555",
+      youtue: "http://youtuebe.com/"
+    },
+    position: "YCPR Team Member",
+    images: [
+      {
+        src: TeamMemberImage
+      }
+    ]
+  },
+  {
+    name: "Aashisha Joseph ",
+    socials: {
+      twitter: "@joebridges",
+      instagram: "@joebridges",
+      facebook: "joebridges",
+      linkedin: "https://www.linkedin.com/in/abhay-mishra-9669711b5/",
+      github: "https://github.com/joebridges",
+      website: "https://joebridges.com",
+      email: "joe.bridges@example.com",
+      phone: "+1 (555) 555-5555",
+      youtue: "http://youtuebe.com/"
+    },
+    position: "YCPR Team Member",
+    images: [
+      {
+        src: TeamMemberImage
+      }
+    ]
+  },
+]
+const yclaTeamData = [
+  {
+    name: "Disha Dubey",
+    socials: {
+      twitter: "@joebridges",
+      instagram: "@joebridges",
+      facebook: "joebridges",
+      linkedin: "https://www.linkedin.com/in/abhay-mishra-9669711b5/",
+      github: "https://github.com/joebridges",
+      website: "https://joebridges.com",
+      email: "joe.bridges@example.com",
+      phone: "+1 (555) 555-5555",
+      youtue: "http://youtuebe.com/"
+    },
+    position: "YCLA Team Member",
+    images: [
+      {
+        src: TeamMemberImage
+      }
+    ]
+  },
+  {
+    name: "Shubhanshu Patel",
+    socials: {
+      twitter: "@joebridges",
+      instagram: "@joebridges",
+      facebook: "joebridges",
+      linkedin: "https://www.linkedin.com/in/abhay-mishra-9669711b5/",
+      github: "https://github.com/joebridges",
+      website: "https://joebridges.com",
+      email: "joe.bridges@example.com",
+      phone: "+1 (555) 555-5555",
+      youtue: "http://youtuebe.com/"
+    },
+    position: "YCLA Team Member",
     images: [
       {
         src: TeamMemberImage
@@ -165,4 +316,4 @@ const teamData = [
 
 ]
 
-export default teamData
+export { boardOfDirectorData, teamHeadData, techTeamData, ycprTeamData, yclaTeamData }

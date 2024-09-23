@@ -44,6 +44,15 @@ import YuvaCracyAboutImage3 from "./assets/about/org/yuvacracy/about-2.png"
 import YuvaCracyAboutImage21 from "./assets/about/org/yuvacracy/about-12.png"
 import GetInvolved1Image from "./assets/home/get-involved/get-involved1.png"
 
+import Partner1Image from "./assets/about/people/partner/p1.png"
+import Partner2Image from "./assets/about/people/partner/p2.png"
+import Partner3Image from "./assets/about/people/partner/p3.png"
+import Partner4Image from "./assets/about/people/partner/p4.png"
+import Partner5Image from "./assets/about/people/partner/p5.png"
+import Partner6Image from "./assets/about/people/partner/p6.png"
+import Partner7Image from "./assets/about/people/partner/p7.png"
+
+
 
 export {
   HeroImage,
@@ -84,5 +93,12 @@ export {
   YuvaCracyAboutImage2,
   YuvaCracyAboutImage3,
   YuvaCracyAboutImage21,
-  GetInvolved1Image
+  GetInvolved1Image,
+  Partner1Image,
+  Partner2Image,
+  Partner3Image,
+  Partner4Image,
+  Partner5Image,
+  Partner6Image,
+  Partner7Image,
 }
