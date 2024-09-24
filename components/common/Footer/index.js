@@ -42,12 +42,12 @@ const Footer = () => {
             <h2 className="mt-6  font-montserrat font-[600] text-[1.15rem] text-primary ">The People</h2>
             <ul>
               <li>
-                <Link href={'/people/advisors'} className="text-black hover:underline font-openSans text-[.9rem] text-opacity-[.8] ">
+                <Link href={'/'} className="text-black hover:underline font-openSans text-[.9rem] text-opacity-[.8] ">
                   Our Advisors
                 </Link>
               </li>
               <li>
-                <Link href={'/people/partners'} className="text-black hover:underline font-openSans text-[.9rem] text-opacity-[.8] ">
+                <Link href={'/people/our-partners'} className="text-black hover:underline font-openSans text-[.9rem] text-opacity-[.8] ">
                   Our Partners
                 </Link>
               </li>
@@ -95,8 +95,8 @@ const Footer = () => {
                   </Link>
                 </li>
                 <li>
-                  <Link href={'/careers/career-opportunities?scroll=career-div'} className="text-black hover:underline font-openSans text-[.9rem] text-opacity-[.8] ">
-                    Career Opportunities
+                  <Link href={'/careers/career-databases?scroll=career-div'} className="text-black hover:underline font-openSans text-[.9rem] text-opacity-[.8] ">
+                    Career Databases
                   </Link>
                 </li>
               </ul>

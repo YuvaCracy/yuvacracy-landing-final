@@ -76,7 +76,7 @@ const InternComponent = ({ title, subtitle, desc, list, link, image, id }) => {
           alt={title}
           className="rounded-xl object-cover md:w-[20rem] w-full pointer-events-none select-none"
         />
-        <Box />
+        {/* <Box /> */}
       </div>
     </div>
   );

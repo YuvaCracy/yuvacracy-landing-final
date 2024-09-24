@@ -60,7 +60,7 @@ const WorkWithUs = () => {
       </SuspenseHandler>
       <div id="work-div" className="xl:px-[8rem] md_desktop:px-[6rem] lg:px-[5rem] md:px-[3rem] md_phone:px-[2rem] px-[1rem] pb-[16rem]">
         <SubHead
-          title={"Collaborate with YuvaCracy"}
+          title={"Work With Us"}
           subtitle={
             "There's a space for everyone in this movement. We believe in our youth's potential to be leaders and take initiative and accountability for their work, which will be at the heart of our engagement with you."
           }
@@ -73,8 +73,7 @@ const WorkWithUs = () => {
             <br />
             <br />
             <span className="font-bold">
-            {"Stay tuned and check back regularly for "}
-            <span className=" underline underline-offset-2">{"updates!"}</span>
+            {"Stay tuned and check back regularly for updates!"}
             </span>
           </>
           }
