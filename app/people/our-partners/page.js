@@ -26,7 +26,7 @@ const Partner = () => {
         />
         <Para
           data={{
-            para: "The YuvaCracy Foundation thrives on the strength of our collaborative partnerships. We proudly work alongside non-profits, educational institutions, corporate sponsors, and government agencies, all of whom share a commitment to our organization's mission"
+            para: "The YuvaCracy Foundation thrives on the strength of our collaborative partnerships. We proudly work alongside non-profits, educational institutions, corporate sponsors, and government agencies, all of whom share a commitment to our organization's mission."
           }}
           styles=' text-[1rem] '
         />
