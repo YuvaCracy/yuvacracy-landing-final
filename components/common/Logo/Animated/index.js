@@ -33,7 +33,7 @@ const AnimatedLogo = ({ bg, color = "", lineColor = "" }) => {
     <div onClick={() => router.push('/')} className='flex flex-col gap-[.3rem] font-montserrat cursor-pointer ' >
       <div className={`relative ${color ? color : " text-primary "} `}>
         <h1 className='  text-[1.3rem] font-[700] ' >YUVACRACY</h1>
-        <p className=' absolute right-[-1.2rem] top-[-.3rem] font-openSans font-[600] text-[.59rem]    ' >TM</p>
+        <p className=' absolute right-[-1.2rem] top-[-.3rem] font-openSans font-[600] text-[1rem]    ' >&reg;</p>
       </div>
 
       {/* Animation code  */}
