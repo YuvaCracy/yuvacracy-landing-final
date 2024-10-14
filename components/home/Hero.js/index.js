@@ -2,7 +2,7 @@ import PrimaryButton from "@/components/common/Button/PrimaryButton";
 import SecondaryButton from "@/components/common/Button/SecondaryButton";
 import { HeroImage } from "@/public/assetManager";
 import Image from "next/image";
-import React, { Suspense, useState } from "react";
+import React, { Suspense } from "react";
 import { useRouter } from "nextjs-toploader/app";
 import Link from "next/link";
 import {
@@ -13,7 +13,6 @@ import {
 } from "react-icons/fa";
 import { FaMedium } from "react-icons/fa6";
 import { AiFillInstagram } from "react-icons/ai";
-import { MdClose } from "react-icons/md";
 
 const GrowthSVG = () => {
   return (
@@ -89,7 +88,6 @@ const socialIcons = [
 
 const HomeHero = () => {
   const router = useRouter();
-  const [showSocial, setShowSocial] = useState(true);
 
   return (
     <div className=" flex relative w-[100%]  h-[100%]  overflow-clip  ">
@@ -110,7 +108,7 @@ const HomeHero = () => {
               className="flex w-full h-full pl-4 hover:border-l-[0.44rem] border-l-transparent border-t-transparent border-b-transparent border-r-transparent hover:border-l-primary transition-all duration-300 hover:text-primary
                 hover:from-[#ebf3ff] hover:bg-gradient-to-r hover:via-[#ebf3ff] hover:to-transparent"
             >
-              {/* This div will change background color  only when hovered */}
+              {/* This div will change background color only when hovered */}
               <Link
                 className="flex items-center"
                 href={href}

@@ -58,7 +58,7 @@ const WorkWithUs = () => {
       <SuspenseHandler>
         <ScrollHandler />
       </SuspenseHandler>
-      <div id="work-div" className="xl:px-[8rem] md_desktop:px-[6rem] lg:px-[5rem] md:px-[3rem] md_phone:px-[2rem] px-[1rem] pb-[16rem]">
+      <div id="work-div" className="xl:px-[8rem] md_desktop:px-[6rem] lg:px-[5rem] md:px-[3rem] md_phone:px-[2rem] px-[1rem] pb-[6rem]">
         <SubHead
           title={"Work With Us"}
           subtitle={
@@ -67,6 +67,8 @@ const WorkWithUs = () => {
         />
 
         <SubHead
+          noSpace={false}
+          customSpace="pt-14"
           title={"How to get involved ?"}
           subtitle={<>
             {"Exciting times are ahead! We will soon be rolling out the application form for those eager to join us."}

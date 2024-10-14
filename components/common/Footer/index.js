@@ -161,7 +161,7 @@ const Footer = () => {
 
             <h2 className=" mt-[1rem] font-montserrat font-[600] text-[1.15rem] text-primary ">Quick Links</h2>
             <ul className="flex flex-col " >
-              <Link href={'https://drive.google.com/file/d/1HS3sDALwDA8NpxqCeClD-gycPMaARBHu'} target="_blank" className="text-black hover:underline font-openSans text-[.9rem] w-fit text-opacity-[.8] " >Brand Identity Guide</Link>
+              <Link href={'https://drive.google.com/file/d/1AZpVPznkcZF2Njd9QqFsgcYIoKOLX2xt/preview'} target="_blank" className="text-black hover:underline font-openSans text-[.9rem] w-fit text-opacity-[.8] " >Brand Identity Guide</Link>
 
               <Link href={'/?scroll=faq-div'} className="text-black hover:underline font-openSans w-fit text-[.9rem] text-opacity-[.8] " >FAQs</Link>
 
