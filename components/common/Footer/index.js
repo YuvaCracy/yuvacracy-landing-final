@@ -95,8 +95,8 @@ const Footer = () => {
                   </Link>
                 </li>
                 <li>
-                  <Link href={'/careers/career-opportunities?scroll=career-div'} className="text-black hover:underline font-openSans text-[.9rem] text-opacity-[.8] ">
-                    Career Opportunities
+                  <Link href={'/careers/career-databases?scroll=career-div'} className="text-black hover:underline font-openSans text-[.9rem] text-opacity-[.8] ">
+                    Career Databases
                   </Link>
                 </li>
               </ul>
