@@ -10,23 +10,168 @@ import ScrollHandler from "@/utils/ScrollHandler";
 
 const DevelopmentData = [
   {
-    title: "Leadership Training: ",
-    desc: "Our training programs focus on essential skills such as public speaking, negotiation, and strategic planning.",
+    title: "Dedicated Legislative Assistants: ",
+    desc: "We assign trained professionals to support MPs, working from their Delhi offices or constituencies as needed.",
   },
   {
-    title: "Mentorship & Networking: ",
-    desc: "We connect young leaders with experienced mentors who guide them through their leadership journey, providing invaluable advice and support.",
+    title: "Parliamentary Work Support: ",
+    desc: "From drafting questions to preparing speeches, we assist with all aspects of parliamentary proceedings.",
+  },
+  {
+    title: "Stakeholder Networking: ",
+    desc: "Facilitating connections with key stakeholders through consultancy and outreach initiatives.",
+  },
+  {
+    title: "Sansad Website Training: ",
+    desc: "Enabling MPs and their teams to maximize the use of the official parliamentary portal.",
   },
 ];
 
 const DevelopmentData2 = [
   {
-    title: "Youth Councils: ",
-    desc: "Our youth councils provide a platform for young people to influence policies and decisions that impact their communities.",
+    title: "",
+    desc: (
+      <div className="flex flex-row items-center h-3">
+        {" "}
+        <div className="mr-2 -mt-1 text-4xl">&#8226;</div>Budgetary Reviews
+      </div>
+    ),
   },
   {
-    title: "Policy Advocacy: ",
-    desc: "We train youth to advocate for policies that address their needs and concerns, ensuring their voices are not just heard, but acted upon.",
+    title: "",
+    desc: (
+      <div className="flex flex-row items-center h-3">
+        {" "}
+        <div className="mr-2 -mt-1 text-4xl">&#8226;</div>Analysis of State
+        Schemes and Bills
+      </div>
+    ),
+  },
+  {
+    title: "",
+    desc: (
+      <div className="flex flex-row items-center h-3">
+        {" "}
+        <div className="mr-2 -mt-1 text-4xl">&#8226;</div>Constitutional Debates
+        and Dispute Resolution
+      </div>
+    ),
+  },
+];
+
+const DevelopmentData3 = [
+  {
+    title: "",
+    desc: (
+      <div className="flex flex-row items-center h-3">
+        {" "}
+        <div className="mr-2 -mt-1 text-4xl">&#8226;</div> Tenure and
+        Accountability
+      </div>
+    ),
+  },
+  {
+    title: "",
+    desc: (
+      <div className="flex flex-row items-center h-3">
+        {" "}
+        <div className="mr-2 -mt-1 text-4xl">&#8226;</div>Federalism and
+        Comparative Insights
+      </div>
+    ),
+  },
+  {
+    title: "",
+    desc: (
+      <div className="flex flex-row items-center h-3">
+        {" "}
+        <div className="mr-2 -mt-1 text-4xl">&#8226;</div>Gender Implications
+      </div>
+    ),
+  },
+  {
+    title: "",
+    desc: (
+      <div className="flex flex-row items-center h-3">
+        {" "}
+        <div className="mr-2 -mt-1 text-4xl">&#8226;</div>Socio-Economic
+        Benefits
+      </div>
+    ),
+  },
+  {
+    title: "",
+    desc: (
+      <div className="flex flex-row items-center h-3">
+        {" "}
+        <div className="mr-2 -mt-1 text-4xl">&#8226;</div>Electoral Impact
+        (e.g., is it a vote-bank scheme?)
+      </div>
+    ),
+  },
+];
+
+const DevelopmentData4 = [
+  {
+    title: "",
+    desc: (
+      <div className="flex flex-row items-center h-3">
+        {" "}
+        <div className="mr-2 -mt-1 text-4xl">&#8226;</div>The constitutional
+        adherence of judgments.
+      </div>
+    ),
+  },
+  {
+    title: "",
+    desc: (
+      <div className="flex flex-row items-center h-3">
+        {" "}
+        <div className="mr-2 -mt-1 text-4xl">&#8226;</div>The interplay between
+        the judiciary's role and the people's mandate.
+      </div>
+    ),
+  },
+  {
+    title: "",
+    desc: (
+      <div className="flex flex-row items-center h-3">
+        {" "}
+        <div className="mr-2 -mt-1 text-4xl">&#8226;</div>Gaps and loopholes in
+        the legal and parliamentary framework.
+      </div>
+    ),
+  },
+];
+
+const DevelopmentData5 = [
+  {
+    title: "",
+    desc: (
+      <span>
+        <span className="mr-2 font-bold">Holistic Research:</span>Analysis of
+        legislative and executive orders.
+      </span>
+    ),
+  },
+  {
+    title: "",
+    desc: (
+      <span>
+        <span className="mr-2 font-bold">Accountability and Transparency:</span>
+        Ensuring every step is aligned with democratic principles.
+      </span>
+    ),
+  },
+  {
+    title: "",
+    desc: (
+      <span>
+        <span className="mr-2 font-bold">Expertise Across Domains:</span>
+        Bringing together skilled professionals passionate about policy and
+        governance.
+      </span>
+    ),
   },
 ];
 
@@ -40,46 +185,93 @@ const Ycpr = () => {
         <SubHead
           title={"YuvaCracy Centre for Policy Research (YCPR)"}
           subtitle={
-            "At YuvaCracy, our YCPR initiative empowers youth to engage in civic life, ensuring their voices are heard and valued."
+            <div className="w-full">
+              <span className="">
+                Aiding Legislators and Policymakers with Innovative Research and
+                Assistance.
+              </span>{" "}
+              <br />
+              <br />
+              <span>
+                At YuvaCracy Centre for Policy Research (YCPR), we are committed
+                to enhance the effectiveness of India's democratic institutions
+                by providing high-quality legislative and policy assistance.
+                Through collaboration, research, and tailored support, we bridge
+                the gap between policymakers and the people they serve.
+              </span>
+            </div>
           }
         />
 
-        <ImageTextComp1 
-          title={"Youth Leadership Development"}
-          subtitle={"Fostering the Next Generation of Leaders"}
+        <ImageTextComp1
+          title={"Our Key Initiatives"}
+          subtitle={"Yuvacracy"}
           imgSrc={MeetingImg}
           desc={
-            " Our Youth Leadership Development program provides comprehensive training and mentorship to equip young leaders with the skills they need to succeed."
+            <div>
+              Legislative Assistance to Members of Parliament (MPs)
+              <br />
+              <br />
+              We equip MPs and their teams with the tools and resources they
+              need to make informed decisions and drive impactful parliamentary
+              contributions. Our services include:
+            </div>
           }
           data={DevelopmentData}
         />
 
-        <ImageTextCustomTitle
-          title={"Civic Education and Awareness"}
+        <ImageTextComp1
+          title={"Policy Research for Think Tanks"}
           subtitle={"Building Informed and Engaged Citizens"}
+          mirror={true}
           desc={
-            "Civic education is the foundation of an informed and engaged society. We provide young people with the knowledge and tools they need to understand their rights and responsibilities as citizens. Through interactive workshops, engaging seminars, and dynamic campaigns, we help youth become active participants in the democratic process."
+            <span>
+              We provide specialized research services to think tanks, ensuring
+              a nuanced and comprehensive analysis of policies
+              <br />
+              <br />
+              <span className="pr-2 font-bold">Collaborative Research:</span>
+              Partnering with other think tanks for diverse perspectives.
+              <br />
+              <span className="pr-2 font-bold">
+                Policy Analysis Parameters:
+              </span>
+            </span>
           }
           imgSrc={PeopleGroup1}
+          data={DevelopmentData3}
         />
 
         <ImageTextComp1
-          title={"Representation in Decision-Making"}
+          title={"State-Level Legislative Insights"}
           subtitle={"Ensuring Youth Voices are Heard"}
           desc={
-            "Young people deserve a seat at the table where decisions that affect their lives are made. Through YCPR, we create opportunities for youth to participate in decision-making processes at the local, regional, and national levels."
+            "Our expertise extends beyond the national level to state legislatures, focusing on:"
           }
           imgSrc={PeopleGroup2}
           data={DevelopmentData2}
         />
 
-        <ImageTextCustomTitle
-          title={"Why YCPR Matters"}
-          subtitle={"Impact of Youth"}
+        <ImageTextComp1
+          title={"Supreme Court Judgement Analysis"}
+          subtitle={"Building Informed and Engaged Citizens"}
+          mirror={true}
           desc={
-            "Youth civic participation is not just about having a voice; it's about making a difference. When young people are actively involved in civic life, they bring fresh perspectives, innovative solutions, and a deep commitment to building better communities."
+            <span>
+              We bridge the understanding between judicial decisions and
+              legislative policymaking by examining:
+            </span>
           }
           imgSrc={PeopleGroup1}
+          data={DevelopmentData4}
+        />
+
+        <ImageTextComp1
+          title={"Why YCPR Matters"}
+          subtitle={"Building Informed and Engaged Citizens"}
+          desc={"Our approach is rooted in:"}
+          imgSrc={PeopleGroup2}
+          data={DevelopmentData5}
         />
       </div>
     </CentreLayout>
