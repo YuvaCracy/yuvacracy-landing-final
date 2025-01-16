@@ -46,43 +46,66 @@ const Ycla = () => {
       <SuspenseHandler>
         <ScrollHandler />
       </SuspenseHandler>
-      <div id="ycla-div" className="xl:px-[8rem] md_desktop:px-[6rem] lg:px-[5rem] md:px-[3rem] md_phone:px-[2rem] px-[1rem] flex flex-col">
+      <div
+        id="ycla-div"
+        className="xl:px-[8rem] md_desktop:px-[6rem] lg:px-[5rem] md:px-[3rem] md_phone:px-[2rem] px-[1rem] flex flex-col"
+      >
         <SubHead
           title={"YuvaCracy Centre for Legal Affairs (YCLA)"}
           subtitle={
-            "Equipping the next generation with the skills and knowledge to lead and advocate for their communities. Our programs encompass leadership training, advocacy campaigns, and mentorship opportunities."
+            "YuvaCracy Centre for Legal Affairs (YCLA) invites you to explore the dynamic world of law and governance. Our mission is to bridge the gap between academic learning and real-world expertise, shaping the next generation of legal professionals who are ready to lead and innovate."
           }
         />
 
         <ImageTextComp1
-          title={"Comprehensive Leadership Curriculum"}
+          title={"What We Offer"}
           subtitle={"Developing Core Competencies for Effective Leadership"}
           imgSrc={MeetingImg}
           desc={
-            " Our leadership curriculum is designed to cover all aspects of community leadership, from ethical decision-making to strategic project management. We offer core modules that every participant completes, along with specialized tracks that allow them to focus on areas of interest."
+            <div>
+              <span className="text-xl font-bold">Legal Research</span>
+              <br />
+              <span>
+                Dive deep into the frameworks of law, governance, policy, and
+                justice. Our research initiatives encourage exploration,
+                analysis, and innovation to tackle contemporary legal
+                challenges.
+              </span>
+            </div>
           }
-          data={DevelopmentData}
+          data={""}
         />
 
         <ImageTextComp1
           mirror={true}
-          title={"Hands-On Community Projects"}
+          title={"Quality Internships"}
           subtitle={"Turning Knowledge into Action"}
           desc={
-            "At YCLA, we believe in learning by doing. Our participants apply what they learn in the classroom to real-world community projects. These hands-on experiences are crucial for developing the practical skills needed to lead effectively."
+            "Unlock transformative career opportunities with our curated internships. We connect ambitious learners with impactful organizations to build skills and pave the way for future success."
           }
-          data={DevelopmentData1}
+          data={""}
           imgSrc={PeopleGroup1}
         />
 
         <ImageTextComp1
-          title={"Networking and Mentorship"}
+          title={"Skill Building"}
           subtitle={"Building Strong Connections for Future Success"}
           desc={
-            "Leadership is not just about individual skills; it's also about building a network of support and guidance. Through our mentorship program, YCLA participants are paired with experienced community leaders who provide valuable insights and advice."
+            "From mastering legal writing to excelling in courtroom advocacy, our workshops and hands-on training sessions empower you to thrive in the legal field."
           }
-          data={DevelopmentData2}
+          data={""}
           imgSrc={PeopleGroup2}
+        />
+
+        <ImageTextComp1
+          mirror={true}
+          title={"Community & Events"}
+          subtitle={"Turning Knowledge into Action"}
+          desc={
+            "Be part of a vibrant network of legal minds. Our seminars, conferences, and interactive events are designed to inspire collaboration, foster learning, and drive growth."
+          }
+          data={""}
+          imgSrc={PeopleGroup1}
         />
       </div>
     </CentreLayout>
