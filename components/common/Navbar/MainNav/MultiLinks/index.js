@@ -27,9 +27,16 @@ const MultiLinks = ({ data, id = -1, active, setActive = () => { }, showNav, set
                   rowItem.sublinks && rowItem.sublinks.map((linkData, linkIndex) => (
                     <div key={linkIndex} className=' text-[.85rem] w-fit flex items-center gap-[.3rem]  ' >
                       {/* <MdKeyboardDoubleArrowRight /> */}
+                      {/* Vikalp - I have added this false check here to prevent the Link component from reloading the page and resetting scroll pos */}
+                      {
+                        linkData.href ? 
                       <Link href={linkData.href} className='  hover:translate-x-[.2rem] duration-300 hover:underline underline-offset-[3px] xsm_desktop:opacity-100 opacity-[.5] '>
                         {linkData.title}
-                      </Link>
+                      </Link> : 
+                      <span className='  hover:translate-x-[.2rem] duration-300 hover:underline underline-offset-[3px] xsm_desktop:opacity-100 opacity-[.5] '>
+                        {linkData.title}
+                      </span> 
+                      }
                     </div>
                   ))
                 }

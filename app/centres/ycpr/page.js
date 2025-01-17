@@ -63,6 +63,14 @@ const DevelopmentData3 = [
   {
     title: "",
     desc: (
+      <div className="flex flex-row items-center h-3 font-bold">
+        Policy Analysis Parameters:
+      </div>
+    ),
+  },
+  {
+    title: "",
+    desc: (
       <div className="flex flex-row items-center h-3">
         {" "}
         <div className="mr-2 -mt-1 text-4xl">&#8226;</div> Tenure and
@@ -186,11 +194,6 @@ const Ycpr = () => {
           title={"YuvaCracy Centre for Policy Research (YCPR)"}
           subtitle={
             <div className="w-full">
-              <span className="">
-                Aiding Legislators and Policymakers with Innovative Research and
-                Assistance.
-              </span>{" "}
-              <br />
               <br />
               <span>
                 At YuvaCracy Centre for Policy Research (YCPR), we are committed
@@ -209,8 +212,9 @@ const Ycpr = () => {
           imgSrc={MeetingImg}
           desc={
             <div>
+              <span className="mb-2 text-lg font-bold">
               Legislative Assistance to Members of Parliament (MPs)
-              <br />
+              </span>
               <br />
               We equip MPs and their teams with the tools and resources they
               need to make informed decisions and drive impactful parliamentary
@@ -232,10 +236,6 @@ const Ycpr = () => {
               <br />
               <span className="pr-2 font-bold">Collaborative Research:</span>
               Partnering with other think tanks for diverse perspectives.
-              <br />
-              <span className="pr-2 font-bold">
-                Policy Analysis Parameters:
-              </span>
             </span>
           }
           imgSrc={PeopleGroup1}
@@ -268,7 +268,7 @@ const Ycpr = () => {
 
         <ImageTextComp1
           title={"Why YCPR Matters"}
-          subtitle={"Building Informed and Engaged Citizens"}
+          subtitle={"Why YCPR?"}
           desc={"Our approach is rooted in:"}
           imgSrc={PeopleGroup2}
           data={DevelopmentData5}

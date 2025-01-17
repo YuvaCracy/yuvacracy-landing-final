@@ -59,13 +59,14 @@ const Ycla = () => {
 
         <ImageTextComp1
           title={"What We Offer"}
-          subtitle={"Developing Core Competencies for Effective Leadership"}
+          subtitle={""}
           imgSrc={MeetingImg}
+          customTextStyle="md:pt-12"
           desc={
             <div>
               <span className="text-xl font-bold">Legal Research</span>
               <br />
-              <span>
+              <span className="text-xl">
                 Dive deep into the frameworks of law, governance, policy, and
                 justice. Our research initiatives encourage exploration,
                 analysis, and innovation to tackle contemporary legal
@@ -80,8 +81,13 @@ const Ycla = () => {
           mirror={true}
           title={"Quality Internships"}
           subtitle={"Turning Knowledge into Action"}
+          customTextStyle="md:pt-12"
           desc={
-            "Unlock transformative career opportunities with our curated internships. We connect ambitious learners with impactful organizations to build skills and pave the way for future success."
+            <span className="text-xl">
+              Unlock transformative career opportunities with our curated
+              internships. We connect ambitious learners with impactful
+              organizations to build skills and pave the way for future success.
+            </span>
           }
           data={""}
           imgSrc={PeopleGroup1}
@@ -89,9 +95,14 @@ const Ycla = () => {
 
         <ImageTextComp1
           title={"Skill Building"}
-          subtitle={"Building Strong Connections for Future Success"}
+          subtitle={""}
+          customTextStyle="md:pt-12"
           desc={
-            "From mastering legal writing to excelling in courtroom advocacy, our workshops and hands-on training sessions empower you to thrive in the legal field."
+            <span className="text-xl">
+              From mastering legal writing to excelling in courtroom advocacy,
+              our workshops and hands-on training sessions empower you to thrive
+              in the legal field.
+            </span>
           }
           data={""}
           imgSrc={PeopleGroup2}
@@ -100,9 +111,14 @@ const Ycla = () => {
         <ImageTextComp1
           mirror={true}
           title={"Community & Events"}
+          customTextStyle="md:pt-12"
           subtitle={"Turning Knowledge into Action"}
           desc={
-            "Be part of a vibrant network of legal minds. Our seminars, conferences, and interactive events are designed to inspire collaboration, foster learning, and drive growth."
+            <span className="text-xl">
+              Be part of a vibrant network of legal minds. Our seminars,
+              conferences, and interactive events are designed to inspire
+              collaboration, foster learning, and drive growth.
+            </span>
           }
           data={""}
           imgSrc={PeopleGroup1}
