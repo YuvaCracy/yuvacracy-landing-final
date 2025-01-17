@@ -22,7 +22,7 @@ const YuvaCracyPage = () => {
         <div className='flex justify-center md_phone:mt-[4rem] mt-[2rem] gap-[.5rem]  ' >
           <Heading
             data={{
-              head: "About Yuvacracy"
+              head: "About YuvaCracy"
             }}
             styles=' uppercase '
           />
