@@ -104,7 +104,7 @@ const PromotionalContent = () => {
                                 `${pathname}?promoId=${data.youtubeId}`
                               );
                             } else {
-                              router.push(data.url); // Navigate to the specific site URL
+                              router.push(data.url); 
                             }
                           }}
                           className="text-nowrap active:scale-[.95] duration-300 flex text-[.8rem] border-[1px] border-white rounded-full px-[.8rem] py-[.2rem] justify-center items-center gap-[.3rem]"
