@@ -268,12 +268,15 @@ const Collaboration = () => {
       </SuspenseHandler>
       <div
         id="collab-div"
-        className="flex flex-col xl:px-[8rem] md_desktop:px-[6rem] lg:px-[5rem] md:px-[3rem] md_phone:px-[2rem] px-[1rem] pt-20"
+        className="flex flex-col xl:px-[8rem] md_desktop:px-[6rem] lg:px-[5rem] md:px-[3rem] md_phone:px-[2rem] px-[1rem] pt-6"
       >
         <SubHead
           title={"Collaboration"}
           subtitle={
-            "YuvaCracy Foundation, through its focus on promoting India-centric thoughts and its two specialized centers—YuvaCracy Centre for Policy Research (YCPR) and YuvaCracy Centre for Legal Affairs (YCLA)—offers diverse collaboration opportunities with educational institutions, NGOs, and other organizations."
+            <>
+            YuvaCracy Foundation, through its focus on promoting India-centric thoughts and its two specialized centers—YuvaCracy Centre for Policy Research (YCPR) and YuvaCracy Centre for Legal Affairs (YCLA)—offers diverse collaboration opportunities with educational institutions, NGOs, and other organizations.
+            <span className="font-semibold"> YuvaCracy provides various collaboration opportunities such as:</span>
+            </>
           }
         />
 
@@ -301,11 +304,6 @@ const Collaboration = () => {
         </div> */}
 
         {/* <HomeStoriesOfImpact /> */}
-
-        <span className="pt-12 text-xl font-bold text-black font-openSans">
-          Collaboration Opportunities
-        </span>
-
         <ImageTextComp1
           title={"With Educational Institutions"}
           subtitle={"Building Informed and Engaged Students"}
