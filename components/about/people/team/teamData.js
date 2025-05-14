@@ -86,26 +86,6 @@ const teamHeadData = [
     ]
   },
   {
-    name: "Shruti Pathania",
-    socials: {
-      twitter: "@joebridges",
-      instagram: "@joebridges",
-      facebook: "joebridges",
-      linkedin: "https://www.linkedin.com/in/abhay-mishra-9669711b5/",
-      github: "https://github.com/joebridges",
-      website: "https://joebridges.com",
-      email: "joe.bridges@example.com",
-      phone: "+1 (555) 555-5555",
-      youtue: "http://youtuebe.com/"
-    },
-    position: "Head – YCPR",
-    images: [
-      {
-        src: TeamMemberImage
-      }
-    ]
-  },
-  {
     name: "Abhay Mishra",
     socials: {
       twitter: "@joebridges",
@@ -193,46 +173,6 @@ const techTeamData = [
 const ycprTeamData = [
   {
     name: "Gayatri Pardeshi",
-    socials: {
-      twitter: "@joebridges",
-      instagram: "@joebridges",
-      facebook: "joebridges",
-      linkedin: "https://www.linkedin.com/in/abhay-mishra-9669711b5/",
-      github: "https://github.com/joebridges",
-      website: "https://joebridges.com",
-      email: "joe.bridges@example.com",
-      phone: "+1 (555) 555-5555",
-      youtue: "http://youtuebe.com/"
-    },
-    position: "YCPR Team Member",
-    images: [
-      {
-        src: TeamMemberImage
-      }
-    ]
-  },
-  {
-    name: "Aryanshi Singh",
-    socials: {
-      twitter: "@joebridges",
-      instagram: "@joebridges",
-      facebook: "joebridges",
-      linkedin: "https://www.linkedin.com/in/abhay-mishra-9669711b5/",
-      github: "https://github.com/joebridges",
-      website: "https://joebridges.com",
-      email: "joe.bridges@example.com",
-      phone: "+1 (555) 555-5555",
-      youtue: "http://youtuebe.com/"
-    },
-    position: "YCPR Team Member",
-    images: [
-      {
-        src: TeamMemberImage
-      }
-    ]
-  },
-  {
-    name: "Suraj S. Sugandhi",
     socials: {
       twitter: "@joebridges",
       instagram: "@joebridges",
